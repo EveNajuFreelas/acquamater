@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { ThemeProvider } from "@mui/material";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Header from "./components/header";
+import { navigation } from "./utils/navigation";
+import { theme } from "./theme";
+import Footer from "./components/footer";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Router>
+        <Header /> 
+          <Routes>
+            {navigation.map(nav => (
+              <Route path={nav.url} element={nav.element} key={nav.id} />
+            ))}
+          </Routes >
+        <Footer />
+      </Router>
+    </ThemeProvider>
   );
 }
-
-export default App;
