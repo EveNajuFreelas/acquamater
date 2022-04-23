@@ -1,7 +1,7 @@
 import AdvisoryBoard from "../pages/advisory-board";
 import Home from "../pages/home";
 import Partners from "../pages/partners";
-import ProductsServices from "../pages/products-services";
+import WhatWeOffer from "../pages/what-we-offer";
 
 export const navigation = [
     {
@@ -18,9 +18,9 @@ export const navigation = [
     },
     {
         id: 2,
-        name: 'Produtos e Serviços',
-        url: '/produtos-e-servicos',
-        element: <ProductsServices />,
+        name: 'O que oferecemos',
+        url: '/o-que-oferecemos',
+        element: <WhatWeOffer />,
     },
     {
         id: 3,

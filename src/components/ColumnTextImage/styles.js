@@ -10,13 +10,13 @@ export const ContainerColumn = styled.div`
 `;
 
 export const ImageColumn = styled.div`
-   max-width: 30vw;
+   max-width: 35vw;
    img {
       width: 100%;
    }
 `;
 export const TextColumn = styled.div`
-   max-width: 30%;
+   max-width: 35%;
    display: flex;
    flex-direction: column;
    gap: 20px;
