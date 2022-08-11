@@ -1,29 +1,71 @@
-import "./products-services.css";
-import ColumnTextImage from "../../components/ColumnTextImage";
-import { ContainerProducts } from "./styles";
-import people_circle from "../../utils/images/people_circle.png";
+import './products-services.css';
+import ColumnTextImage from '../../components/ColumnTextImage';
+import {
+	ContainerProducts,
+	Title,
+	HeadPage,
+	Description,
+	ContainerText,
+	ContainerProduct,
+} from './styles';
+import people_circle from '../../utils/images/people_circle.png';
 
 const ProductsServices = () => {
-   return (
-      <ContainerProducts>
-         <ColumnTextImage
-            image={people_circle}
-            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et auctor lorem, convallis venenatis arcu. Curabitur rutrum iaculis ex, quis gravida felis accumsan id. Phasellus at commodo tellus. "
-            title="Phasellus nec rutrum"
-            button
-         />
-         <ColumnTextImage
-            image={people_circle}
-            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et auctor lorem, convallis venenatis arcu. Curabitur rutrum iaculis ex, quis gravida felis accumsan id. Phasellus at commodo tellus. "
-            title="Phasellus nec rutrum"
-            reverse
-         />
-         <ColumnTextImage
-            image={people_circle}
-            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et auctor lorem, convallis venenatis arcu. Curabitur rutrum iaculis ex, quis gravida felis accumsan id. Phasellus at commodo tellus. "
-         />
-      </ContainerProducts>
-   );
+	return (
+		<>
+			<HeadPage>
+				<ContainerText maxWidth='md'>
+					<Title variant='h2'>O que oferecemos</Title>
+
+					<Description>
+						Todos os produtos da Acqua Mater são realizados tendo
+						por eixo a ÁGUA e o OCEANO e têm sinergia entre si,
+						podendo se articular dependendo das necessidades do
+						cliente
+					</Description>
+				</ContainerText>
+			</HeadPage>
+			<ContainerProducts>
+				<ContainerProduct>
+					<ColumnTextImage
+						image={people_circle}
+						content='Oferecemos uma série de Palestras ligadas ao Mundo ÁGUA-OCEANO que incentivam reflexões, pesquisas, mudanças de comportamneto e tomadas de decisão. Janelas sobre o mundo para ver mais e além. Uma "lente azul" através da qual conseguimos olhar para a vida, relações e os negócios sob um prisma disruptivo e revelador.'
+						title='Palestras'
+						button
+					/>
+				</ContainerProduct>
+
+				<ContainerProduct>
+					<ColumnTextImage
+						image={people_circle}
+						content='Oferecemos uma série de Palestras ligadas ao Mundo ÁGUA-OCEANO que incentivam reflexões, pesquisas, mudanças de comportamneto e tomadas de decisão. Janelas sobre o mundo para ver mais e além. Uma "lente azul" através da qual conseguimos olhar para a vida, relações e os negócios sob um prisma disruptivo e revelador.'
+						title='Palestras'
+						button
+						reverse
+					/>
+				</ContainerProduct>
+
+				<ContainerProduct>
+					<ColumnTextImage
+						image={people_circle}
+						content='Oferecemos uma série de Palestras ligadas ao Mundo ÁGUA-OCEANO que incentivam reflexões, pesquisas, mudanças de comportamneto e tomadas de decisão. Janelas sobre o mundo para ver mais e além. Uma "lente azul" através da qual conseguimos olhar para a vida, relações e os negócios sob um prisma disruptivo e revelador.'
+						title='Palestras'
+						button
+					/>
+				</ContainerProduct>
+
+				<ContainerProduct>
+					<ColumnTextImage
+						image={people_circle}
+						content='Oferecemos uma série de Palestras ligadas ao Mundo ÁGUA-OCEANO que incentivam reflexões, pesquisas, mudanças de comportamneto e tomadas de decisão. Janelas sobre o mundo para ver mais e além. Uma "lente azul" através da qual conseguimos olhar para a vida, relações e os negócios sob um prisma disruptivo e revelador.'
+						title='Palestras'
+						button
+						reverse
+					/>
+				</ContainerProduct>
+			</ContainerProducts>
+		</>
+	);
 };
 
 export default ProductsServices;
