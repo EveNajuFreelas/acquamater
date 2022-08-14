@@ -6,15 +6,16 @@ let theme = createTheme({
          main: "#003b80",
          contrastText: "#FFF",
       },
-      secondary: { main: "#FFF" },
+      secondary: { main: "#FFF", contrastText: "#000" },
       action: { main: "#FF0000" },
    },
    typography: {
+      fontFamily: "Museo",
       body1: {
-         fontSize: "20px",
+         fontSize: "16px",
       },
       h2: {
-         fontSize: "28px",
+         fontSize: "18px",
          fontWeight: "bold",
          textTransform: "capitalize",
       },
@@ -32,7 +33,11 @@ theme = createTheme(theme, {
          },
       },
       MuiAppBar: {
-         color: "secondary",
+         styleOverrides: {
+            root: {
+               color: "secondary",
+            }
+         }
       },
    },
 });
