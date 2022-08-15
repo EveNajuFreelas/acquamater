@@ -9,22 +9,26 @@ import {
 	ContainerProduct,
 } from './styles';
 import people_circle from '../../utils/images/people_circle.png';
+import { Typography } from '@mui/material';
 
 const ProductsServices = () => {
 	return (
 		<>
 			<HeadPage>
-				<ContainerText maxWidth='md'>
-					<Title variant='h2'>O que oferecemos</Title>
+				<ContainerText maxWidth='lg'>
+					<Title variant='h1'>O que oferecemos</Title>
 
 					<Description>
-						Todos os produtos da Acqua Mater são realizados tendo
-						por eixo a ÁGUA e o OCEANO e têm sinergia entre si,
-						podendo se articular dependendo das necessidades do
-						cliente
+						<Typography variant='subtitle1'>
+							Todos os produtos da Acqua Mater são realizados tendo
+							por eixo a ÁGUA e o OCEANO e têm sinergia entre si,
+							podendo se articular dependendo das necessidades do
+							cliente
+						</Typography>
 					</Description>
 				</ContainerText>
 			</HeadPage>
+			
 			<ContainerProducts>
 				<ContainerProduct>
 					<ColumnTextImage
