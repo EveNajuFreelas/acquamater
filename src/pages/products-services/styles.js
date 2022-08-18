@@ -8,6 +8,14 @@ export const ContainerText = styled(Container)`
 	padding: 0px 70px;
 `;
 
+export const ContainerTextSingle = styled(Container)`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 20px;
+`;
+
 export const Title = styled(Typography)``;
 
 export const Description = styled.div`
@@ -33,9 +41,8 @@ export const HeadPage = styled.div`
 	align-items: center;
 	justify-content: center;
 	padding-top: 10%;
-	padding-bottom: 15%;
-	background: url('http://www.patobragado.pr.gov.br/uploads/article/2021-02/saude-promove-palestras-de-prevencao-a-covid-19-na-escola-municipal-d7f2c94b32.jpg')
-		rgba(0, 42, 194, 0.8);
+	padding-bottom: 10%;
+	background: url(${props => props.image}) rgba(0, 42, 194, 0.8);
 	background-size: cover;
 	background-blend-mode: multiply;
 
