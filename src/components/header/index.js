@@ -28,7 +28,7 @@ const Header = () => {
          <Container maxWidth="md">
             <Toolbar disableGutters sx={{ my: 2, alignItems: "flex-end" }}>
                <Box>
-                  <img src="printed-logo.png" alt="logo" />
+                  <img src="acquamater-logo.svg" alt="logo" />
                </Box>
 
                {navigation.map((nav) => (
