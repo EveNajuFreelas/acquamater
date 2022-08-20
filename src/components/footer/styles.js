@@ -1,4 +1,4 @@
-import { Grid } from '@mui/material';
+import { Divider, Grid } from '@mui/material';
 import styled from 'styled-components';
 
 const FooterContainer = styled((props) => <Grid {...props} />)`
@@ -18,12 +18,19 @@ const SectionTitle = styled('p')`
 `;
 
 const SectionChild = styled('p')`
-    color: #999999;
+    color: #999;
     font-size: 14px;
+`;
+
+const SectionDivider = styled(Divider)`
+    border-color: #999;
+    width: 100%;
+    margin: 20px 0;
 `;
 
 export {
     FooterContainer,
     SectionTitle,
-    SectionChild
+    SectionChild,
+    SectionDivider
 }
