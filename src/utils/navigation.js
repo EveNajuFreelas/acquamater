@@ -1,4 +1,6 @@
 import AdvisoryBoard from "../pages/advisory-board";
+import AcquaMater from "../pages/acqua-mater";
+import NossaHistoria from "../pages/acqua-mater/nossa-historia";
 import Home from "../pages/home";
 import Partners from "../pages/partners";
 import ProductsServices from "../pages/products-services";
@@ -15,7 +17,7 @@ export const navigation = [
         id: 1,
         name: 'Acqua Mater',
         url: '/acqua-mater',
-        element: '',
+        element: <AcquaMater />,
         subelements: [
             {
                 id: 1-0,
@@ -27,7 +29,7 @@ export const navigation = [
                 id: 1-1,
                 name: 'Nossa história',
                 url: '/nossa-historia',
-                element: '',
+                element: <NossaHistoria />,
             },
             {
                 id: 1-2,
