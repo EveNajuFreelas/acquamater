@@ -2,8 +2,11 @@ import { Grid } from "@mui/material";
 import { FooterContainer, SectionChild, SectionTitle, SectionDivider } from "./styles";
 import { Instagram, YouTube, LinkedIn } from '@mui/icons-material';
 import { navigation } from "../../utils/navigation";
+import { useNavigate } from "react-router-dom";
 
 const Footer = ()  => {
+    const navigate = useNavigate();
+
     const IconStyle = { 
         border: '2px solid white', 
         borderRadius: '50%', 
@@ -14,7 +17,7 @@ const Footer = ()  => {
     };
 
     const handleClick = (url) => {
-        window.location.href = url;
+        navigate(url);
     }
 
     return (
@@ -22,11 +25,13 @@ const Footer = ()  => {
             {navigation.map(nav => (
                 nav.subelements.length > 0 &&
                 <Grid item xs={2}>
-                    <SectionTitle>
+                    <SectionTitle onClick={() => handleClick(nav.url)} key={nav.id}>
                         {nav.name}
                     </SectionTitle>
                     {nav.subelements.map(el => (
-                        <SectionChild>{el.name}</SectionChild>
+                        <SectionChild onClick={() => handleClick(el.url)} key={el.id}>
+                            {el.name}
+                        </SectionChild>
                     ))}
                 </Grid>
             ))}
