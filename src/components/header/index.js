@@ -12,8 +12,7 @@ const Header = () => {
       navigate(url);
    }
 
-   const handleHover = (element, isHovering, event) => {
-      event.preventDefault();
+   const handleHover = (event, element, isHovering = false) => {
       if(isHovering) {
          setActiveFacet(element.id);
          setAnchorMenu(event.currentTarget);
@@ -39,7 +38,7 @@ const Header = () => {
                         key={nav.id} 
                         sx={{ px: 1, textTransform: 'none' }}
                         onClick={() => handleRedirect(nav.url)}
-                        onMouseEnter={(e) => handleHover(nav, true, e)}
+                        onMouseEnter={(e) => handleHover(e, nav, true)}
                      >
                         <p>{nav.name}</p>
                      </Link>
@@ -48,7 +47,8 @@ const Header = () => {
                         key="menuDropdown"
                         open={activeFacet === nav.id}
                         anchorEl={anchorMenu}
-                        MenuListProps={{ onMouseLeave: (e) => handleHover(null, false, e) }}
+                        MenuListProps={{ onMouseLeave: handleHover }}
+                        sx={{ marginTop: '15px', borderTopLeftRadius: 0, borderTopRightRadius: 0 }}
                      >
                         {nav.subelements.map((el) => (
                            <MenuItem 
