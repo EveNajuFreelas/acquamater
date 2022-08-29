@@ -4,25 +4,37 @@ import { Button, Typography } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
 import { useNavigate } from "react-router-dom";
 
-const ColumnTextImage = ({ image, content, title, buttons, reverse }) => {
+const ColumnTextImage = ({ image, content, title, extraImg, buttons, reverse, invertedColors }) => {
+   const { isBg, img } = image;
    const navigate = useNavigate();
 
    return (
-      <ContainerColumn reverse={reverse}>
+      <ContainerColumn backgroundImage={isBg && img} reverse={reverse}>
          <ImageColumn>
-            <img alt="people_circle" src={image} />
+           {!isBg && <img alt="people_circle" src={img} />}
          </ImageColumn>
          <TextColumn>
-            {title && <Typography variant="h2" color="primary">
-               {title}
-            </Typography>}
-            <Typography variant="body1">{content}</Typography>
+            {title && 
+               <Typography 
+                  variant="h2" 
+                  color={invertedColors ? 'title.main' : 'primary'}
+                  sx={{ marginBottom: '20px' }}
+               >
+                  {title}
+               </Typography>
+            }
+            <Typography variant="body1" color={invertedColors ? 'secondary' : 'text'}>
+               {content}
+            </Typography>
+            {extraImg && <img src={extraImg} alt="imagem" style={{ marginTop: '15px', width: '350px' }} />}
             <ButtonSection>
                {buttons?.map(
-                  ({ title, url }) => (
-                     <Button 
+                  ({ title, url }, index) => (
+                     <Button
+                        key={index}
                         onClick={() => navigate(url)}
                         style={{ width: 'fit-content' }}
+                        color={invertedColors ? 'secondary' : 'primary'}
                      >
                         <AddIcon />
                         {title}

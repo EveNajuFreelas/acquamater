@@ -6,18 +6,35 @@ let theme = createTheme({
          main: "#003b80",
          contrastText: "#FFF",
       },
-      secondary: { main: "#FFF", contrastText: "#000" },
+      secondary: { main: "#FFF", contrastText: "#003b80" },
       action: { main: "#FF0000" },
+      title: { main: "#A5D513" },
+      text: { main : "#44494A" },
    },
    typography: {
       fontFamily: "Museo",
       body1: {
          fontSize: "16px",
       },
+      body1bold: {
+         fontSize: "16px",
+         fontWeight: "300",
+      },
       h2: {
-         fontSize: "18px",
+         fontSize: "25px",
          fontWeight: "bold",
-         textTransform: "capitalize",
+      },
+      h2lite: {
+         fontSize: "25px",
+         fontWeight: "normal"
+      },
+      h3: {
+         fontSize: "20px",
+         fontWeight: "bold",
+      },
+      h3lite: {
+         fontSize: "20px",
+         fontWeight: "normal"
       },
    },
 });
@@ -28,12 +45,12 @@ theme = createTheme(theme, {
          styleOverrides: {
             root: {
                backgroundColor: theme.palette.primary.main,
-               color: theme.palette.secondary.main,
+               color: theme.palette.primary.contrastText,
                textTransform: 'none',
                borderRadius: '100px',
                whiteSpace: 'nowrap',
                '&:hover': {
-                  backgroundColor: theme.palette.secondary.main,
+                  backgroundColor: theme.palette.primary.contrastText,
                   color: theme.palette.primary.main,
                }
             }, 
@@ -57,7 +74,7 @@ theme = createTheme(theme, {
       MuiTypography: {
          styleOverrides: {
             root: {
-               color: '#44494A',
+               color: theme.palette.text.main,
                letterSpacing: '1.5px',
                lineHeight: '1.6',
             },

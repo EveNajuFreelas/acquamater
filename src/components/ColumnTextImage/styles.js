@@ -5,12 +5,14 @@ export const ContainerColumn = styled.div`
    gap: 80px;
    flex-direction: ${(props) => props.reverse && "row-reverse"};
    justify-content: center;
-   margin: 50px 0px;
+   padding: 50px 10%;
+   background-image: ${(props) => `url(${props.backgroundImage})`};
+   background-size: cover;
 `;
 
 export const ImageColumn = styled.div`
    margin-top: 15px;
-   max-width: 30vw;
+   width: 30%;
    img {
       width: 100%;
    }
