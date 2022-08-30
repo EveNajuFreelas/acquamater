@@ -4,7 +4,7 @@ import { Button, Typography } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
 import { useNavigate } from "react-router-dom";
 
-const ColumnTextImage = ({ image, content, title, extraImg, buttons, reverse, invertedColors }) => {
+const ColumnTextImage = ({ image, content, title, extraImg, buttons, reverse, invertedColors, children }) => {
    const { isBg, img } = image;
    const navigate = useNavigate();
 
@@ -24,7 +24,7 @@ const ColumnTextImage = ({ image, content, title, extraImg, buttons, reverse, in
                </Typography>
             }
             <Typography variant="body1" color={invertedColors ? 'secondary' : 'text'}>
-               {content}
+               {children}
             </Typography>
             {extraImg && <img src={extraImg} alt="imagem" style={{ marginTop: '15px', width: '350px' }} />}
             <ButtonSection>
@@ -52,6 +52,12 @@ const ColumnTextImage = ({ image, content, title, extraImg, buttons, reverse, in
  *    title: 'Saiba mais',
  *    url: '/saiba-mais',
  * }]
+ * 
+ * `image` prop example:
+ * {
+ *    isBg: Bool,
+ *    img: 'image.png',
+ * }
  */
 
 export default ColumnTextImage;
