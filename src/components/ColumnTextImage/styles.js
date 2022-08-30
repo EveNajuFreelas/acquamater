@@ -2,43 +2,36 @@ import { Typography } from '@mui/material';
 import styled from 'styled-components';
 
 export const ContainerColumn = styled.div`
-  display: flex;
-  gap: 60px;
-  flex-direction: ${(props) => props.reverse && "row-reverse"};
-  justify-content: center;
-  margin: 50px 0px;
-  align-items: center;
+	display: flex;
+	gap: 80px;
+	flex-direction: ${props => props.reverse && 'row-reverse'};
+	justify-content: center;
+	padding: 50px 10%;
+	background-image: ${props => `url(${props.backgroundImage})`};
+	background-size: cover;
 `;
 
-export const ImageColumn = styled.div``;
-
+export const ImageColumn = styled.div`
+	margin-top: 15px;
+	width: 30%;
+	img {
+		width: 100%;
+	}
+`;
 export const TextColumn = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  max-width: 40%;
-
-  button {
-    width: 150px;
-    font-size: 15px;
-    padding: 10px;
-    border-radius: 50px;
-  }
+	width: 50%;
+	gap: 20px;
 `;
 
-export const TitleSection = styled.div`
-  gap: 10px;
-`;
+export const ButtonSection = styled.div`
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
 
-export const TitleText = styled(Typography)`
-  font-size: 32px;
-  font-weight: bold;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-`;
-
-export const ContentText = styled(Typography)`
-  line-height: 35px;
-  letter-spacing: 2px;
-  font-weight: lighter;
+	Button {
+		margin-top: 15px;
+		width: 150px;
+		font-size: 15px;
+		padding: 10px;
+	}
 `;

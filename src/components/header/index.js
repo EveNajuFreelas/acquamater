@@ -21,8 +21,7 @@ const Header = () => {
 		navigate(url);
 	};
 
-	const handleHover = (element, isHovering, event) => {
-		event.preventDefault();
+	const handleHover = (event, element, isHovering = false) => {
 		if (isHovering) {
 			setActiveFacet(element.id);
 			setAnchorMenu(event.currentTarget);
@@ -34,15 +33,11 @@ const Header = () => {
 
 	return (
 		<AppBar position='static' sx={{ backgroundColor: 'white' }}>
-			<Container maxWidth='lg'>
-				<Toolbar
-					sx={{
-						my: 2,
-						alignItems: 'flex-end',
-						justifyContent: 'space-between',
-					}}
-				>
-					<Logo src='printed-logo.png' alt='logo' />
+			<Container maxWidth='md'>
+				<Toolbar disableGutters sx={{ my: 2, alignItems: 'flex-end' }}>
+					<Box>
+						<img src='acquamater-logo.svg' alt='logo' />
+					</Box>
 
 					{navigation.map(nav => (
 						<>
@@ -50,13 +45,9 @@ const Header = () => {
 								variant='body1'
 								underline='none'
 								key={nav.id}
-								sx={{
-									px: 1,
-									textTransform: 'none',
-									cursor: 'pointer',
-								}}
+								sx={{ px: 1, textTransform: 'none' }}
 								onClick={() => handleRedirect(nav.url)}
-								onMouseEnter={e => handleHover(nav, true, e)}
+								onMouseEnter={e => handleHover(e, nav, true)}
 							>
 								<p>{nav.name}</p>
 							</Link>
@@ -66,17 +57,19 @@ const Header = () => {
 									open={activeFacet === nav.id}
 									anchorEl={anchorMenu}
 									MenuListProps={{
-										onMouseLeave: e =>
-											handleHover(null, false, e),
+										onMouseLeave: handleHover,
+									}}
+									sx={{
+										marginTop: '15px',
+										borderTopLeftRadius: 0,
+										borderTopRightRadius: 0,
 									}}
 								>
 									{nav.subelements.map(el => (
 										<MenuItem
 											key={el.id}
 											onClick={() =>
-												handleRedirect(
-													`${nav.url + el.url}`
-												)
+												handleRedirect(el.url)
 											}
 										>
 											{el.name}
