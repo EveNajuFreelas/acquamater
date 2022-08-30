@@ -4,24 +4,31 @@ export const ContainerColumn = styled.div`
    display: flex;
    gap: 80px;
    flex-direction: ${(props) => props.reverse && "row-reverse"};
-   max-width: 80%;
-   align-items: center;
-   margin: 50px 0px;
+   justify-content: center;
+   padding: 50px 10%;
+   background-image: ${(props) => `url(${props.backgroundImage})`};
+   background-size: cover;
 `;
 
 export const ImageColumn = styled.div`
-   max-width: 30vw;
+   margin-top: 15px;
+   width: 30%;
    img {
       width: 100%;
    }
 `;
 export const TextColumn = styled.div`
-   max-width: 30%;
+   width: 50%;
+   gap: 20px;
+`;
+
+export const ButtonSection = styled.div`
+   margin-top: 40px;
    display: flex;
    flex-direction: column;
-   gap: 20px;
 
    Button {
+      margin-top: 15px;
       width: 150px;
       font-size: 15px;
       padding: 10px;

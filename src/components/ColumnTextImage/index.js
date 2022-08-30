@@ -1,23 +1,63 @@
 import React from "react";
-import { ContainerColumn, ImageColumn, TextColumn } from "./styles";
+import { ContainerColumn, ImageColumn, TextColumn, ButtonSection } from "./styles";
 import { Button, Typography } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
+import { useNavigate } from "react-router-dom";
 
-const ColumnTextImage = ({ image, content, title, button, reverse }) => {
+const ColumnTextImage = ({ image, content, title, extraImg, buttons, reverse, invertedColors, children }) => {
+   const { isBg, img } = image;
+   const navigate = useNavigate();
+
    return (
-      <ContainerColumn reverse={reverse}>
+      <ContainerColumn backgroundImage={isBg && img} reverse={reverse}>
          <ImageColumn>
-            <img alt="people_circle" src={image} />
+           {!isBg && <img alt="people_circle" src={img} />}
          </ImageColumn>
          <TextColumn>
-            <Typography variant="h2" color="primary">
-               {title}
+            {title && 
+               <Typography 
+                  variant="h2" 
+                  color={invertedColors ? 'title.main' : 'primary'}
+                  sx={{ marginBottom: '20px' }}
+               >
+                  {title}
+               </Typography>
+            }
+            <Typography variant="body1" color={invertedColors ? 'secondary' : 'text'}>
+               {children}
             </Typography>
-            <Typography variant="body1">{content}</Typography>
-            {button && <Button startIcon={<AddIcon />}>Saiba Mais</Button>}
+            {extraImg && <img src={extraImg} alt="imagem" style={{ marginTop: '15px', width: '350px' }} />}
+            <ButtonSection>
+               {buttons?.map(
+                  ({ title, url }, index) => (
+                     <Button
+                        key={index}
+                        onClick={() => navigate(url)}
+                        style={{ width: 'fit-content' }}
+                        color={invertedColors ? 'secondary' : 'primary'}
+                     >
+                        <AddIcon />
+                        {title}
+                     </Button>
+                  ))}
+            </ButtonSection>
          </TextColumn>
       </ContainerColumn>
    );
 };
+
+/**
+ * `buttons` prop example:
+ * [{
+ *    title: 'Saiba mais',
+ *    url: '/saiba-mais',
+ * }]
+ * 
+ * `image` prop example:
+ * {
+ *    isBg: Bool,
+ *    img: 'image.png',
+ * }
+ */
 
 export default ColumnTextImage;
