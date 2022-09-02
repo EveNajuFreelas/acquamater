@@ -4,10 +4,10 @@ import { colors } from './colors';
 let theme = createTheme({
 	palette: {
 		primary: {
-			main: '#003b80',
+			main: colors.primary,
 			contrastText: '#FFF',
 		},
-		secondary: { main: '#FFF', contrastText: '#003b80' },
+		secondary: { main: '#FFF', contrastText: colors.primary },
 		action: { main: '#FF0000' },
 		title: { main: '#A5D513' },
 		text: { main: '#44494A' },
@@ -51,8 +51,7 @@ theme = createTheme(theme, {
 					'borderRadius': '100px',
 					'whiteSpace': 'nowrap',
 					'&:hover': {
-						backgroundColor: theme.palette.primary.contrastText,
-						color: theme.palette.primary.main,
+						backgroundColor: colors.blueLighter,
 					},
 				},
 			},
@@ -68,8 +67,10 @@ theme = createTheme(theme, {
 			styleOverrides: {
 				root: {
 					margin: 'auto',
-					width: '80%',
 				},
+			},
+			defaultProps: {
+				maxWidth: 'lg',
 			},
 		},
 		MuiTypography: {

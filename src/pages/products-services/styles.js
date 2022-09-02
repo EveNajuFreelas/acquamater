@@ -16,10 +16,8 @@ export const ContainerTextSingle = styled(Container)`
 	font-size: 20px;
 `;
 
-export const Title = styled(Typography)``;
-
 export const Description = styled.div`
-	max-width: 30%;
+	max-width: 35%;
 	text-align: end;
 `;
 
@@ -30,11 +28,11 @@ export const ContainerProducts = styled.div`
 `;
 
 export const ContainerProduct = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
 `;
 
 export const HeadPage = styled.div`
@@ -43,12 +41,10 @@ export const HeadPage = styled.div`
 	justify-content: center;
 	padding-top: 10%;
 	padding-bottom: 10%;
-	background: url(${props => props.image}) rgba(0, 42, 194, 0.8);
+	background: url(${props => props.image});
 	background-size: cover;
 	background-blend-mode: multiply;
 
 	color: #fff;
 	position: relative;
-
-	clip-path: url('wave.svg#wave');
 `;

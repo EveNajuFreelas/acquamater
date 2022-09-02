@@ -33,8 +33,15 @@ const Header = () => {
 
 	return (
 		<AppBar position='static' sx={{ backgroundColor: 'white' }}>
-			<Container maxWidth='md'>
-				<Toolbar disableGutters sx={{ my: 2, alignItems: 'flex-end' }}>
+			<Container maxWidth='lg'>
+				<Toolbar
+					disableGutters
+					sx={{
+						my: 2,
+						alignItems: 'flex-end',
+						justifyContent: 'center',
+					}}
+				>
 					<Box>
 						<img src='acquamater-logo.svg' alt='logo' />
 					</Box>

@@ -4,6 +4,7 @@ import NossaHistoria from '../pages/acqua-mater/nossa-historia';
 import Home from '../pages/home';
 import Partners from '../pages/partners';
 import ProductsServices from '../pages/products-services';
+import Talk from '../pages/products-services/Talk';
 
 export const navigation = [
 	{
@@ -66,8 +67,8 @@ export const navigation = [
 			{
 				id: 2 - 0,
 				name: 'Palestras',
-				url: '/palestras',
-				element: '',
+				url: '/talk',
+				element: <Talk />,
 			},
 			{
 				id: 2 - 1,

@@ -4,39 +4,48 @@ import {
 	ImageColumn,
 	TextColumn,
 	ButtonSection,
+	TitleContainer,
 } from './styles';
 import { Button, Typography } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
 import { useNavigate } from 'react-router-dom';
+import { colors } from '../../theme/colors';
 
 const ColumnTextImage = ({
 	image,
-	content,
 	title,
 	extraImg,
 	buttons,
 	reverse,
 	invertedColors,
 	children,
+	subtitle,
 }) => {
 	const { isBg, img } = image;
 	const navigate = useNavigate();
 
+	console.log({ isBg }, { img });
+
 	return (
 		<ContainerColumn backgroundImage={isBg && img} reverse={reverse}>
-			<ImageColumn>
-				{!isBg && <img alt='people_circle' src={img} />}
-			</ImageColumn>
+			<ImageColumn>{!isBg && <img src={img} />}</ImageColumn>
 			<TextColumn>
-				{title && (
-					<Typography
-						variant='h2'
-						color={invertedColors ? 'title.main' : 'primary'}
-						sx={{ marginBottom: '20px' }}
-					>
-						{title}
-					</Typography>
-				)}
+				<TitleContainer>
+					{title && (
+						<Typography
+							variant='h2'
+							color={invertedColors ? 'title.main' : 'primary'}
+						>
+							{title}
+						</Typography>
+					)}
+					{subtitle && (
+						<Typography variant='subtitle' color={colors.grayDark}>
+							{title}
+						</Typography>
+					)}
+				</TitleContainer>
+
 				<Typography
 					variant='body1'
 					color={invertedColors ? 'secondary' : 'text'}
@@ -70,16 +79,16 @@ const ColumnTextImage = ({
 
 /**
  * `buttons` prop example:
- * [{
- *    title: 'Saiba mais',
- *    url: '/saiba-mais',
- * }]
+  [{
+     title: 'Saiba mais',
+    url: '/saiba-mais',
+  }]
  *
  * `image` prop example:
- * {
- *    isBg: Bool,
- *    img: 'image.png',
- * }
+  {
+     isBg: Bool,
+     img: 'image.png',
+  }
  */
 
 export default ColumnTextImage;

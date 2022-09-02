@@ -1,7 +1,0 @@
-<svg width="100%" height="100%" id="svg" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
-    <defs>
-        <clipPath id="wave">
-            <path d="M 0,600 C 0,600 0,300 0,300 C 168.8,346.6666666666667 337.6,393.33333333333337 502,397 C 666.4,400.66666666666663 826.4000000000001,361.3333333333333 982,338 C 1137.6,314.6666666666667 1288.8,307.33333333333337 1440,300 C 1440,300 1440,600 1440,600 Z" stroke="none" stroke-width="0" fill="#000000ff" class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 300)"></path>
-        </clipPath>
-    </defs>
-</svg>			

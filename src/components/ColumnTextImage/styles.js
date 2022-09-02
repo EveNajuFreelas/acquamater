@@ -1,23 +1,30 @@
-import { Typography } from '@mui/material';
 import styled from 'styled-components';
 
 export const ContainerColumn = styled.div`
 	display: flex;
-	gap: 80px;
+	gap: 60px;
 	flex-direction: ${props => props.reverse && 'row-reverse'};
 	justify-content: center;
-	padding: 50px 10%;
+	padding: 50px 0;
+	align-items: center;
 	background-image: ${props => `url(${props.backgroundImage})`};
 	background-size: cover;
 `;
 
 export const ImageColumn = styled.div`
 	margin-top: 15px;
-	width: 30%;
+	width: 50%;
 	img {
 		width: 100%;
 	}
 `;
+
+export const TitleContainer = styled.div`
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+`;
+
 export const TextColumn = styled.div`
 	width: 50%;
 	gap: 20px;
