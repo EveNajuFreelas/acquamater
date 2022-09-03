@@ -52,7 +52,11 @@ const Header = () => {
 								variant='body1'
 								underline='none'
 								key={nav.id}
-								sx={{ px: 1, textTransform: 'none' }}
+								sx={{
+									px: 1,
+									textTransform: 'none',
+									cursor: 'pointer',
+								}}
 								onClick={() => handleRedirect(nav.url)}
 								onMouseEnter={e => handleHover(e, nav, true)}
 							>

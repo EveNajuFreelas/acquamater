@@ -28,6 +28,11 @@ export const TitleContainer = styled.div`
 export const TextColumn = styled.div`
 	width: 50%;
 	gap: 20px;
+	padding-left: ${props => props.paddingText && '20%'};
+
+	@media (max-width: 1280px) {
+		padding-left: ${props => props.paddingText && '5%'};
+	}
 `;
 
 export const ButtonSection = styled.div`

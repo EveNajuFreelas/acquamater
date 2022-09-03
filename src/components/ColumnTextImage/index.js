@@ -5,6 +5,7 @@ import {
 	TextColumn,
 	ButtonSection,
 	TitleContainer,
+	DisplayContainer,
 } from './styles';
 import { Button, Typography } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
@@ -20,6 +21,7 @@ const ColumnTextImage = ({
 	invertedColors,
 	children,
 	subtitle,
+	paddingText,
 }) => {
 	const { isBg, img } = image;
 	const navigate = useNavigate();
@@ -29,7 +31,7 @@ const ColumnTextImage = ({
 	return (
 		<ContainerColumn backgroundImage={isBg && img} reverse={reverse}>
 			<ImageColumn>{!isBg && <img src={img} />}</ImageColumn>
-			<TextColumn>
+			<TextColumn paddingText={paddingText}>
 				<TitleContainer>
 					{title && (
 						<Typography
