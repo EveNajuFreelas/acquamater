@@ -5,7 +5,7 @@ export const ContainerColumn = styled.div`
 	gap: 60px;
 	flex-direction: ${props => props.reverse && 'row-reverse'};
 	justify-content: center;
-	padding: 50px 0;
+	padding: ${props => (props.noPadding ? '0px' : '50px 0')};
 	align-items: center;
 	background-image: ${props => `url(${props.backgroundImage})`};
 	background-size: cover;

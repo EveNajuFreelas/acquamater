@@ -22,6 +22,8 @@ const ColumnTextImage = ({
 	children,
 	subtitle,
 	paddingText,
+	noPadding,
+	textRight,
 }) => {
 	const { isBg, img } = image;
 	const navigate = useNavigate();
@@ -29,7 +31,11 @@ const ColumnTextImage = ({
 	console.log({ isBg }, { img });
 
 	return (
-		<ContainerColumn backgroundImage={isBg && img} reverse={reverse}>
+		<ContainerColumn
+			backgroundImage={isBg && img}
+			reverse={reverse}
+			noPadding={noPadding}
+		>
 			<ImageColumn>{!isBg && <img src={img} />}</ImageColumn>
 			<TextColumn paddingText={paddingText}>
 				<TitleContainer>
@@ -51,6 +57,7 @@ const ColumnTextImage = ({
 				<Typography
 					variant='body1'
 					color={invertedColors ? 'secondary' : 'text'}
+					style={textRight && { textAlign: 'right' }}
 				>
 					{children}
 				</Typography>

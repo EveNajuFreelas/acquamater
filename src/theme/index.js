@@ -15,7 +15,7 @@ let theme = createTheme({
 	typography: {
 		fontFamily: 'Museo',
 		body1: {
-			fontSize: '16px',
+			fontSize: '18px',
 		},
 		body1bold: {
 			fontSize: '16px',

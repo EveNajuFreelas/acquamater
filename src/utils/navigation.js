@@ -5,6 +5,7 @@ import Home from '../pages/home';
 import Partners from '../pages/partners';
 import ProductsServices from '../pages/products-services';
 import Talk from '../pages/products-services/Talk';
+import Traning from '../pages/products-services/Traning';
 
 export const navigation = [
 	{
@@ -74,7 +75,7 @@ export const navigation = [
 				id: 2 - 1,
 				name: 'Capacitação',
 				url: '/capacitacao',
-				element: '',
+				element: <Traning />,
 			},
 			{
 				id: 2 - 2,
