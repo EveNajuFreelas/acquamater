@@ -10,7 +10,6 @@ import {
 } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import { navigation } from '../../utils/navigation';
-import { Logo } from './styles';
 
 const Header = () => {
 	const navigate = useNavigate();

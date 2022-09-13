@@ -1,0 +1,73 @@
+import { Breadcrumbs, Typography, Grid } from "@mui/material";
+import styled from "styled-components";
+import { colors } from '../../theme/colors';
+
+export const HeadContainer = styled.div`
+    position: relative;
+    background-image: url('quem-pensa-faz/quem-pensa-faz-head.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    height: 23em;
+    z-index: 10;
+`;
+
+export const HeadBreadcrumbs = styled(Breadcrumbs)`
+    color: white;
+    padding-top: 40px;
+`;
+
+export const OrgSectionContainer = styled.div`
+    margin-top: -65px;
+    padding: 100px 0;
+    background-image: url('quem-pensa-faz/quem-pensa-faz-section-1.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 28.2em;
+`;
+
+export const TextOrganism = styled(Typography)`
+    text-align: center;
+    margin-bottom: 20px;
+`;
+
+export const AdvisoryBoardSectionContainer = styled.div`
+    padding: 100px 10%;
+    background-size: 100% 100%;
+    background-image: url('advisory-board-bg.png');
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+`;
+
+export const SectionBlueTitle = styled(Typography)`
+    background-color: ${colors.blueLighter};
+    color: white;
+    padding: 10px 60px;
+    border-radius: 35px;
+    margin-bottom: 30px;
+`;
+
+export const PeopleContainer = styled.div`
+    display: flex;
+    min-height: 520px;
+`;
+
+export const ParceirosContainer = styled.div`
+    padding: 100px 10%;
+    background-size: 100%;
+    background-image: url('quem-pensa-faz/parceiros-bg.png');
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+`;
+
+export const ParceiroImg = styled(({ src }) => (
+    <Grid item xs>
+        <img src={src} alt="parceiro" width="180px" height="180px" />
+    </Grid>))``;

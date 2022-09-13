@@ -5,6 +5,7 @@ import Home from '../pages/home';
 import Partners from '../pages/partners';
 import ProductsServices from '../pages/products-services';
 import Talk from '../pages/products-services/Talk';
+import { QuemPensaFaz } from "../pages/quem-pensa-e-faz";
 
 export const navigation = [
 	{
@@ -36,7 +37,7 @@ export const navigation = [
 				id: 1 - 2,
 				name: 'Quem pensa e faz',
 				url: '/quem-pensa-e-faz',
-				element: '',
+				element: <QuemPensaFaz />,
 			},
 			{
 				id: 1 - 3,

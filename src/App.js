@@ -4,7 +4,6 @@ import Header from './components/header';
 import { navigation } from './utils/navigation';
 import { theme } from './theme';
 import Footer from './components/footer';
-import Talk from './pages/products-services/Talk';
 
 export default function App() {
 	const renderRoutes = routes => {

@@ -1,4 +1,4 @@
-import { Container, Typography } from '@mui/material';
+import { Container } from '@mui/material';
 import styled from 'styled-components';
 
 export const ContainerText = styled(Container)`
