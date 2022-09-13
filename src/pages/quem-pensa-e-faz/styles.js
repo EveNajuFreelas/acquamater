@@ -1,4 +1,4 @@
-import { Breadcrumbs, Typography, Grid } from "@mui/material";
+import { Breadcrumbs, Typography, Grid, Box } from "@mui/material";
 import styled from "styled-components";
 import { colors } from '../../theme/colors';
 
@@ -71,3 +71,29 @@ export const ParceiroImg = styled(({ src }) => (
     <Grid item xs>
         <img src={src} alt="parceiro" width="180px" height="180px" />
     </Grid>))``;
+
+// Modal Styles
+
+export const ModalContainer = styled(Box)`
+    width: 60%;
+    height: 80%;
+    background-color: white;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 20px;
+    overflow-y: auto;
+
+    box-shadow: 10px 10px gray;
+`;
+
+export const CloseButton = styled.button`
+    border-radius: 50px;
+    border: none;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+`;

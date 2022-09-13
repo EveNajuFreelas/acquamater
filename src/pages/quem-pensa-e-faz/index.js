@@ -13,8 +13,33 @@ import {
 import { colors } from '../../theme/colors';
 import ColumnTextImage from '../../components/ColumnTextImage';
 import { PersonCard } from "../../components/person-card";
+import { useState } from "react";
+import { brazilAdvisoryBoard, worldAdvisoryBoard } from "../../utils/advisory-board-people";
+import { AdvisoryBoardModal } from "./advisory-board-modal";
 
 export const QuemPensaFaz = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    const [modalContent, setModalContent] = useState({});
+    const [worldABView, setWorldABView] = useState(worldAdvisoryBoard.slice(0, 4));
+
+    const handleModalState = (section, id) => {
+        setIsOpen(true);
+        setModalContent(section[id]);
+    }
+
+    const handleClose = () => {
+        setIsOpen(false);
+        setModalContent({});
+    }
+
+    const changeWorldAdvisoryBoardView = () => {
+        if(worldABView.length === 4) {
+            setWorldABView(worldAdvisoryBoard);
+        } else {
+            setWorldABView(worldAdvisoryBoard.slice(0, 4));
+        }
+    }
+
     return (
         <Box>
             <HeadContainer>
@@ -52,62 +77,45 @@ export const QuemPensaFaz = () => {
                 - Mentora e Conselheira de várias organizações internacionais voltada para jovens, como Waterlution, Sustainable Ocean Alliance, UNFCCC YOUNGO Ocean's Voice, entre outras
             </ColumnTextImage>
             <AdvisoryBoardSectionContainer>
+                <AdvisoryBoardModal 
+                    isOpen={isOpen}
+                    modalContent={modalContent}
+                    onCloseFunction={handleClose}
+                />
                 <SectionBlueTitle variant="h1">ADVISORY BOARD</SectionBlueTitle>
                 <Typography variant="body1">Formado em sua maioria por empreendedores, pesquisadores e especialistas em temas ligados ao Mundo ÁGUA-OCEANO, com os quais a Acqua Mater colabora e/ou nos quais confia para definir importantes diretrizes de seus projetos.</Typography>
                 
                 <Typography variant="h1" color={colors.blueLighter} paddingY="20px">NO MUNDO</Typography>
                 <PeopleContainer>
-                    <PersonCard
-                        name="Francesca Santoro"
-                        img="quem-pensa-faz/people/francesca-santoro.png"
-                        country="Itália"
-                        description="Responsável Cultura Oceânica da COI-UNESCO"
-                    />
-                    <PersonCard 
-                        name="Wenche Grønbrekk"
-                        img="quem-pensa-faz/people/wenche-gronbrekk.png"
-                        country="Noruega"
-                        description="Presidente do Pacto Global da ONU na Noruega e Diretora de Estratégia da SeaBOS"
-                    />
-                    <PersonCard 
-                        name="Karen Kun"
-                        img="quem-pensa-faz/people/karen-kun.png"
-                        country="Canadá"
-                        description="Fundadora e Presidente da Waterlution"
-                    />
-                    <PersonCard 
-                        name="Brandon Levy SOA"
-                        img="quem-pensa-faz/people/brandon-levy.png"
-                        country="USA"
-                        description="Diretor de Programação da SOA"
-                    />
+                    {worldABView.map(wab => (
+                         <PersonCard
+                            name={wab.name}
+                            img={wab.image}
+                            country={wab.country}
+                            description={wab.description}
+                            section={worldAdvisoryBoard}
+                            id={wab.id}
+                            personClick={handleModalState}
+                        />
+                    ))}
                 </PeopleContainer>
-                <Button>Conheça Todos</Button>
+                <Button onClick={changeWorldAdvisoryBoardView}>Conheça Todos</Button>
                 
                 <Divider width="80%" sx={{ marginTop: '30px' }} />
 
                 <Typography variant="h1" color={colors.blueLighter} paddingY="20px">NO BRASIL</Typography>
                 <PeopleContainer>
-                    <PersonCard 
-                        name="Ronaldo Christofoletti"
-                        img="quem-pensa-faz/people/ronaldo-christofoletti.png"
-                        description="Professor Associado do Instituto do Mar da Universidade Federal de São Paulo"
-                    />
-                    <PersonCard 
-                        name="Samuel Barreto"
-                        img="quem-pensa-faz/people/samuel-barreto.png"
-                        description="Gerente Nacional de Água da The Natural Conservancy (TNC)"
-                    />
-                    <PersonCard 
-                        name="Dawn Fleming"
-                        img="quem-pensa-faz/people/dawn-fleming.png"
-                        description="Coordenadora do Water Innovation Lab (WIL) Brasil"
-                    />
-                    <PersonCard 
-                        name="Glauco Kimura"
-                        img="quem-pensa-faz/people/glauco-kimura.png"
-                        description="Oficial de Projetos de Ciências Naturais da UNESCO Brasil"
-                    />
+                    {brazilAdvisoryBoard.map(bab => (
+                        <PersonCard 
+                            name={bab.name}
+                            img={bab.image}
+                            country={bab.country}
+                            description={bab.description}
+                            section={brazilAdvisoryBoard}
+                            id={bab.id}
+                            personClick={handleModalState}
+                        />
+                    ))}
                 </PeopleContainer>
                 <Button>Conheça Todos</Button>
             </AdvisoryBoardSectionContainer>
@@ -117,19 +125,9 @@ export const QuemPensaFaz = () => {
 
                 <Typography variant="h1" color={colors.blueLighter} paddingY="20px">NO MUNDO</Typography>
                 <Grid container spacing={2} marginBottom={2}>
-                    <ParceiroImg src="white-placeholder.png" />
-                    <ParceiroImg src="white-placeholder.png" />
-                    <ParceiroImg src="white-placeholder.png" />
-                    <ParceiroImg src="white-placeholder.png" />
-                    <ParceiroImg src="white-placeholder.png" />
-
-                    <br />
-
-                    <ParceiroImg src="white-placeholder.png" />
-                    <ParceiroImg src="white-placeholder.png" />
-                    <ParceiroImg src="white-placeholder.png" />
-                    <ParceiroImg src="white-placeholder.png" />
-                    <ParceiroImg src="white-placeholder.png" />
+                    {Array.from(Array(10)).map(a => ( 
+                        <ParceiroImg src="white-placeholder.png" />
+                    ))}
                 </Grid>
                 <Button>Conheça Todos</Button>
 
@@ -137,19 +135,9 @@ export const QuemPensaFaz = () => {
 
                 <Typography variant="h1" color={colors.blueLighter} paddingY="20px">NO BRASIL</Typography>
                 <Grid container spacing={2} marginBottom={2}>
-                    <ParceiroImg src="white-placeholder.png" />
-                    <ParceiroImg src="white-placeholder.png" />
-                    <ParceiroImg src="white-placeholder.png" />
-                    <ParceiroImg src="white-placeholder.png" />
-                    <ParceiroImg src="white-placeholder.png" />
-
-                    <br />
-
-                    <ParceiroImg src="white-placeholder.png" />
-                    <ParceiroImg src="white-placeholder.png" />
-                    <ParceiroImg src="white-placeholder.png" />
-                    <ParceiroImg src="white-placeholder.png" />
-                    <ParceiroImg src="white-placeholder.png" />
+                    {Array.from(Array(10)).map(a => ( 
+                        <ParceiroImg src="white-placeholder.png" />
+                    ))}
                 </Grid>
                 <Button>Conheça Todos</Button>
 
