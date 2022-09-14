@@ -6,7 +6,6 @@ import {
     HeadContainer, 
     OrgSectionContainer, 
     TextOrganism,
-    PeopleContainer,
     ParceirosContainer,
     ParceiroImg
 } from "./styles";
@@ -18,9 +17,13 @@ import { brazilAdvisoryBoard, worldAdvisoryBoard } from "../../utils/advisory-bo
 import { AdvisoryBoardModal } from "./advisory-board-modal";
 
 export const QuemPensaFaz = () => {
+    const intialWorldABValue = worldAdvisoryBoard.slice(0, 4);
+    const initialBrazilABValue = brazilAdvisoryBoard.slice(0, 4);
+
     const [isOpen, setIsOpen] = useState(false);
     const [modalContent, setModalContent] = useState({});
-    const [worldABView, setWorldABView] = useState(worldAdvisoryBoard.slice(0, 4));
+    const [worldABView, setWorldABView] = useState(intialWorldABValue);
+    const [brazilABView, setBrazilABView] = useState(initialBrazilABValue);
 
     const handleModalState = (section, id) => {
         setIsOpen(true);
@@ -33,11 +36,17 @@ export const QuemPensaFaz = () => {
     }
 
     const changeWorldAdvisoryBoardView = () => {
-        if(worldABView.length === 4) {
-            setWorldABView(worldAdvisoryBoard);
-        } else {
-            setWorldABView(worldAdvisoryBoard.slice(0, 4));
-        }
+        setWorldABView(curr => curr.length === 4 
+            ? worldAdvisoryBoard 
+            : intialWorldABValue
+        );
+    }
+
+    const changeBrazilAdvisoryBoard = () => {
+        setBrazilABView(curr => curr.length === 4
+            ? brazilAdvisoryBoard
+            : initialBrazilABValue 
+        );
     }
 
     return (
@@ -86,38 +95,41 @@ export const QuemPensaFaz = () => {
                 <Typography variant="body1">Formado em sua maioria por empreendedores, pesquisadores e especialistas em temas ligados ao Mundo ÁGUA-OCEANO, com os quais a Acqua Mater colabora e/ou nos quais confia para definir importantes diretrizes de seus projetos.</Typography>
                 
                 <Typography variant="h1" color={colors.blueLighter} paddingY="20px">NO MUNDO</Typography>
-                <PeopleContainer>
+                <Grid container>
                     {worldABView.map(wab => (
-                         <PersonCard
-                            name={wab.name}
-                            img={wab.image}
-                            country={wab.country}
-                            description={wab.description}
-                            section={worldAdvisoryBoard}
-                            id={wab.id}
-                            personClick={handleModalState}
-                        />
+                        <Grid item sx={1} minHeight="520px">
+                            <PersonCard
+                               name={wab.name}
+                               img={wab.image}
+                               country={wab.country}
+                               description={wab.description}
+                               section={worldAdvisoryBoard}
+                               id={wab.id}
+                               personClick={handleModalState}
+                           />
+                        </Grid>
                     ))}
-                </PeopleContainer>
+                </Grid>
                 <Button onClick={changeWorldAdvisoryBoardView}>Conheça Todos</Button>
                 
                 <Divider width="80%" sx={{ marginTop: '30px' }} />
 
                 <Typography variant="h1" color={colors.blueLighter} paddingY="20px">NO BRASIL</Typography>
-                <PeopleContainer>
-                    {brazilAdvisoryBoard.map(bab => (
-                        <PersonCard 
-                            name={bab.name}
-                            img={bab.image}
-                            country={bab.country}
-                            description={bab.description}
-                            section={brazilAdvisoryBoard}
-                            id={bab.id}
-                            personClick={handleModalState}
-                        />
+                <Grid container>
+                    {brazilABView.map(bab => (
+                        <Grid item sx={1} minHeight="520px">
+                            <PersonCard 
+                                name={bab.name}
+                                img={bab.image}
+                                description={bab.description}
+                                section={brazilAdvisoryBoard}
+                                id={bab.id}
+                                personClick={handleModalState}
+                            />
+                        </Grid>
                     ))}
-                </PeopleContainer>
-                <Button>Conheça Todos</Button>
+                </Grid>
+                <Button onClick={changeBrazilAdvisoryBoard}>Conheça Todos</Button>
             </AdvisoryBoardSectionContainer>
             <ParceirosContainer>
                 <SectionBlueTitle variant="h1">PARCEIROS</SectionBlueTitle>

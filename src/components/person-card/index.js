@@ -9,7 +9,7 @@ export const PersonCard = ({ name, img, country, description, personClick, secti
         <Typography variant="h3" color={colors.blueLighter} height="50px">{name}</Typography>
         <InfoDivider />
         {country && <Typography variant="body1bold">{country}</Typography>}
-        <Typography height="150px">{description}</Typography>
+        <Typography height="150px" textOverflow="ellipsis" overflow="hidden">{description}</Typography>
         <br />
         <LearnMoreButton
             onClick={() => personClick(section, id)}

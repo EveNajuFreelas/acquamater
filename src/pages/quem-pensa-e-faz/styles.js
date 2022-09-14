@@ -50,11 +50,6 @@ export const SectionBlueTitle = styled(Typography)`
     margin-bottom: 30px;
 `;
 
-export const PeopleContainer = styled.div`
-    display: flex;
-    min-height: 520px;
-`;
-
 export const ParceirosContainer = styled.div`
     padding: 100px 10%;
     background-size: 100%;
