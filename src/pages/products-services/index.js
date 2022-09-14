@@ -6,7 +6,6 @@ import {
 	ContainerText,
 	ContainerProduct,
 } from './styles';
-import people_circle from '../../utils/images/people_circle.png';
 import { Typography } from '@mui/material';
 import { Wrapper } from '../styles';
 
@@ -19,7 +18,7 @@ const ProductsServices = () => {
 						variant='h1'
 						sx={{ color: '#fff', fontSize: '2.5rem' }}
 					>
-						O que oferecemos
+						O que oferecem
 					</Typography>
 
 					<Description>

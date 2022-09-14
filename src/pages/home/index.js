@@ -1,5 +1,4 @@
-import { Box } from '@mui/material';
-import { Container } from '@mui/system';
+import { Container } from '@mui/material';
 import ColumnTextImage from '../../components/ColumnTextImage';
 import { QuoteSection } from '../../components/quote-section';
 import { ImgContainer } from './styles';
