@@ -31,7 +31,7 @@ const Home = () => {
 					buttons={[
 						{
 							title: 'Saiba Mais',
-							url: '/quem-pensa-e-faz#patricia',
+							url: '/patricia-furtado',
 						},
 					]}
 				>
@@ -75,7 +75,7 @@ const Home = () => {
 				image={{ img: 'como-atuamos-bg.png', isBg: true }}
 				title='Como atuamos'
 				buttons={[
-					{ title: 'Conheça nosso Advisory Board', url: '/' },
+					{ title: 'Conheça nosso Advisory Board', url: '/quem-pensa-e-faz#advisory-board' },
 					{
 						title: 'Conheça nossos Parceiros',
 						url: '/parceiros',

@@ -73,7 +73,7 @@ export const QuemPensaFaz = () => {
             <ColumnTextImage
                 title="Patrícia Furtado de Mendonça"
                 image={{ isBg: false, img: 'patricia-furtado-2.png' }}
-                buttons={[{ url: '/quem-pensa-e-faz', title: "Saiba Mais"}]}
+                buttons={[{ url: '/patricia-furtado', title: "Saiba Mais"}]}
             >
                 - Brasileira e Italiana, Empreendedora, Palestrante Inspiracional / Storyteller, Defensora do Oceano e das Águas, Facilitadora de Experiências de Reconexão com a Água e com o Oceano, Mergulhadora;
                 <br />

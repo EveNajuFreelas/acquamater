@@ -6,6 +6,7 @@ import Partners from '../pages/partners';
 import ProductsServices from '../pages/products-services';
 import Talk from '../pages/products-services/Talk';
 import { QuemPensaFaz } from "../pages/quem-pensa-e-faz";
+import { PatriciaFurtado } from "../pages/patricia-furtado";
 
 export const navigation = [
 	{
@@ -184,3 +185,13 @@ export const navigation = [
 		],
 	},
 ];
+
+export const extraRoutes = [
+	{
+		id: 7,
+		name: 'Patrícia Furtado',
+		url: '/patricia-furtado',
+		element: <PatriciaFurtado />,
+		subelements: [],
+	}
+]
