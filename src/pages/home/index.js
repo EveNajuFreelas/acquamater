@@ -53,22 +53,27 @@ const Home = () => {
 			</Container>
 			<QuoteSection
 				background='bg-prada-quote.png'
-				text='Estamos extremamente orgulhosos de continuar tendo Patricia Furtado de Mendonça desempenhando um papel ativo no projeto SEA BEYOND, o programa educacional desenvolvido pelo Grupo Prada em colaboração com a COI-UNESCO, para difundir os princípios da Cultura Oceânica em todo o mundo.'
+				text='"Estamos extremamente orgulhosos de continuar tendo Patricia Furtado de Mendonça desempenhando um papel ativo no projeto SEA BEYOND, o programa educacional desenvolvido pelo Grupo Prada em colaboração com a COI-UNESCO, para difundir os princípios da Cultura Oceânica em todo o mundo."'
 				author='EQUIPE DE COMUNICAÇÃO CORPORATIVA DO GRUPO PRADA/ITÁLIA'
 				authorLogo='prada-logo.png'
+				textStyle="body1bold"
 			/>
 			<ColumnTextImage
 				reverse
 				invertedColors
 				image={{ img: 'o-que-oferecemos-bg.png', isBg: true }}
 				title='O que Oferecemos'
-				extraImg='o-que-oferecemos-graph.png'
 				buttons={[{ title: 'Saiba Mais', url: '/o-que-oferecemos' }]}
 				paddingText
 			>
 				Todos os Produtos da Acqua Mater são realizados tendo por eixo a
 				ÁGUA e O OCEANO e tem sinergia entre si, podendo se articular
 				dependendo das necessidades do cliente
+				<img
+					src='o-que-oferecemos-graph.png'
+					alt='o-que-oferecemos gráfico'
+					style={{ marginTop: '15px', width: '350px' }}
+				/>
 			</ColumnTextImage>
 			<ColumnTextImage
 				reverse
