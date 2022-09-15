@@ -1,9 +1,7 @@
-import { Box, Button, Container, Link, Typography, Divider, Grid } from "@mui/material";
+import { Box, Button, Container, Typography, Divider, Grid } from "@mui/material";
 import { 
     AdvisoryBoardSectionContainer,
     SectionBlueTitle,
-    HeadBreadcrumbs, 
-    HeadContainer, 
     OrgSectionContainer, 
     TextOrganism,
     ParceirosContainer,
@@ -15,6 +13,7 @@ import { PersonCard } from "../../components/person-card";
 import { useState } from "react";
 import { brazilAdvisoryBoard, worldAdvisoryBoard } from "../../utils/advisory-board-people";
 import { AdvisoryBoardModal } from "./advisory-board-modal";
+import { Head } from "../../components/head";
 
 export const QuemPensaFaz = () => {
     const intialWorldABValue = worldAdvisoryBoard.slice(0, 4);
@@ -51,17 +50,11 @@ export const QuemPensaFaz = () => {
 
     return (
         <Box>
-            <HeadContainer>
-                <Container>
-                    <HeadBreadcrumbs>
-                        <Link underline="hover" color="inherit" href="/">Home</Link>
-                        <Link underline="hover" color="inherit" href="/acqua-mater">Acqua Mater</Link>
-                        <Typography color="white">Quem Pensa e Faz</Typography>
-                    </HeadBreadcrumbs>
-
-                    <Typography variant="h1" color="white">QUEM PENSA E FAZ</Typography>
-                </Container>
-            </HeadContainer>
+            <Head 
+                breadcrumbs={[{ url: '/', name: 'Home'}, { url: '/acqua-mater', name: 'Acqua Mater' }]}
+                title="Quem Pensa e Faz"
+                backgroundImage='quem-pensa-faz/quem-pensa-faz-head.png'
+            />
             <OrgSectionContainer>
                 <Container sx={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
                     <TextOrganism variant="body1" color="primary.main">

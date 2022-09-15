@@ -2,20 +2,6 @@ import { Breadcrumbs, Typography, Grid, Box } from "@mui/material";
 import styled from "styled-components";
 import { colors } from '../../theme/colors';
 
-export const HeadContainer = styled.div`
-    position: relative;
-    background-image: url('quem-pensa-faz/quem-pensa-faz-head.png');
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    height: 23em;
-    z-index: 10;
-`;
-
-export const HeadBreadcrumbs = styled(Breadcrumbs)`
-    color: white;
-    padding-top: 40px;
-`;
-
 export const OrgSectionContainer = styled.div`
     margin-top: -65px;
     padding: 100px 0;
