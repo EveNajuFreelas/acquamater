@@ -4,7 +4,6 @@ import { ContainerTextSingle, HeadPage } from '../styles';
 import {
 	ContainerTitle,
 	Title,
-	Themes,
 	List,
 	TitleThemesBox,
 	TitleThemesBlue,

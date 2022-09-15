@@ -1,12 +1,12 @@
 import { ThemeProvider } from '@mui/material';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/header';
-import { navigation } from './utils/navigation';
+import { navigation, extraRoutes } from './utils/navigation';
 import { theme } from './theme';
 import Footer from './components/footer';
-import Talk from './pages/products-services/Talk';
 
 export default function App() {
+
 	const renderRoutes = routes => {
 		let allRoutes = routes.map(nav => {
 			if (nav.subelements?.length > 0) {
@@ -26,7 +26,7 @@ export default function App() {
 		<ThemeProvider theme={theme}>
 			<Router>
 				<Header />
-				<Routes>{renderRoutes(navigation)}</Routes>
+				<Routes>{renderRoutes([...navigation, ...extraRoutes])}</Routes>
 				<Footer />
 			</Router>
 		</ThemeProvider>

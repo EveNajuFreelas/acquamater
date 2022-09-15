@@ -1,4 +1,3 @@
-import AdvisoryBoard from '../pages/advisory-board';
 import AcquaMater from '../pages/acqua-mater';
 import NossaHistoria from '../pages/acqua-mater/nossa-historia';
 import Home from '../pages/home';
@@ -6,6 +5,9 @@ import Partners from '../pages/partners';
 import ProductsServices from '../pages/products-services';
 import Talk from '../pages/products-services/Talk';
 import Traning from '../pages/products-services/Traning';
+import { QuemPensaFaz } from '../pages/quem-pensa-e-faz';
+import { PatriciaFurtado } from '../pages/patricia-furtado';
+import { Clientes } from '../pages/clientes';
 
 export const navigation = [
 	{
@@ -37,7 +39,7 @@ export const navigation = [
 				id: 1 - 2,
 				name: 'Quem pensa e faz',
 				url: '/quem-pensa-e-faz',
-				element: '',
+				element: <QuemPensaFaz />,
 			},
 			{
 				id: 1 - 3,
@@ -96,40 +98,14 @@ export const navigation = [
 		name: 'Cases',
 		url: '/cases',
 		element: <Partners />,
-		subelements: [
-			{
-				id: 3 - 0,
-				name: 'No Brasil',
-				url: '/cases/no-brasil',
-				element: '',
-			},
-			{
-				id: 3 - 1,
-				name: 'No Mundo',
-				url: '/cases/no-mundo',
-				element: '',
-			},
-		],
+		subelements: [],
 	},
 	{
 		id: 4,
 		name: 'Clientes',
 		url: '/clientes',
-		element: <AdvisoryBoard />,
-		subelements: [
-			{
-				id: 4 - 0,
-				name: 'No Brasil',
-				url: '/clientes/no-brasil',
-				element: '',
-			},
-			{
-				id: 4 - 1,
-				name: 'No Mundo',
-				url: '/clientes/no-mundo',
-				element: '',
-			},
-		],
+		element: <Clientes />,
+		subelements: [],
 	},
 	{
 		id: 5,
@@ -182,5 +158,15 @@ export const navigation = [
 				element: '',
 			},
 		],
+	},
+];
+
+export const extraRoutes = [
+	{
+		id: 7,
+		name: 'Patrícia Furtado',
+		url: '/patricia-furtado',
+		element: <PatriciaFurtado />,
+		subelements: [],
 	},
 ];

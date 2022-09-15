@@ -5,12 +5,25 @@ import {
 	TextColumn,
 	ButtonSection,
 	TitleContainer,
-	DisplayContainer,
 } from './styles';
 import { Button, Typography } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
 import { useNavigate } from 'react-router-dom';
 import { colors } from '../../theme/colors';
+
+/**
+ * `buttons` prop example:
+  [{
+     title: 'Saiba mais',
+    url: '/saiba-mais',
+  }]
+ *
+ * `image` prop example:
+  {
+     isBg: Bool,
+     img: 'image.png',
+  }
+ */
 
 const ColumnTextImage = ({
 	image,
@@ -21,14 +34,12 @@ const ColumnTextImage = ({
 	invertedColors,
 	children,
 	subtitle,
-	paddingText,
+	paddingText = false,
 	noPadding,
 	textRight,
 }) => {
 	const { isBg, img } = image;
 	const navigate = useNavigate();
-
-	console.log({ isBg }, { img });
 
 	return (
 		<ContainerColumn
@@ -36,7 +47,7 @@ const ColumnTextImage = ({
 			reverse={reverse}
 			noPadding={noPadding}
 		>
-			<ImageColumn>{!isBg && <img src={img} />}</ImageColumn>
+			<ImageColumn>{!isBg && <img src={img} alt='imagem' />}</ImageColumn>
 			<TextColumn paddingText={paddingText}>
 				<TitleContainer>
 					{title && (
@@ -85,19 +96,5 @@ const ColumnTextImage = ({
 		</ContainerColumn>
 	);
 };
-
-/**
- * `buttons` prop example:
-  [{
-     title: 'Saiba mais',
-    url: '/saiba-mais',
-  }]
- *
- * `image` prop example:
-  {
-     isBg: Bool,
-     img: 'image.png',
-  }
- */
 
 export default ColumnTextImage;
