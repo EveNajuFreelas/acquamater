@@ -1,4 +1,4 @@
-import { Button, Divider, Grid, Typography } from "@mui/material";
+import { Divider, Grid, Typography } from "@mui/material";
 import { Head } from "../../components/head";
 import { colors } from "../../theme/colors";
 import { ParceiroImg, ParceirosContainer } from "../quem-pensa-e-faz/styles";
@@ -23,7 +23,6 @@ export const Clientes = () => (
                     <ParceiroImg src="white-placeholder.png" />
                 ))}
             </Grid>
-            <Button>Conheça Todos</Button>
 
             <Divider width="80%" sx={{ marginTop: '30px' }} />
 
@@ -33,7 +32,6 @@ export const Clientes = () => (
                     <ParceiroImg src="white-placeholder.png" />
                 ))}
             </Grid>
-            <Button>Conheça Todos</Button>
 
         </ParceirosContainer>
     </>
