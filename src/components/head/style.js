@@ -1,18 +1,18 @@
-import { Breadcrumbs } from "@mui/material";
-import styled from "styled-components";
+import { Breadcrumbs } from '@mui/material';
+import styled from 'styled-components';
 
 export const HeadBreadcrumbs = styled(Breadcrumbs)`
-    color: white;
-    padding-top: 40px;
+	color: white;
+	padding-top: 40px;
 `;
 
 export const HeadContainer = styled.div`
-    position: relative;
-    background-image: ${(props) => props.bgImg && `url(${props.bgImg})`};
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    height: 23em;
-    z-index: 10;
-    padding: 2% 10%;
-    margin-bottom: -60px;
+	position: relative;
+	background-image: ${props => props.bgImg && `url(${props.bgImg})`};
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	height: 23em;
+	z-index: 10;
+	padding: 2% 10%;
+	margin-bottom: -60px;
 `;

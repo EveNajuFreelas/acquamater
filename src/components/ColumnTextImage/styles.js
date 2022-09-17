@@ -28,16 +28,16 @@ export const TitleContainer = styled.div`
 export const TextColumn = styled.div`
 	width: 50%;
 	gap: 20px;
-	padding-left: ${props => props.paddingText && '20%'};
+	padding: ${props => props.paddingText && '7% 18%'};
 
 	@media (max-width: 1280px) {
-		padding-left: ${props => props.paddingText && '5%'};
+		padding-left: ${props => props.paddingText && '0 5%'};
 	}
 `;
 
 export const ButtonSection = styled.div`
 	margin-top: 40px;
-	display: flex;
+	display: ${props => (props.button ? 'flex' : 'none')};
 	flex-direction: column;
 
 	Button {

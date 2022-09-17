@@ -27,7 +27,7 @@ const Training = () => {
 
 	return (
 		<>
-			<HeadPage image='head-training.png'>
+			<HeadPage image='head-training.png' noMargin>
 				<ContainerTextSingle maxWidth='lg'>
 					<Typography variant='subtitle1' sx={{ color: '#fff' }}>
 						Oferecemos{' '}
@@ -66,12 +66,7 @@ const Training = () => {
 				reverse
 				invertedColors
 			>
-				<Wrapper
-					style={{
-						padding: ' 200px 200px 120px 0px',
-						textAlign: 'left',
-					}}
-				>
+				<Wrapper>
 					São Webinars e Treinamentos (presenciais e online) voltados,
 					especificamente, ao público corporativo, para promover
 					transformações socioambientais tendo como ponto de partida o

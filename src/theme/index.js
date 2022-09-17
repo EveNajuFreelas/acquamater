@@ -25,10 +25,9 @@ let theme = createTheme({
 			fontSize: '14px',
 		},
 		h1: {
-			fontSize: "35px",
-			textTransform: "capitalize",
-			marginTop: "20px",
-		 },
+			fontSize: '35px',
+			marginTop: '20px',
+		},
 		h2: {
 			fontSize: '25px',
 			fontWeight: 'bold',

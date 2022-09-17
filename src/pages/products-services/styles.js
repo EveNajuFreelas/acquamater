@@ -39,11 +39,13 @@ export const HeadPage = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding-top: 10%;
-	padding-bottom: 10%;
 	background: url(${props => props.image});
-	background-size: cover;
-	background-blend-mode: multiply;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	height: 25em;
+	z-index: 10;
+	padding: 2% 10%;
+	margin-bottom: ${props => !props.noMargin && '60px'};
 
 	color: #fff;
 	position: relative;

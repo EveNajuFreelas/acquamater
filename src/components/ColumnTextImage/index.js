@@ -37,6 +37,8 @@ const ColumnTextImage = ({
 	paddingText = false,
 	noPadding,
 	textRight,
+	variant,
+	upperCase,
 }) => {
 	const { isBg, img } = image;
 	const navigate = useNavigate();
@@ -48,19 +50,20 @@ const ColumnTextImage = ({
 			noPadding={noPadding}
 		>
 			<ImageColumn>{!isBg && <img src={img} alt='imagem' />}</ImageColumn>
-			<TextColumn paddingText={paddingText}>
+			<TextColumn paddingText={paddingText} sx={{ paddingTop: '25em' }}>
 				<TitleContainer>
 					{title && (
 						<Typography
-							variant='h2'
+							variant='h1'
 							color={invertedColors ? 'title.main' : 'primary'}
+							style={{ textTransform: 'uppercase' }}
 						>
 							{title}
 						</Typography>
 					)}
 					{subtitle && (
 						<Typography variant='subtitle' color={colors.grayDark}>
-							{title}
+							{subtitle}
 						</Typography>
 					)}
 				</TitleContainer>
@@ -79,7 +82,7 @@ const ColumnTextImage = ({
 						style={{ marginTop: '15px', width: '350px' }}
 					/>
 				)}
-				<ButtonSection>
+				<ButtonSection buttons>
 					{buttons?.map(({ title, url }, index) => (
 						<Button
 							key={index}
