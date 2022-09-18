@@ -1,6 +1,11 @@
 import { Typography } from "@mui/material";
 import { Head } from "../../components/head";
-import { InteractiveContainer } from "./style";
+import { 
+    GraphTooltip, 
+    InteractiveContainer, 
+    InteractiveGraph, 
+    GraphTooltipContainer,
+} from "./style";
 import { colors } from '../../theme/colors';
 import { QuoteSection } from "../../components/quote-section";
 import ColumnTextImage from "../../components/ColumnTextImage";
@@ -26,8 +31,12 @@ export const QuemSomos = () => (<>
     <InteractiveContainer>
         <Typography variant="body1" color={colors.blueLighter} fontWeight="bold">Nossos projetos transdisciplinares são voltados à Conservação, à Regeneração e à Sustentabilidade de todos os organismos que habitam o Mundo ÁGUA-OCEANO.</Typography>
 
-        {/** add interactive thingie */}
-
+        <GraphTooltip title="Reconstituição de algo que foi destruido ou arruinado" mt="20px" divTitle="Regeneração" />
+        <InteractiveGraph src="quem-somos-graph.png" alt="Gráfico" />
+        <GraphTooltipContainer>
+            <GraphTooltip placement="top" title="Estado do organismo que está em equilíbrio com o ambiente em que se encontra" divTitle="Conservação" bottomText />
+            <GraphTooltip placement="top" title="Capacidade de criar meios para suprir as necessidades básicas do presente sem afetar as gerações futuras" divTitle="Sustentabilidade" bottomText />
+        </GraphTooltipContainer>
     </InteractiveContainer>
 
     <QuoteSection 
@@ -57,8 +66,6 @@ export const QuemSomos = () => (<>
         cuidar da água do mar.
         <br/>
         <br />
-
-        <img alt="Ícones 6 e 14 OMS" src="oms-icons-water.png" width="200px" />
     </ColumnTextImage>
     <img alt="Água" src="quem-somos-bottom.png" />
 </>);
