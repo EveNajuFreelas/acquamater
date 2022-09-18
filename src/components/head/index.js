@@ -14,7 +14,7 @@ export const Head = ({ breadcrumbs, title, backgroundImage, children }) => (
 
                 <Typography variant="h1" color="white" textTransform="capitalize">{title}</Typography>
             </Grid>
-            <Grid item sm={7}>
+            <Grid item sm={7} sx={{ paddingTop: '40px' }}>
                 {children}
             </Grid>
         </Grid>

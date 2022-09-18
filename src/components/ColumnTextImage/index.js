@@ -28,7 +28,6 @@ import { colors } from '../../theme/colors';
 const ColumnTextImage = ({
 	image,
 	title,
-	extraImg,
 	buttons,
 	reverse,
 	invertedColors,
@@ -65,13 +64,6 @@ const ColumnTextImage = ({
 				>
 					{children}
 				</Typography>
-				{extraImg && (
-					<img
-						src={extraImg}
-						alt='imagem'
-						style={{ marginTop: '15px', width: '350px' }}
-					/>
-				)}
 				<ButtonSection>
 					{buttons?.map(({ title, url }, index) => (
 						<Button
