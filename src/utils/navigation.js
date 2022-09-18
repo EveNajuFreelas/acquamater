@@ -8,6 +8,7 @@ import Traning from '../pages/products-services/Traning';
 import { QuemPensaFaz } from '../pages/quem-pensa-e-faz';
 import { PatriciaFurtado } from '../pages/patricia-furtado';
 import { Clientes } from '../pages/clientes';
+import { QuemSomos } from '../pages/quem-somos';
 
 export const navigation = [
 	{
@@ -27,7 +28,7 @@ export const navigation = [
 				id: 1 - 0,
 				name: 'Quem somos',
 				url: '/quem-somos',
-				element: '',
+				element: <QuemSomos />,
 			},
 			{
 				id: 1 - 1,
@@ -98,14 +99,40 @@ export const navigation = [
 		name: 'Cases',
 		url: '/cases',
 		element: <Partners />,
-		subelements: [],
+		subelements: [
+			{
+				id: 3 - 0,
+				name: 'No Brasil',
+				url: '/cases#brasil',
+				element: '',
+			},
+			{
+				id: 3 - 1,
+				name: 'No Mundo',
+				url: '/cases#mundo',
+				element: '',
+			},
+		],
 	},
 	{
 		id: 4,
 		name: 'Clientes',
 		url: '/clientes',
 		element: <Clientes />,
-		subelements: [],
+		subelements: [
+			{
+				id: 4 - 0,
+				name: 'No Brasil',
+				url: '/clientes#brasil',
+				element: '',
+			},
+			{
+				id: 4 - 1,
+				name: 'No Mundo',
+				url: '/clientes#mundo',
+				element: '',
+			},
+		],
 	},
 	{
 		id: 5,
@@ -116,19 +143,19 @@ export const navigation = [
 			{
 				id: 5 - 0,
 				name: 'Para ver',
-				url: '/para-inspirar/para-ver',
+				url: '/para-inspirar#para-ver',
 				element: '',
 			},
 			{
 				id: 5 - 1,
 				name: 'Para ler',
-				url: '/para-inspirar/para-ler',
+				url: '/para-inspirar#para-ler',
 				element: '',
 			},
 			{
 				id: 5 - 2,
 				name: 'Para ouvir',
-				url: '/para-inspirar/para-ouvir',
+				url: '/para-inspirar#para-ouvir',
 				element: '',
 			},
 		],
@@ -142,19 +169,19 @@ export const navigation = [
 			{
 				id: 6 - 0,
 				name: 'Vamos conversar',
-				url: '/contato/conversar',
+				url: '/contato#conversar',
 				element: '',
 			},
 			{
 				id: 6 - 1,
 				name: 'Vamos colaborar',
-				url: '/contato/colaborar',
+				url: '/contato#colaborar',
 				element: '',
 			},
 			{
 				id: 6 - 2,
 				name: 'Vamos manter contato',
-				url: '/contato/manter-contato',
+				url: '/contato#manter-contato',
 				element: '',
 			},
 		],

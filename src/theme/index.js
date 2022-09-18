@@ -89,6 +89,14 @@ theme = createTheme(theme, {
 				},
 			},
 		},
+		MuiTooltip: {
+			styleOverrides: {
+				tooltip: {
+					backgroundColor: 'none',
+					padding: 0,
+				}
+			}
+		}
 	},
 });
 

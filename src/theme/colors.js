@@ -4,5 +4,5 @@ export const colors = {
 	primary: '#003b80',
 	blueLighter: '#004ba3',
 	lightBlue: '#4AC1ED',
-	lightGreen: '#A5D513',
+	darkBlueLowOpacity: 'rgba(6, 56, 112, 0.4)',
 };

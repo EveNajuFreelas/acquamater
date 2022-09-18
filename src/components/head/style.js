@@ -15,4 +15,5 @@ export const HeadContainer = styled.div`
 	z-index: 10;
 	padding: 2% 10%;
 	margin-bottom: -60px;
+	color: white;
 `;
