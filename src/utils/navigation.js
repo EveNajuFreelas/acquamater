@@ -9,6 +9,7 @@ import { QuemPensaFaz } from '../pages/quem-pensa-e-faz';
 import { PatriciaFurtado } from '../pages/patricia-furtado';
 import { Clientes } from '../pages/clientes';
 import { QuemSomos } from '../pages/quem-somos';
+import Consultancy from '../pages/products-services/Consultancy';
 
 export const navigation = [
 	{
@@ -84,7 +85,7 @@ export const navigation = [
 				id: 2 - 2,
 				name: 'Consultoria',
 				url: '/consultoria',
-				element: '',
+				element: <Consultancy />,
 			},
 			{
 				id: 2 - 3,

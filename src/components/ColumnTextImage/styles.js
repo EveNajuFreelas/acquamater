@@ -13,9 +13,9 @@ export const ContainerColumn = styled.div`
 
 export const ImageColumn = styled.div`
 	margin-top: 15px;
-	width: 50%;
+	width: ${props => (props.noDivision ? '0%' : '50%')};
 	img {
-		width: 100%;
+		width: ${props => (props.noDivision ? '0%' : '100%')};
 	}
 `;
 
@@ -26,7 +26,7 @@ export const TitleContainer = styled.div`
 `;
 
 export const TextColumn = styled.div`
-	width: 50%;
+	width: ${props => (props.noDivision ? '100%' : '50%')};
 	gap: 20px;
 	padding: ${props => props.paddingText && '7% 18%'};
 
@@ -36,7 +36,7 @@ export const TextColumn = styled.div`
 `;
 
 export const ButtonSection = styled.div`
-	margin-top: 40px;
+	margin-top: 20px;
 	display: ${props => (props.button ? 'flex' : 'none')};
 	flex-direction: column;
 

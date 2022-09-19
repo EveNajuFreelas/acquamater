@@ -38,6 +38,8 @@ const ColumnTextImage = ({
 	textRight,
 	variant,
 	upperCase,
+	extraImg,
+	noDivision,
 }) => {
 	const { isBg, img } = image;
 	const navigate = useNavigate();
@@ -48,13 +50,19 @@ const ColumnTextImage = ({
 			reverse={reverse}
 			noPadding={noPadding}
 		>
-			<ImageColumn>{!isBg && <img src={img} alt='imagem' />}</ImageColumn>
-			<TextColumn paddingText={paddingText} sx={{ paddingTop: '25em' }}>
+			<ImageColumn noDivision={noDivision}>
+				{!isBg && <img src={img} alt='imagem' />}
+			</ImageColumn>
+			<TextColumn
+				paddingText={paddingText}
+				sx={{ paddingTop: '25em' }}
+				noDivision={noDivision}
+			>
 				<TitleContainer>
 					{title && (
 						<Typography
 							variant='h1'
-							color={invertedColors ? 'title.main' : 'primary'}
+							color={invertedColors ? 'white' : 'primary'}
 							style={{ textTransform: 'uppercase' }}
 						>
 							{title}
@@ -74,7 +82,6 @@ const ColumnTextImage = ({
 				>
 					{children}
 				</Typography>
-<<<<<<< HEAD
 				{extraImg && (
 					<img
 						src={extraImg}
@@ -82,10 +89,7 @@ const ColumnTextImage = ({
 						style={{ marginTop: '15px', width: '350px' }}
 					/>
 				)}
-				<ButtonSection buttons>
-=======
-				<ButtonSection>
->>>>>>> 9684cf88ed16e918d955a0a827f07b0d0838f85b
+				<ButtonSection button>
 					{buttons?.map(({ title, url }, index) => (
 						<Button
 							key={index}
