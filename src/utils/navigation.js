@@ -8,6 +8,7 @@ import { QuemPensaFaz } from "../pages/quem-pensa-e-faz";
 import { PatriciaFurtado } from "../pages/patricia-furtado";
 import { Clientes } from '../pages/clientes';
 import { QuemSomos } from '../pages/quem-somos';
+import { ComoAtuamos } from '../pages/como-atuamos';
 
 export const navigation = [
 	{
@@ -45,7 +46,7 @@ export const navigation = [
 				id: 1 - 3,
 				name: 'Como atuamos',
 				url: '/como-atuamos',
-				element: '',
+				element: <ComoAtuamos />,
 			},
 			{
 				id: 1 - 4,
