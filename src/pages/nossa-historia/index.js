@@ -31,14 +31,16 @@ export const NossaHistoria = () => {
                     </Typography>
                 </Grid>
             </Grid>
-            <Box textAlign="center" width="80%" marginX="auto">
+            <Box textAlign="center" width="80%" marginX="auto" marginY="50px">
                 <BoxGray waterMark dense>
                     <Typography variant="h2" color={colors.blueLighter}>O NOME</Typography>
                     <Typography variant="body1bold" mt="15px">Acqua Mater {`<>`} Água Mãe</Typography>
                     <Typography variant="body1">A escrita correta em latim seria Aqua Mater. A introdução da letra "c" é uma "licença poética", homenagem à escrita da palavra "água" em italiano, pois foi na Itália que sua fundadora, Patrícia Furtado, iniciou seus estudos sobre as Memórias da Água e as nossas Memórias Marinhas.</Typography>
                 </BoxGray>
             </Box>
-            <Box>Inserir aqui imagem de logos acquamater</Box>
+            <Box width="80%" marginX="auto" marginY="50px">
+                <img width="100%" src="other-acquamater-logos.png" alt="Acqua Mater logos" />
+            </Box>
             <Box display="flex" alignItems="center" justifyContent="center">
                 <PersonQuoteCard 
                     quote='"Os projetos da Acqua Mater produzem um resultado extremamente potente e raro por fazerem convergir o olhar humano, técnico e artístico sobre a água."'
@@ -49,7 +51,7 @@ export const NossaHistoria = () => {
                 />
                 <PersonQuoteCard 
                     quote='"Patrícia Furtado é uma inspiração e uma Empoderadora Mulher Global, porque suas ações inspiram outras pessoas a sonhar mais, aprender mais, fazer mais e se tornar mais. Ela é uma verdadeira líder!"'
-                    personImg="quem-pensa-faz/people/dawn-fleming.png"
+                    personImg="quem-pensa-faz/people/anais-barclay.png"
                     name="Anais Barclay"
                     extraContent={<Typography variant="body1">Laos / Hong Kong</Typography>}
                     description="Fundadora da BubblyStarzs & CEO da MEDRadiance Organization"
