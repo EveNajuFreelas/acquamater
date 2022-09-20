@@ -1,16 +1,18 @@
 import styled from "styled-components";
 
 export const CardBox = styled.div`
-    height: 350px;
-    width: 300px;
-    background: linear-gradient(180deg, #EDEEEF 180px, #E3E4E3 170px);
+    height: 400px;
+    width: 350px;
+    background: linear-gradient(180deg, #EDEEEF 210px, #E3E4E3 190px);
     text-align: center;
+    margin: 50px 20px;
 `;
 
 export const QuoteContainer = styled.div`
-    height: 130px;
+    height: 150px;
     display: flex;
     align-items: center;
+    justify-content: center;
 `;
 
 export const DescriptionContainer = styled.div`
@@ -18,4 +20,5 @@ export const DescriptionContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 `;

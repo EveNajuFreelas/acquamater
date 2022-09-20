@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { Head } from "../../components/head";
 import { 
     GraphTooltip, 
@@ -10,7 +10,7 @@ import { colors } from '../../theme/colors';
 import { QuoteSection } from "../../components/quote-section";
 import ColumnTextImage from "../../components/ColumnTextImage";
 
-export const QuemSomos = () => (<>
+export const QuemSomos = () => (<Box overflow="hidden">
     <Head
         breadcrumbs={[ { url: '/', name: 'Home' }, { url: '/acqua-mater', name: 'Acqua Mater' } ]}
         title="Quem somos"
@@ -31,11 +31,25 @@ export const QuemSomos = () => (<>
     <InteractiveContainer>
         <Typography variant="body1" color={colors.blueLighter} fontWeight="bold">Nossos projetos transdisciplinares são voltados à Conservação, à Regeneração e à Sustentabilidade de todos os organismos que habitam o Mundo ÁGUA-OCEANO.</Typography>
 
-        <GraphTooltip title="Reconstituição de algo que foi destruido ou arruinado" mt="20px" divTitle="Regeneração" />
+        <GraphTooltip 
+            title="Reconstituição de algo que foi destruido ou arruinado" 
+            mt="20px" 
+            divTitle="Regeneração" 
+        />
         <InteractiveGraph src="quem-somos-graph.png" alt="Gráfico" />
         <GraphTooltipContainer>
-            <GraphTooltip placement="top" title="Estado do organismo que está em equilíbrio com o ambiente em que se encontra" divTitle="Conservação" bottomText />
-            <GraphTooltip placement="top" title="Capacidade de criar meios para suprir as necessidades básicas do presente sem afetar as gerações futuras" divTitle="Sustentabilidade" bottomText />
+            <GraphTooltip 
+                placement="top" 
+                title="Estado do organismo que está em equilíbrio com o ambiente em que se encontra" 
+                divTitle="Conservação" 
+                bottomText 
+            />
+            <GraphTooltip 
+                placement="top" 
+                title="Capacidade de criar meios para suprir as necessidades básicas do presente sem afetar as gerações futuras" 
+                divTitle="Sustentabilidade" 
+                bottomText 
+            />
         </GraphTooltipContainer>
     </InteractiveContainer>
 
@@ -68,4 +82,4 @@ export const QuemSomos = () => (<>
         <br />
     </ColumnTextImage>
     <img alt="Água" src="quem-somos-bottom.png" />
-</>);
+</Box>);
