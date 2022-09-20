@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { colors } from "../../theme/colors";
 
 export const InteractiveContainer = styled(Container)`
-    margin: 100px 0;
+    margin: 100px auto;
     text-align: center;
     display: flex;
     flex-direction: column;
