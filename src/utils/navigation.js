@@ -1,5 +1,5 @@
 import AcquaMater from '../pages/acqua-mater';
-import NossaHistoria from '../pages/acqua-mater/nossa-historia';
+import { NossaHistoria } from '../pages/nossa-historia';
 import Home from '../pages/home';
 import Partners from '../pages/partners';
 import ProductsServices from '../pages/products-services';
@@ -11,6 +11,7 @@ import { Clientes } from '../pages/clientes';
 import { QuemSomos } from '../pages/quem-somos';
 import Consultancy from '../pages/products-services/Consultancy';
 import { ComoAtuamos } from '../pages/como-atuamos';
+import { PactoGlobalONU } from '../pages/pacto-global-onu';
 
 export const navigation = [
 	{
@@ -54,7 +55,7 @@ export const navigation = [
 				id: 1 - 4,
 				name: 'Acqua Mater e o pacto global da ONU',
 				url: '/acqua-mater-pacto-global-onu',
-				element: '',
+				element: <PactoGlobalONU />,
 			},
 			{
 				id: 1 - 5,
