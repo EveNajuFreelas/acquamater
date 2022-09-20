@@ -5,7 +5,7 @@ export const BackgroundBox = styled(Box)`
     background-image: url(${(props) => props.backgroundImg});
     background-size: 100% 100%;
     padding: 50px 20%;
-    height: 310px;
+    min-height: 310px;
     display: flex;
     flex-direction: column;
     align-items: center;
