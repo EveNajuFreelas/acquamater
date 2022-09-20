@@ -7,12 +7,16 @@ import {
 	Menu,
 	MenuItem,
 	Link,
+	useMediaQuery,
 } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import { navigation } from '../../utils/navigation';
 
 const Header = () => {
 	const navigate = useNavigate();
+	const isDesktop = useMediaQuery('(min-width:600px)', { noSsr: true });
+
+
 	const [activeFacet, setActiveFacet] = useState(null);
 	const [anchorMenu, setAnchorMenu] = useState(null);
 
@@ -45,7 +49,7 @@ const Header = () => {
 						<img src='acquamater-logo.svg' alt='logo' />
 					</Box>
 
-					{navigation.map(nav => (
+					{isDesktop && navigation.map(nav => (
 						<>
 							<Link
 								variant='body1'

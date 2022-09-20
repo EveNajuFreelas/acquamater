@@ -6,6 +6,7 @@ export const CardBox = styled.div`
     background: linear-gradient(180deg, #EDEEEF 210px, #E3E4E3 190px);
     text-align: center;
     margin: 50px 20px;
+    padding: 20px;
 `;
 
 export const QuoteContainer = styled.div`
