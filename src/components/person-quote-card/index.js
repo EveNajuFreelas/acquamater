@@ -22,7 +22,7 @@ export const PersonQuoteCard = ({ quote, personImg, name, description, extraCont
         </QuoteContainer>
         {!horizontal && <img width="110px" src={personImg} alt={name} />}
         <DescriptionContainer width={horizontal ? '45%' : 'auto'} height={horizontal ? '300px' : '100px'}>
-            {horizontal && <img width="110px" src={personImg} alt={name} />}
+            {horizontal && <img width={horizontal ? "150px" :"110px"} src={personImg} alt={name} />}
             <Typography variant="body1" color={colors.blueLighter}>
                 {name}
             </Typography>

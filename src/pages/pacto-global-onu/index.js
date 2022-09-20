@@ -11,7 +11,9 @@ export const PactoGlobalONU = () => (<Box>
     />
     <Box my="100px" width="70%" mx="auto">
         <Grid container spacing={2} mb="50px">
-            <Grid item md={6}>imagem aqui</Grid>
+            <Grid item md={6}>
+                <img src="ods-wheel.png" alt="ODS wheel" width="80%" />
+            </Grid>
             <Grid item md={6}>
                 <Typography variant="body1" textAlign="end">A fundadora e CEO da Acqua Mater, Patricia Furtado, começou a trabalhar pelas 8 Metas do Milênio e pela difusão dos princípios do Pacto Global da ONU em 2006, quando era Especialista em Responsabilidade Social da Ampla (atual Enel Energia), coordenando projetos socioculturais da empresa e redigindo seu Relatório de Sustentabilidade, já no modelo GRI (Global Reporting Initiative). Quando fundou a Acqua Mater,envolveu-se imediatamente com as ações do Pacto Global da ONU Brasil, principalmente as promovidas pela Plataforma Ação pela Água e Oceano, da qual é integrante desde 2019.</Typography>
             </Grid>            
@@ -20,7 +22,9 @@ export const PactoGlobalONU = () => (<Box>
         <Typography variant="body1">Em 2021, A Acqua Mater tornou-se signatária do Global Compact e Patricia Furtado foi reconhecida como "Profissional de ImPacto" do Pacto Global da ONU Brasil.</Typography>
 
         <Grid container spacing={2} my="50px">
-            <Grid item md={6}>imagem aqui</Grid>
+            <Grid item md={6}>
+                <img src="profissionais-impacto.png" alt="Selo Profissionais de imPacto" width="70%" />
+            </Grid>
             <Grid item md={6}>
                 <Typography variant="body1">Em 2022, envolveu-se com mais três projetos coordenados pela plataforma Ação pela Água e Oceano do Pacto Global da ONU Brasil: tornou-se signatária do "Pacto pela Resiliência Hídrica" e do "Movimento + Água", além de passar a integrar o Projeto "Blue Keepers", voltado à despoluição marinha. <br /> <br /> Ainda em 2022, torna-se signatária dos "Princípios do Oceano Sustentável" (Sustainable Ocean Principles), iniciativa da "Coalizão pela Governança do Oceano" (Ocean Stewardship Coalition) do Pacto Global da ONU.</Typography>
             </Grid> 
@@ -45,45 +49,52 @@ export const PactoGlobalONU = () => (<Box>
             Por isso, esses são os 5 principais ODS na estratégia da organização:
             </Typography>
         </Box>
-        <Box display="flex" mt="30px" justifyContent="space-between" width="800px">
-            <img src="white-placeholder.png" alt="ODS6" width="150px"/>
-            <img src="white-placeholder.png" alt="ODS6" width="150px" />
-            <img src="white-placeholder.png" alt="ODS6" width="150px" />
-            <img src="white-placeholder.png" alt="ODS6" width="150px" />
-            <img src="white-placeholder.png" alt="ODS6" width="150px" />
+        <Box mt="30px">
+            <img width="700px" src="principais-ods.png" alt="ODSs"/>
         </Box>
     </ObjetivosContainer>
     <LinksContainer>
-        <Typography variant="body1">
-            <b>Global Compact: </b>
-            <a rel="noreferrer" target="_blank" href="https://www.unglobalcompact.org">https://www.unglobalcompact.org</a>
-        </Typography>
-        <Typography variant="body1">
-            <b>Pacto Global da ONU Brasil </b>
-            <a rel="noreferrer" target="_blank" href="https://www.pactoglobal.org.br">https://www.pactoglobal.org.br</a>
-        </Typography>
-        <Typography variant="body1">
-            <b>Plataforma Ação pela Água e Oceano: </b>
-            <a rel="noreferrer" target="_blank" href="https://www.pactoglobal.org.br/plataformas-de-acao/acao-pela-agua">https://www.pactoglobal.org.br/plataformas-de-acao/acao-pela-agua</a>
-        </Typography>
-        <Typography variant="body1">
-            <b>Projeto Blue Keepers: </b>
-            <a rel="noreferrer" target="_blank" href="https://www.bluekeepers.org">https://www.bluekeepers.org</a>
-        </Typography>
-        <Typography variant="body1">
-            <b>Movimento + Água: </b>
-            <a rel="noreferrer" target="_blank" href="https://www.pactoglobal.org.br/movimento/maisagua/#sobre">https://www.pactoglobal.org.br/movimento/maisagua/#sobre</a>
-        </Typography>
-        <Typography variant="body1">
-            <b>Ocean Stewardship Coalition: </b>
-            <a rel="noreferrer" target="_blank" href="https://www.unglobalcompact.org/take-action/ocean">https://www.unglobalcompact.org/take-action/ocean</a>
+        <Typography variant="body1bold">
+            Global Compact: 
+            <a rel="noreferrer" target="_blank" href="https://www.unglobalcompact.org"> https://www.unglobalcompact.org</a>
+
+            <br />
+            
+            Pacto Global da ONU Brasil:
+            <a rel="noreferrer" target="_blank" href="https://www.pactoglobal.org.br"> https://www.pactoglobal.org.br</a>
+            
+            <br/>
+            
+            Plataforma Ação pela Água e Oceano: 
+            <a rel="noreferrer" target="_blank" href="https://www.pactoglobal.org.br/plataformas-de-acao/acao-pela-agua"> https://www.pactoglobal.org.br/plataformas-de-acao/acao-pela-agua</a>
+            
+            <br/>
+            
+            Projeto Blue Keepers: 
+            <a rel="noreferrer" target="_blank" href="https://www.bluekeepers.org"> https://www.bluekeepers.org</a>
+
+            <br />
+
+            Movimento + Água: 
+            <a rel="noreferrer" target="_blank" href="https://www.pactoglobal.org.br/movimento/maisagua/#sobre"> https://www.pactoglobal.org.br/movimento/maisagua/#sobre</a>
+
+            <br />
+
+            Ocean Stewardship Coalition:
+            <a rel="noreferrer" target="_blank" href="https://www.unglobalcompact.org/take-action/ocean"> https://www.unglobalcompact.org/take-action/ocean</a>
         </Typography>
 
-        <Box display="flex" mt="30px" justifyContent="space-between" width="700px">
-            <img src="white-placeholder.png" alt="ODS6" width="150px"/>
-            <img src="white-placeholder.png" alt="ODS6" width="150px" />
-            <img src="white-placeholder.png" alt="ODS6" width="150px" />
-            <img src="white-placeholder.png" alt="ODS6" width="150px" />
+        <Box 
+            display="flex" 
+            mt="30px" 
+            alignItems="center" 
+            justifyContent="space-between" 
+            width="700px"
+        >
+            <img src="un-global-compact-logo.png" alt="ODS6" width="100px" height="100px" />
+            <img src="blue-keepers-logo.png" alt="ODS6" width="100px" height="100px" />
+            <img src="pacto-global-rb-logo.png" alt="ODS6" width="150px" height="50px" />
+            <img src="movimento-+-agua-logo.png" alt="ODS6" width="200px" height="100px" />
         </Box>
     </LinksContainer>
 </Box>);
