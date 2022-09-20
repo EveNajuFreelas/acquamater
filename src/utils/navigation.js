@@ -16,7 +16,7 @@ export const navigation = [
 	{
 		id: 0,
 		name: 'Home',
-		url: '/',
+		url: '/home',
 		element: <Home />,
 		subelements: [],
 	},

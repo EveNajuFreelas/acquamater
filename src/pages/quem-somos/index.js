@@ -12,7 +12,7 @@ import ColumnTextImage from "../../components/ColumnTextImage";
 
 export const QuemSomos = () => (<Box overflow="hidden">
     <Head
-        breadcrumbs={[ { url: '/', name: 'Home' }, { url: '/acqua-mater', name: 'Acqua Mater' } ]}
+        breadcrumbs={[ { url: '/home', name: 'Home' }, { url: '/acqua-mater', name: 'Acqua Mater' } ]}
         title="Quem somos"
         backgroundImage="default-head-bg.png"
     >
