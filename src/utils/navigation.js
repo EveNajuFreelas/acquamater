@@ -1,5 +1,5 @@
 import AcquaMater from '../pages/acqua-mater';
-import NossaHistoria from '../pages/acqua-mater/nossa-historia';
+import { NossaHistoria } from '../pages/nossa-historia';
 import Home from '../pages/home';
 import Partners from '../pages/partners';
 import ProductsServices from '../pages/products-services';
