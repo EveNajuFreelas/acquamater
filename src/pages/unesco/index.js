@@ -1,7 +1,7 @@
 import { Box, Grid, Typography, Link, Chip, Stack } from "@mui/material";
 import { Head } from "../../components/head";
 import { PersonQuoteCard } from "../../components/person-quote-card";
-import { CulturaOceanicaContainer, LinksDivider } from "./style";
+import { CulturaOceanicaContainer, LinksContainer, LinksDivider } from "./style";
 import { colors } from '../../theme/colors';
 
 export const UNESCO = () => (
@@ -28,7 +28,7 @@ export const UNESCO = () => (
         <CulturaOceanicaContainer>
             <Typography variant="body1" textAlign="center">Em 1961, nasce a Comissão Oceanográfica Intergovernamental (COI) da UNESCO, para promover um maior conhecimento sobre o que o oceano representa para a humanidade e para toda a vida na Terra. </Typography>
 
-            <Box mt="50vh" mb="25vh">
+            <Box mt="40vh" mb="25vh">
                 <Typography variant="h1" color="white">ACQUA MATER <br/> & CULTURA OCEÂNICA</Typography>
 
                 <Grid container spacing={5} mt="2vh">
@@ -63,12 +63,15 @@ export const UNESCO = () => (
         <Box textAlign="center" mb="5%" px="15%">
             <Typography variant="body1" mb="30px">Em 2021, é convidada a integrar o seleto grupo de colaboradores internacionais do novo Programa da COI-UNESCO "Cultura Oceânica com Todos" (Ocean Literacy With All/OLWA), coordenado por Francesca Santoro e formalmente endossado pela "Década do Oceano" da ONU.</Typography>
 
-            <Box display="flex"> duas imagens aqui </Box>
+            <Box display="flex" justifyContent="space-around">
+                <img src="UN-dossd.png" alt="United Nations program" />
+                <img src="ocean-literacy-logo.png" alt="Ocean Literacy For All logo" />
+            </Box>
 
             <Typography variant="body1" my="30px">Atualmente, Patricia Furtado, CEO da Acqua Mater, é co-líder do grupo de trabalho do OLWA que se dedica a desenvolver, sempre no âmbito da Cultura Oceânica: "treinamentos, associações e outras oportunidades para diferentes públicos, incluindo educadores, jornalistas, governo, setor privado, sociedade civil, ONGs, profissionais da diplomacia, entre outros".</Typography>
 
         </Box>
-        <Box mb="5%" px="15%">
+        <LinksContainer>
             <Typography variant="h1" color={colors.blueLighter}>PARA SABER MAIS</Typography>
             <Typography variant="h2lite">Projetos com os quais a Acqua Mater colaborou em 2020 e 2021.</Typography>
             <br /><br/>
@@ -109,6 +112,6 @@ export const UNESCO = () => (
                 <Link rel="noreferrer" target="_blank" href="https://www.pradagroup.com/en/sustainability/cultural-csr/prada-re-nylon-sea-beyond-unesco.html">https://www.pradagroup.com/en/sustainability/cultural-csr/prada-re-nylon-sea-beyond-unesco.html</Link> <br/>
                 <Link rel="noreferrer" target="_blank" href="https://www.pradagroup.com/en/sustainability/cultural-csr/prada-re-nylon-sea-beyond-unesco-2021.html">https://www.pradagroup.com/en/sustainability/cultural-csr/prada-re-nylon-sea-beyond-unesco-2021.html</Link>
             </Typography>
-        </Box>
+        </LinksContainer>
     </Box>
 );
