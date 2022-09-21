@@ -75,7 +75,7 @@ export const navigation = [
 			{
 				id: 2 - 0,
 				name: 'Palestras',
-				url: '/talk',
+				url: '/palestras',
 				element: <Talk />,
 			},
 			{
