@@ -1,6 +1,20 @@
 import { Container } from '@mui/material';
 import styled from 'styled-components';
 
+export const ContainerTitle = styled.div`
+	display: flex;
+	background: ${props => props.color};
+	margin-bottom: 24px;
+`;
+
+export const Title = styled(Container)`
+	display: flex;
+	padding: 24px 52px;
+	color: #fff;
+	font-size: 56px;
+	margin-bottom: 24px;
+`;
+
 export const ContainerText = styled(Container)`
 	display: flex;
 	justify-content: space-between;

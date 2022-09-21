@@ -1,9 +1,12 @@
 import { Typography } from '@mui/material';
 import ColumnTextImage from '../../../components/ColumnTextImage';
-import { ContainerTextSingle, HeadPage } from '../styles';
 import {
+	ContainerTextSingle,
 	ContainerTitle,
+	HeadPage,
 	Title,
+} from '../styles';
+import {
 	ContainerList,
 	FirstColumn,
 	SecondColumn,
@@ -43,7 +46,7 @@ const Training = () => {
 					</Typography>
 				</ContainerTextSingle>
 			</HeadPage>
-			<ContainerTitle lighter>
+			<ContainerTitle color='#037D92'>
 				<Title maxWidth='lg'>Consultoria</Title>
 			</ContainerTitle>
 			<Wrapper>
@@ -74,18 +77,22 @@ const Training = () => {
 								DE CURADORIA
 							</Typography>
 							<br />
-							Quer realizar uma Exposição, uma Mostra ou um
-							Festival que abrace temas ligados ao mundo
-							ÁGUA-OCEANO segundo abordagens artísticas e/ou
-							pedagógicas e/ou culturais e/ou científicas e/ou
-							sociais e/ou ambientais? A Acqua Mater ajuda você a
-							organizar um evento criativo e único!
-							<br />
-							<br />
-							Neste momento, a Acqua Mater está fazendo a
-							Curadoria do “Festival do Oceano” que acontecerá em
-							Fernando de Noronha em 2023, com produção da IMUA
-							Escola do Mar. Mais informações em breve!
+							<Typography color='white'>
+								Quer realizar uma Exposição, uma Mostra ou um
+								Festival que abrace temas ligados ao mundo
+								ÁGUA-OCEANO segundo abordagens artísticas e/ou
+								pedagógicas e/ou culturais e/ou científicas e/ou
+								sociais e/ou ambientais? A Acqua Mater ajuda
+								você a organizar um evento criativo e único!
+								<br />
+								<br />
+								Neste momento, a Acqua Mater está fazendo a
+								Curadoria do “Festival do Oceano” que acontecerá
+								em Fernando de Noronha em 2023, com produção da
+								IMUA Escola do Mar.
+								<br />
+								Mais informações em breve!
+							</Typography>
 						</div>
 					</ContainerColumn2>
 				</Wrapper>
@@ -104,7 +111,7 @@ const Training = () => {
 					seus rios, lagos e mares.
 				</ColumnTextImage>
 
-				<div style={{ width: '100%' }}>
+				<div style={{ width: '100%', marginTop: '50px' }}>
 					<BoxGray dense waterMark>
 						<ContainerList>
 							<FirstColumn>

@@ -50,6 +50,19 @@ let theme = createTheme({
 theme = createTheme(theme, {
 	components: {
 		MuiButton: {
+			variants: [
+				{
+					props: { variant: 'outline' },
+					style: {
+						backgroundColor: theme.palette.primary.contrastText,
+						color: colors.grayDark,
+						border: `1px solid ${theme.palette.primary.main}`,
+						fontSize: '18px',
+						fontWeight: 'bold',
+						padding: '10px 25px',
+					},
+				},
+			],
 			styleOverrides: {
 				root: {
 					'backgroundColor': theme.palette.primary.main,
@@ -94,12 +107,11 @@ theme = createTheme(theme, {
 				tooltip: {
 					backgroundColor: 'none',
 					padding: 0,
-				}
-			}
-		}
+				},
+			},
+		},
 	},
 });
-
 
 theme = responsiveFontSizes(theme);
 

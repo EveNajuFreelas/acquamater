@@ -5,11 +5,12 @@ import Partners from '../pages/partners';
 import ProductsServices from '../pages/products-services';
 import Talk from '../pages/products-services/Talk';
 import Traning from '../pages/products-services/Traning';
+import Consultancy from '../pages/products-services/Consultancy';
+import Experiences from '../pages/products-services/Experiences';
 import { QuemPensaFaz } from '../pages/quem-pensa-e-faz';
 import { PatriciaFurtado } from '../pages/patricia-furtado';
 import { Clientes } from '../pages/clientes';
 import { QuemSomos } from '../pages/quem-somos';
-import Consultancy from '../pages/products-services/Consultancy';
 import { ComoAtuamos } from '../pages/como-atuamos';
 import { PactoGlobalONU } from '../pages/pacto-global-onu';
 
@@ -93,7 +94,7 @@ export const navigation = [
 				id: 2 - 3,
 				name: 'Experiência',
 				url: '/experiencia',
-				element: '',
+				element: <Experiences />,
 			},
 		],
 	},

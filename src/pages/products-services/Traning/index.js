@@ -1,9 +1,12 @@
 import { Grid, Typography } from '@mui/material';
 import ColumnTextImage from '../../../components/ColumnTextImage';
-import { ContainerTextSingle, HeadPage } from '../styles';
 import {
+	ContainerTextSingle,
 	ContainerTitle,
+	HeadPage,
 	Title,
+} from '../styles';
+import {
 	List,
 	TitleThemesBox,
 	TitleThemesBlue,
@@ -40,7 +43,7 @@ const Training = () => {
 					</Typography>
 				</ContainerTextSingle>
 			</HeadPage>
-			<ContainerTitle>
+			<ContainerTitle color='#005980'>
 				<Title maxWidth='lg'>Capacitação</Title>
 			</ContainerTitle>
 			<Wrapper>

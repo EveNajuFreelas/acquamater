@@ -1,9 +1,12 @@
 import { Grid, Typography } from '@mui/material';
 import ColumnTextImage from '../../../components/ColumnTextImage';
-import { ContainerTextSingle, HeadPage } from '../styles';
 import {
+	ContainerTextSingle,
 	ContainerTitle,
+	HeadPage,
 	Title,
+} from '../styles';
+import {
 	List,
 	TitleThemesBox,
 	TitleThemesBlue,
@@ -83,7 +86,7 @@ const Talk = () => {
 					</Typography>
 				</ContainerTextSingle>
 			</HeadPage>
-			<ContainerTitle>
+			<ContainerTitle color='#00376d'>
 				<Title maxWidth='lg'>Palestras</Title>
 			</ContainerTitle>
 			<Wrapper>

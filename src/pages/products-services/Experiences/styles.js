@@ -40,17 +40,16 @@ export const Link = styled.a`
 	margin-top: 20px;
 `;
 
-export const ContainerColumn2 = styled.div`
+export const ContainerColumn = styled.div`
 	display: flex;
-	gap: 60px;
-	margin: 120px 0px;
+	flex-direction: column;
+`;
 
-	img {
-		width: 50%;
-	}
-	div {
-		width: 40%;
-	}
+export const Column = styled.div`
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 60px;
+	margin: 50px 0px 200px;
 `;
 
 export const ListConsultancy = styled.ul`
@@ -74,12 +73,24 @@ export const ContainerList = styled.div`
 	grid-template-columns: 1fr 2.5fr;
 `;
 
+export const ContainerColumns = styled.div`
+	display: grid;
+	grid-template-columns: 1fr 3.5fr;
+`;
+
 export const FirstColumn = styled.div`
-	padding-right: 16px;
+	padding-right: 20px;
 	text-align: right;
 `;
 
 export const SecondColumn = styled.div`
 	padding-left: 32px;
 	border-left: 1px solid ${colors.blueLighter};
+`;
+
+export const ColumnPhotos = styled.div`
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 30px;
+	margin-bottom: 45px;
 `;
