@@ -1,4 +1,4 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Grid, Typography, Link } from "@mui/material";
 import { Head } from "../../components/head";
 import { PersonQuoteCard } from "../../components/person-quote-card";
 import { ObjetivosContainer, LinksContainer } from "./styles";
@@ -56,32 +56,32 @@ export const PactoGlobalONU = () => (<Box>
     <LinksContainer>
         <Typography variant="body1bold">
             Global Compact: 
-            <a rel="noreferrer" target="_blank" href="https://www.unglobalcompact.org"> https://www.unglobalcompact.org</a>
+            <Link rel="noreferrer" target="_blank" href="https://www.unglobalcompact.org"> https://www.unglobalcompact.org</Link>
 
             <br />
             
             Pacto Global da ONU Brasil:
-            <a rel="noreferrer" target="_blank" href="https://www.pactoglobal.org.br"> https://www.pactoglobal.org.br</a>
+            <Link rel="noreferrer" target="_blank" href="https://www.pactoglobal.org.br"> https://www.pactoglobal.org.br</Link>
             
             <br/>
             
             Plataforma Ação pela Água e Oceano: 
-            <a rel="noreferrer" target="_blank" href="https://www.pactoglobal.org.br/plataformas-de-acao/acao-pela-agua"> https://www.pactoglobal.org.br/plataformas-de-acao/acao-pela-agua</a>
+            <Link rel="noreferrer" target="_blank" href="https://www.pactoglobal.org.br/plataformas-de-acao/acao-pela-agua"> https://www.pactoglobal.org.br/plataformas-de-acao/acao-pela-agua</Link>
             
             <br/>
             
             Projeto Blue Keepers: 
-            <a rel="noreferrer" target="_blank" href="https://www.bluekeepers.org"> https://www.bluekeepers.org</a>
+            <Link rel="noreferrer" target="_blank" href="https://www.bluekeepers.org"> https://www.bluekeepers.org</Link>
 
             <br />
 
             Movimento + Água: 
-            <a rel="noreferrer" target="_blank" href="https://www.pactoglobal.org.br/movimento/maisagua/#sobre"> https://www.pactoglobal.org.br/movimento/maisagua/#sobre</a>
+            <Link rel="noreferrer" target="_blank" href="https://www.pactoglobal.org.br/movimento/maisagua/#sobre"> https://www.pactoglobal.org.br/movimento/maisagua/#sobre</Link>
 
             <br />
 
             Ocean Stewardship Coalition:
-            <a rel="noreferrer" target="_blank" href="https://www.unglobalcompact.org/take-action/ocean"> https://www.unglobalcompact.org/take-action/ocean</a>
+            <Link rel="noreferrer" target="_blank" href="https://www.unglobalcompact.org/take-action/ocean"> https://www.unglobalcompact.org/take-action/ocean</Link>
         </Typography>
 
         <Box 

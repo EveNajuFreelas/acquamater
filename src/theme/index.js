@@ -11,6 +11,7 @@ let theme = createTheme({
 		action: { main: '#FF0000' },
 		title: { main: '#A5D513' },
 		text: { main: '#44494A' },
+		chip : { main: colors.gray, contrastText: colors.primary },
 	},
 	typography: {
 		fontFamily: 'Museo',
