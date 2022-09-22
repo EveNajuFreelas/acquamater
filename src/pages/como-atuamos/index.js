@@ -37,13 +37,13 @@ export const ComoAtuamos = () => {
                 <PeopleContainer>
                     <PersonQuoteCard 
                         quote='“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore”'
-                        personImg="quem-pensa-faz/people/sergio-mello.png"
+                        personImg="/quem-pensa-faz/people/sergio-mello.png"
                         name="Sérgio Mello"
                         description="Consectetur adipiscing elit, sed do ei temper"
                     />
                     <PersonQuoteCard 
                         quote='“Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo ad minim veniam”'
-                        personImg="quem-pensa-faz/people/susana-salvador.png"
+                        personImg="/quem-pensa-faz/people/susana-salvador.png"
                         name="Susana Salvador"
                         description="Consectetur adipiscing elit, sed do ei temper"
                     />
@@ -53,7 +53,7 @@ export const ComoAtuamos = () => {
             <QuoteSection
                 text="ESSÊNCIA"
                 textStyle="h3"
-                background="como-atuamos-quote-bg.png"
+                background="/como-atuamos-quote-bg.png"
             >
                 <Typography variant="body1bold" color="white">Como promover mais SAÚDE nos organismos vivos da Terra? <br /> Como gerar mais VIDA no planeta?</Typography>
                 <br/> <br />

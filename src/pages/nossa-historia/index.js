@@ -44,14 +44,14 @@ export const NossaHistoria = () => {
             <Box display="flex" alignItems="center" justifyContent="center">
                 <PersonQuoteCard 
                     quote='"Os projetos da Acqua Mater produzem um resultado extremamente potente e raro por fazerem convergir o olhar humano, técnico e artístico sobre a água."'
-                    personImg="quem-pensa-faz/people/dawn-fleming.png"
+                    personImg="/quem-pensa-faz/people/dawn-fleming.png"
                     name="Dawn Fleming"
                     extraContent={<Typography variant="body1">Canadá / Brasil</Typography>}
                     description="Diretora do Water Innovation Lab Brasil / WIL BRASIL"
                 />
                 <PersonQuoteCard 
                     quote='"Patrícia Furtado é uma inspiração e uma Empoderadora Mulher Global, porque suas ações inspiram outras pessoas a sonhar mais, aprender mais, fazer mais e se tornar mais. Ela é uma verdadeira líder!"'
-                    personImg="quem-pensa-faz/people/anais-barclay.png"
+                    personImg="/quem-pensa-faz/people/anais-barclay.png"
                     name="Anais Barclay"
                     extraContent={<Typography variant="body1">Laos / Hong Kong</Typography>}
                     description="Fundadora da BubblyStarzs & CEO da MEDRadiance Organization"

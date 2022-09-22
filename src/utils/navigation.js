@@ -1,7 +1,6 @@
-import AcquaMater from '../pages/acqua-mater';
 import { NossaHistoria } from '../pages/nossa-historia';
 import Home from '../pages/home';
-import Partners from '../pages/partners';
+import { Cases } from '../pages/cases';
 import ProductsServices from '../pages/products-services';
 import Talk from '../pages/products-services/Talk';
 import { QuemPensaFaz } from "../pages/quem-pensa-e-faz";
@@ -25,7 +24,7 @@ export const navigation = [
 		id: 1,
 		name: 'Acqua Mater',
 		url: '/acqua-mater',
-		element: <AcquaMater />,
+		element: <Home />,
 		subelements: [
 			{
 				id: 1 - 0,
@@ -101,7 +100,7 @@ export const navigation = [
 		id: 3,
 		name: 'Cases',
 		url: '/cases',
-		element: <Partners />,
+		element: <Cases />,
 		subelements: [{
 			id: 3 - 0,
 			name: 'No Brasil',

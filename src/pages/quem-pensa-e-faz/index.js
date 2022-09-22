@@ -65,7 +65,7 @@ export const QuemPensaFaz = () => {
             </OrgSectionContainer>
             <ColumnTextImage
                 title="Patrícia Furtado de Mendonça"
-                image={{ isBg: false, img: 'patricia-furtado-2.png' }}
+                image={{ isBg: false, img: '/patricia-furtado-2.png' }}
                 buttons={[{ url: '/patricia-furtado', title: "Saiba Mais"}]}
             >
                 - Brasileira e Italiana, Empreendedora, Palestrante Inspiracional / Storyteller, Defensora do Oceano e das Águas, Facilitadora de Experiências de Reconexão com a Água e com o Oceano, Mergulhadora;
@@ -88,7 +88,7 @@ export const QuemPensaFaz = () => {
                 <Typography variant="body1">Formado em sua maioria por empreendedores, pesquisadores e especialistas em temas ligados ao Mundo ÁGUA-OCEANO, com os quais a Acqua Mater colabora e/ou nos quais confia para definir importantes diretrizes de seus projetos.</Typography>
                 
                 <Typography variant="h1" color={colors.blueLighter} paddingY="20px">NO MUNDO</Typography>
-                <Grid container>
+                <Grid container justifyContent="center">
                     {worldABView.map(wab => (
                         <Grid item sx={1} minHeight="520px">
                             <PersonCard

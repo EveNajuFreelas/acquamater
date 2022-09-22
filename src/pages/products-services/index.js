@@ -12,7 +12,7 @@ import { Wrapper } from '../styles';
 const ProductsServices = () => {
 	return (
 		<>
-			<HeadPage image={'head-products.png'}>
+			<HeadPage image={'/head-products.png'}>
 				<ContainerText maxWidth='lg'>
 					<Typography
 						variant='h1'
@@ -36,7 +36,7 @@ const ProductsServices = () => {
 				<ContainerProduct>
 					<Wrapper>
 						<ColumnTextImage
-							image={{ isBg: false, img: 'last-products.png' }}
+							image={{ isBg: false, img: '/last-products.png' }}
 							title='Palestras'
 							pathName='/o-que-oferecemos/palestras'
 							buttons={[
@@ -59,7 +59,7 @@ const ProductsServices = () => {
 				<ContainerProduct>
 					<Wrapper>
 						<ColumnTextImage
-							image={{ isBg: false, img: 'last-products.png' }}
+							image={{ isBg: false, img: '/last-products.png' }}
 							title='Capacitação'
 							pathName='/o-que-oferecemos/capacitacao'
 							buttons={[
@@ -84,7 +84,7 @@ const ProductsServices = () => {
 				<ContainerProduct>
 					<Wrapper>
 						<ColumnTextImage
-							image={{ isBg: false, img: 'last-products.png' }}
+							image={{ isBg: false, img: '/last-products.png' }}
 							title='Consultorias'
 							pathName='/o-que-oferecemos/consultoria'
 							buttons={[
@@ -107,7 +107,7 @@ const ProductsServices = () => {
 				<ContainerProduct>
 					<Wrapper>
 						<ColumnTextImage
-							image={{ isBg: false, img: 'last-products.png' }}
+							image={{ isBg: false, img: '/last-products.png' }}
 							title='Experiência'
 							pathName='/o-que-oferecemos/experiencia'
 							buttons={[

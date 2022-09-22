@@ -34,7 +34,7 @@ export const PactoGlobalONU = () => (<Box>
             <PersonQuoteCard
                 horizontal
                 quote='"Conectar ODS, especialmente o 6, o 14 e o 17, é de fundamental importância para prevenir os caminhos do lixo para o mar, e a Acqua Mater enfrenta esse desafio com consistência e comprometimento. Trazer a pauta OCEANO para o ambiente corporativo é palavra de ordem na atualidade!"'
-                personImg="quem-pensa-faz/people/gabriela-otero.png"
+                personImg="/quem-pensa-faz/people/gabriela-otero.png"
                 name="Gabriela Otero"
                 description="Coordenadora do Blue Keepers, projeto do Pacto Global Brasil"
             />

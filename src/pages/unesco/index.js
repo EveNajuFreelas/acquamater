@@ -54,7 +54,7 @@ export const UNESCO = () => (
             <PersonQuoteCard 
                 horizontal
                 quote='"Patricia é uma rara combinação de talento artístico e compromisso sério com a proteção do oceano. Tive o prazer de conhecê-la por ocasião de um workshop que organizei em Veneza em 2019 e, desde então, continuamos a trabalhar juntas para promover a Cultura Oceânica para Todos e com Todos!"'
-                personImg="quem-pensa-faz/people/francesca-santoro.png"
+                personImg="/quem-pensa-faz/people/francesca-santoro.png"
                 name="Francesca Santoro"
                 description="Responsável Cultura Oceânica da COI-UNESCO"
             />
