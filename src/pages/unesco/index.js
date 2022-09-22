@@ -9,13 +9,13 @@ export const UNESCO = () => (
         <Head
             breadcrumbs={[ { url: '/', name: 'Home' }, { url: '/acqua-mater', name: 'Acqua Mater' } ]} 
             title="Acqua Mater & UNESCO"
-            backgroundImage="default-head-bg.png"
+            backgroundImage="/default-head-bg.png"
         />
 
         <Box my="100px" width="70%" mx="auto">
             <Grid container spacing={2} mb="50px">
                 <Grid item md={6}>
-                    <img src="unesco-section-img.png" alt="UNESCO" width="100%" />
+                    <img src="/unesco-section-img.png" alt="UNESCO" width="100%" />
                 </Grid>
                 <Grid item md={6}>
                     <Typography variant="body1" textAlign="end">A UNESCO é uma agência da ONU fundada em 1945 e voltada para a Educação, a Ciência e a Cultura.
@@ -54,7 +54,7 @@ export const UNESCO = () => (
             <PersonQuoteCard 
                 horizontal
                 quote='"Patricia é uma rara combinação de talento artístico e compromisso sério com a proteção do oceano. Tive o prazer de conhecê-la por ocasião de um workshop que organizei em Veneza em 2019 e, desde então, continuamos a trabalhar juntas para promover a Cultura Oceânica para Todos e com Todos!"'
-                personImg="quem-pensa-faz/people/francesca-santoro.png"
+                personImg="/quem-pensa-faz/people/francesca-santoro.png"
                 name="Francesca Santoro"
                 description="Responsável Cultura Oceânica da COI-UNESCO"
             />
@@ -64,8 +64,8 @@ export const UNESCO = () => (
             <Typography variant="body1" mb="30px">Em 2021, é convidada a integrar o seleto grupo de colaboradores internacionais do novo Programa da COI-UNESCO "Cultura Oceânica com Todos" (Ocean Literacy With All/OLWA), coordenado por Francesca Santoro e formalmente endossado pela "Década do Oceano" da ONU.</Typography>
 
             <Box display="flex" justifyContent="space-around">
-                <img src="UN-dossd.png" alt="United Nations program" />
-                <img src="ocean-literacy-logo.png" alt="Ocean Literacy For All logo" />
+                <img src="/UN-dossd.png" alt="United Nations program" />
+                <img src="/ocean-literacy-logo.png" alt="Ocean Literacy For All logo" />
             </Box>
 
             <Typography variant="body1" my="30px">Atualmente, Patricia Furtado, CEO da Acqua Mater, é co-líder do grupo de trabalho do OLWA que se dedica a desenvolver, sempre no âmbito da Cultura Oceânica: "treinamentos, associações e outras oportunidades para diferentes públicos, incluindo educadores, jornalistas, governo, setor privado, sociedade civil, ONGs, profissionais da diplomacia, entre outros".</Typography>

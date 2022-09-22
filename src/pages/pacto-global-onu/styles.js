@@ -2,7 +2,7 @@ import { Box } from "@mui/system";
 import styled  from 'styled-components';
 
 export const ObjetivosContainer = styled(Box)`
-    background-image: url('objetivos-ods-bg.png');
+    background-image: url('/objetivos-ods-bg.png');
     background-size: 100% 100%;
     padding: 10%;
 `;

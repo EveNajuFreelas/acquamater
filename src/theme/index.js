@@ -25,6 +25,10 @@ let theme = createTheme({
 		body2: {
 			fontSize: '14px',
 		},
+		body3: {
+			fontSize: '17px',
+			color: colors.gray,
+		},
 		h1: {
 			fontSize: '35px',
 			marginTop: '20px',

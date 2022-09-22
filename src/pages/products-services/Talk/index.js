@@ -73,7 +73,7 @@ const Talk = () => {
 
 	return (
 		<>
-			<HeadPage image='head-talk.png' noMargin>
+			<HeadPage image='/head-talk.png'>
 				<ContainerTextSingle maxWidth='lg'>
 					<Typography variant='subtitle1' sx={{ color: '#fff' }}>
 						Oferecemos uma série de Palestras ligadas ao Mundo
@@ -91,7 +91,7 @@ const Talk = () => {
 			</ContainerTitle>
 			<Wrapper>
 				<ColumnTextImage
-					image={{ isBg: false, img: 'patricia-palestra.png' }}
+					image={{ isBg: false, img: '/patricia-palestra.png' }}
 					title='Palestras Patricia'
 				>
 					A formação e a experiência de Patricia como Atriz e
@@ -136,7 +136,7 @@ const Talk = () => {
 				</BoxGray>
 
 				<ColumnTextImage
-					image={{ isBg: false, img: 'patricia-palestra.png' }}
+					image={{ isBg: false, img: '/patricia-palestra.png' }}
 					title='Palestras Parceiro'
 					subtitle='(só atende no Brasil)'
 					reverse
