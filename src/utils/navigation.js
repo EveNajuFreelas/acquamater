@@ -1,5 +1,6 @@
 import { NossaHistoria } from '../pages/nossa-historia';
 import Home from '../pages/home';
+import { Cases } from '../pages/cases';
 import ProductsServices from '../pages/products-services';
 import Talk from '../pages/products-services/Talk';
 import { QuemPensaFaz } from "../pages/quem-pensa-e-faz";
@@ -98,7 +99,7 @@ export const navigation = [
 		id: 3,
 		name: 'Cases',
 		url: '/cases',
-		element: '',
+		element: <Cases />,
 		subelements: [{
 			id: 3 - 0,
 			name: 'No Brasil',
