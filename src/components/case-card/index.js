@@ -5,7 +5,7 @@ import { BoxContainer } from "./styles";
 export const CaseCard = ({ coverImg, project, client, where, when, saibaMaisFunction }) => (
     <BoxContainer>
         <Box height="250px">
-            <img src={coverImg} alt={project} width="100%" />
+            <img src={coverImg} alt={project} style={{height: '100%', width: '100%', objectFit: 'contain'}} />
         </Box>
         <Box my="10px" px="5px">
             <Typography variant="body1" color={colors.blueLighter} mb="20px">
