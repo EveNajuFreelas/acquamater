@@ -1,4 +1,3 @@
-import AcquaMater from '../pages/acqua-mater';
 import { NossaHistoria } from '../pages/nossa-historia';
 import Home from '../pages/home';
 import { Cases } from '../pages/cases';
@@ -24,7 +23,7 @@ export const navigation = [
 		id: 1,
 		name: 'Acqua Mater',
 		url: '/acqua-mater',
-		element: <AcquaMater />,
+		element: <Home />,
 		subelements: [
 			{
 				id: 1 - 0,

@@ -46,7 +46,7 @@ const Header = () => {
 					}}
 				>
 					<Box>
-						<img src='acquamater-logo.svg' alt='logo' />
+						<img src='/acquamater-logo.svg' alt='logo' />
 					</Box>
 
 					{isDesktop && navigation.map(nav => (
