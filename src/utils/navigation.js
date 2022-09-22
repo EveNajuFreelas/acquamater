@@ -13,6 +13,7 @@ import { Clientes } from '../pages/clientes';
 import { QuemSomos } from '../pages/quem-somos';
 import { ComoAtuamos } from '../pages/como-atuamos';
 import { PactoGlobalONU } from '../pages/pacto-global-onu';
+import { UNESCO } from '../pages/unesco';
 
 export const navigation = [
 	{
@@ -62,7 +63,7 @@ export const navigation = [
 				id: 1 - 5,
 				name: 'Acqua Mater e UNESCO',
 				url: '/acqua-mater-unesco',
-				element: '',
+				element: <UNESCO />,
 			},
 		],
 	},
