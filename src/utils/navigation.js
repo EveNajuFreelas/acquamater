@@ -9,6 +9,7 @@ import { QuemSomos } from '../pages/quem-somos';
 import { ComoAtuamos } from '../pages/como-atuamos';
 import { PactoGlobalONU } from '../pages/pacto-global-onu';
 import { UNESCO } from '../pages/unesco';
+import { Contato } from '../pages/contato';
 
 export const navigation = [
 	{
@@ -159,7 +160,7 @@ export const navigation = [
 		id: 6,
 		name: 'Contato',
 		url: '/contato',
-		element: '',
+		element: <Contato />,
 		subelements: [
 			{
 				id: 6 - 0,
