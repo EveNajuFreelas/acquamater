@@ -7,12 +7,12 @@ export const PactoGlobalONU = () => (<Box>
     <Head
         breadcrumbs={[ { url: '/', name: 'Home' }, { url: '/acqua-mater', name: 'Acqua Mater' } ]} 
         title="Acqua Mater & Pacto Global da ONU"
-        backgroundImage="default-head-bg.png"
+        backgroundImage="/default-head-bg.png"
     />
     <Box my="100px" width="70%" mx="auto">
         <Grid container spacing={2} mb="50px">
             <Grid item md={6}>
-                <img src="ods-wheel.png" alt="ODS wheel" width="80%" />
+                <img src="/ods-wheel.png" alt="ODS wheel" width="80%" />
             </Grid>
             <Grid item md={6}>
                 <Typography variant="body1" textAlign="end">A fundadora e CEO da Acqua Mater, Patricia Furtado, começou a trabalhar pelas 8 Metas do Milênio e pela difusão dos princípios do Pacto Global da ONU em 2006, quando era Especialista em Responsabilidade Social da Ampla (atual Enel Energia), coordenando projetos socioculturais da empresa e redigindo seu Relatório de Sustentabilidade, já no modelo GRI (Global Reporting Initiative). Quando fundou a Acqua Mater,envolveu-se imediatamente com as ações do Pacto Global da ONU Brasil, principalmente as promovidas pela Plataforma Ação pela Água e Oceano, da qual é integrante desde 2019.</Typography>
@@ -23,7 +23,7 @@ export const PactoGlobalONU = () => (<Box>
 
         <Grid container spacing={2} my="50px">
             <Grid item md={6}>
-                <img src="profissionais-impacto.png" alt="Selo Profissionais de imPacto" width="70%" />
+                <img src="/profissionais-impacto.png" alt="Selo Profissionais de imPacto" width="70%" />
             </Grid>
             <Grid item md={6}>
                 <Typography variant="body1">Em 2022, envolveu-se com mais três projetos coordenados pela plataforma Ação pela Água e Oceano do Pacto Global da ONU Brasil: tornou-se signatária do "Pacto pela Resiliência Hídrica" e do "Movimento + Água", além de passar a integrar o Projeto "Blue Keepers", voltado à despoluição marinha. <br /> <br /> Ainda em 2022, torna-se signatária dos "Princípios do Oceano Sustentável" (Sustainable Ocean Principles), iniciativa da "Coalizão pela Governança do Oceano" (Ocean Stewardship Coalition) do Pacto Global da ONU.</Typography>
@@ -50,7 +50,7 @@ export const PactoGlobalONU = () => (<Box>
             </Typography>
         </Box>
         <Box mt="30px">
-            <img width="700px" src="principais-ods.png" alt="ODSs"/>
+            <img width="700px" src="/principais-ods.png" alt="ODSs"/>
         </Box>
     </ObjetivosContainer>
     <LinksContainer>
@@ -91,10 +91,10 @@ export const PactoGlobalONU = () => (<Box>
             justifyContent="space-between" 
             width="700px"
         >
-            <img src="un-global-compact-logo.png" alt="ODS6" width="100px" height="100px" />
-            <img src="blue-keepers-logo.png" alt="ODS6" width="100px" height="100px" />
-            <img src="pacto-global-rb-logo.png" alt="ODS6" width="150px" height="50px" />
-            <img src="movimento-+-agua-logo.png" alt="ODS6" width="200px" height="100px" />
+            <img src="/un-global-compact-logo.png" alt="ODS6" width="100px" height="100px" />
+            <img src="/blue-keepers-logo.png" alt="ODS6" width="100px" height="100px" />
+            <img src="/pacto-global-rb-logo.png" alt="ODS6" width="150px" height="50px" />
+            <img src="/movimento-+-agua-logo.png" alt="ODS6" width="200px" height="100px" />
         </Box>
     </LinksContainer>
 </Box>);

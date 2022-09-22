@@ -14,7 +14,7 @@ export const QuemSomos = () => (<Box overflow="hidden">
     <Head
         breadcrumbs={[ { url: '/', name: 'Home' }, { url: '/acqua-mater', name: 'Acqua Mater' } ]}
         title="Quem somos"
-        backgroundImage="default-head-bg.png"
+        backgroundImage="/default-head-bg.png"
     >
         Somos uma organização brasileira com atuação global que incentiva a geração de mais saúde e mais vida  a partir do cuidado de todas as águas que circulam no planeta.
         <br />
@@ -36,7 +36,7 @@ export const QuemSomos = () => (<Box overflow="hidden">
             mt="20px" 
             divTitle="Regeneração" 
         />
-        <InteractiveGraph src="quem-somos-graph.png" alt="Gráfico" />
+        <InteractiveGraph src="/quem-somos-graph.png" alt="Gráfico" />
         <GraphTooltipContainer>
             <GraphTooltip 
                 placement="top" 
@@ -81,5 +81,5 @@ export const QuemSomos = () => (<Box overflow="hidden">
         <br/>
         <br />
     </ColumnTextImage>
-    <img alt="Água" src="quem-somos-bottom.png" />
+    <img alt="Água" src="/quem-somos-bottom.png" />
 </Box>);

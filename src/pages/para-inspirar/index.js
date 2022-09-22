@@ -1,6 +1,7 @@
-import { Box, Chip, Divider, Grid, Typography } from "@mui/material";
+import { Box, Container } from "@mui/material";
 import { Head } from "../../components/head";
-import { colors } from "../../theme/colors";
+import { InspirarHeader } from "./inspirar-header";
+import { InspirarItem } from "./inspirar-item";
 import { BoxContainer } from "./styles";
 
 export const ParaInspirar = () => (
@@ -11,76 +12,130 @@ export const ParaInspirar = () => (
                 name: 'Home' }
             ]}
             title="Para Inspirar"
-            backgroundImage="default-head-bg.png"
+            backgroundImage="/default-head-bg.png"
         />
 
         <BoxContainer px="10%">
-            <Grid container spacing={2}>
-                <Grid item xs={1}>
-                    <img src="para-inspirar/para-ver-icon.png" alt="para-ver" width="100px" />
-                </Grid>
-                <Grid item xs={10} mx="30px">
-                    <Box display="flex" mx="15px" alignItems="end">
-                        <Typography variant="h3" color={colors.blueLighter} mr="10px">
-                            PARA VER
-                        </Typography>
-                        <Typography variant="body1">Vídeos, filmes</Typography>
-                    </Box>
-                    <Divider variant="middle" w="100%" color="#7FC31B" />
-                    <Box display="flex" mx="15px" my="10px">
-                        <Chip label="Ciência, Pesquisa e Tecnologia" avatar={<img src="para-inspirar/science-icon.png" alt="Science" />} />
-                        <Chip label="Relação, Conexão e Emoção" avatar={<img src="para-inspirar/heart-icon.png" alt="Heart" />} />
-                    </Box>
-                </Grid>
-            </Grid>
+            <InspirarHeader 
+                sectionName="PARA VER"
+                subtitle="Vídeos, filmes"
+                img="/para-inspirar/para-ver-icon.png"
+            />
 
-            <Box my="40px">
-                <Divider variant="middle" w="100%" color={colors.blueLighter} />
-            </Box>
+            <Container ml="20%">
+                <InspirarItem 
+                    img="/para-inspirar/science-icon.png"
+                    date="10 / 10 / 2022"
+                    author="Fulano"
+                    name="Namenamenamenamenamenamenamename"
+                />
+                <InspirarItem 
+                    img="/para-inspirar/science-icon.png"
+                    date="10 / 10 / 2022"
+                    author="Fulano"
+                    name="Namenamenamenamenamenamenamename"
+                />
+                <InspirarItem 
+                    img="/para-inspirar/science-icon.png"
+                    date="10 / 10 / 2022"
+                    author="Fulano"
+                    name="Namenamenamenamenamenamenamename"
+                />
+                <InspirarItem 
+                    img="/para-inspirar/science-icon.png"
+                    date="10 / 10 / 2022"
+                    author="Fulano"
+                    name="Namenamenamenamenamenamenamename"
+                />
+                <InspirarItem 
+                    img="/para-inspirar/science-icon.png"
+                    date="10 / 10 / 2022"
+                    author="Fulano"
+                    name="Namenamenamenamenamenamenamename"
+                />
+            </Container>
 
-            <Grid container spacing={2}>
-                <Grid item xs={1}>
-                    <img src="para-inspirar/para-ler-icon.png" alt="para-ler" width="100px" />
-                </Grid>
 
-                <Grid item xs={10} mx="30px">
-                    <Box display="flex" mx="15px" alignItems="end">
-                        <Typography variant="h3" color={colors.blueLighter} mr="10px">
-                            PARA LER
-                        </Typography>
-                        <Typography variant="body1">Textos, artigos</Typography>
-                    </Box>
-                    <Divider variant="middle" w="100%" color="#7FC31B" />
-                    <Box display="flex" mx="15px" my="10px">
-                        <Chip label="Ciência, Pesquisa e Tecnologia" avatar={<img src="para-inspirar/science-icon.png" alt="Science" />} />
-                        <Chip label="Relação, Conexão e Emoção" avatar={<img src="para-inspirar/heart-icon.png" alt="Heart" />} />
-                    </Box>
-                </Grid>
-            </Grid>
+            <InspirarHeader 
+                sectionName="PARA LER"
+                subtitle="Textos, artigos"
+                img="/para-inspirar/para-ler-icon.png"
+                hasTopDivider
+            />
 
-            <Box my="40px">
-                <Divider variant="middle" w="100%" color={colors.blueLighter} />
-            </Box>
+            <Container ml="20%">
+                <InspirarItem 
+                    img="/para-inspirar/science-icon.png"
+                    date="10 / 10 / 2022"
+                    author="Fulano"
+                    name="Namenamenamenamenamenamenamename"
+                />
+                <InspirarItem 
+                    img="/para-inspirar/science-icon.png"
+                    date="10 / 10 / 2022"
+                    author="Fulano"
+                    name="Namenamenamenamenamenamenamename"
+                />
+                <InspirarItem 
+                    img="/para-inspirar/science-icon.png"
+                    date="10 / 10 / 2022"
+                    author="Fulano"
+                    name="Namenamenamenamenamenamenamename"
+                />
+                <InspirarItem 
+                    img="/para-inspirar/science-icon.png"
+                    date="10 / 10 / 2022"
+                    author="Fulano"
+                    name="Namenamenamenamenamenamenamename"
+                />
+                <InspirarItem 
+                    img="/para-inspirar/science-icon.png"
+                    date="10 / 10 / 2022"
+                    author="Fulano"
+                    name="Namenamenamenamenamenamenamename"
+                />
+            </Container>
 
-            <Grid container spacing={2}>
-                <Grid item xs={1}>
-                    <img src="para-inspirar/para-ouvir-icon.png" alt="para-ouvir" width="100px" />
-                </Grid>
+            <InspirarHeader 
+                sectionName="PARA OUVIR"
+                subtitle="Podcasts, música"
+                img="/para-inspirar/para-ouvir-icon.png"
+                hasTopDivider
+            />
 
-                <Grid item xs={10} mx="30px">
-                    <Box display="flex" mx="15px" alignItems="end">
-                        <Typography variant="h3" color={colors.blueLighter} mr="10px">
-                            PARA OUVIR
-                        </Typography>
-                        <Typography variant="body1">Podcasts, música</Typography>
-                    </Box>
-                    <Divider variant="middle" w="100%" color="#7FC31B" />
-                    <Box display="flex" mx="15px" my="10px">
-                        <Chip label="Ciência, Pesquisa e Tecnologia" avatar={<img src="para-inspirar/science-icon.png" alt="Science" />} />
-                        <Chip label="Relação, Conexão e Emoção" avatar={<img src="para-inspirar/heart-icon.png" alt="Heart" />} />
-                    </Box>
-                </Grid>
-            </Grid>
+            <Container ml="20%">
+                <InspirarItem 
+                    img="/para-inspirar/science-icon.png"
+                    date="10 / 10 / 2022"
+                    author="Fulano"
+                    name="Namenamenamenamenamenamenamename"
+                />
+                <InspirarItem 
+                    img="/para-inspirar/science-icon.png"
+                    date="10 / 10 / 2022"
+                    author="Fulano"
+                    name="Namenamenamenamenamenamenamename"
+                />
+                <InspirarItem 
+                    img="/para-inspirar/science-icon.png"
+                    date="10 / 10 / 2022"
+                    author="Fulano"
+                    name="Namenamenamenamenamenamenamename"
+                />
+                <InspirarItem 
+                    img="/para-inspirar/science-icon.png"
+                    date="10 / 10 / 2022"
+                    author="Fulano"
+                    name="Namenamenamenamenamenamenamename"
+                />
+                <InspirarItem 
+                    img="/para-inspirar/science-icon.png"
+                    date="10 / 10 / 2022"
+                    author="Fulano"
+                    name="Namenamenamenamenamenamenamename"
+                />
+            </Container>
+
         </BoxContainer>
     </Box>
 );

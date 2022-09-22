@@ -22,7 +22,7 @@ export const PilaresContainer = styled(Container)`
 `;
 
 export const GraphContainer = styled.div`
-    background-image: url('como-atuamos-graph.png');
+    background-image: url('/como-atuamos-graph.png');
     background-size: 80% 80%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -44,7 +44,7 @@ export const TooltipContainer = styled.div`
 `;
 
 export const SubfooterContainer = styled.div`
-    background-image: url('como-atuamos-subfooter.png');
+    background-image: url('/como-atuamos-subfooter.png');
     background-size: 100% 100%;
     height: 500px;
     width: 100%;

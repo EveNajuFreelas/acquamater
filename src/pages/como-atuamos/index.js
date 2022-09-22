@@ -23,7 +23,7 @@ export const ComoAtuamos = () => {
             <Head 
                 breadcrumbs={[ { url: '/', name: 'Home' }, { url: '/acqua-mater', name: 'Acqua Mater' } ]}
                 title="Como Atuamos"
-                backgroundImage="default-head-bg.png"
+                backgroundImage="/default-head-bg.png"
             />
             <IntroContainer>
                 <Typography variant="body1">
@@ -103,7 +103,7 @@ export const ComoAtuamos = () => {
             <SubfooterContainer>
                 <Grid container spacing={2} height="300px" pt="150px">
                     <Grid item xs={6} display="flex" justifyContent="flex-end">
-                        <img src="acquamater-logo.svg" alt="acquamater" width="300px" />
+                        <img src="/acquamater-logo.svg" alt="acquamater" width="300px" />
                     </Grid>
                     <Grid item xs={6}>
                         <Typography variant="h3">Apresentação Institucional <br/> Acqua Mater</Typography>

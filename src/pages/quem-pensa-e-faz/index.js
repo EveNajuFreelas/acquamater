@@ -53,14 +53,14 @@ export const QuemPensaFaz = () => {
             <Head 
                 breadcrumbs={[{ url: '/', name: 'Home'}, { url: '/acqua-mater', name: 'Acqua Mater' }]}
                 title="Quem Pensa e Faz"
-                backgroundImage='quem-pensa-faz/quem-pensa-faz-head.png'
+                backgroundImage='/quem-pensa-faz/quem-pensa-faz-head.png'
             />
             <OrgSectionContainer>
                 <Container sx={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
                     <TextOrganism variant="body1" color="primary.main">
                         Funcionamos como um organismo multicelular, composto de várias células, que são PESSOAS e ORGANIZAÇÕES com as quais trocamos ideias, idealizamos e realizamos projetos, potencializados por meio da cooperação e da diversidade cultural que caracteriza nossos parceiros, com os quais compartilhamos valores e objetivos.
                     </TextOrganism>
-                    <img src="quem-pensa-faz/quem-pensa-faz-grafico.png" alt="gráfico" width="400px" />
+                    <img src="/quem-pensa-faz/quem-pensa-faz-grafico.png" alt="gráfico" width="400px" />
                 </Container>
             </OrgSectionContainer>
             <ColumnTextImage
@@ -131,7 +131,7 @@ export const QuemPensaFaz = () => {
                 <Typography variant="h1" color={colors.blueLighter} paddingY="20px">NO MUNDO</Typography>
                 <Grid container spacing={2} marginBottom={2}>
                     {Array.from(Array(10)).map(a => ( 
-                        <ParceiroImg src="white-placeholder.png" />
+                        <ParceiroImg src="/white-placeholder.png" />
                     ))}
                 </Grid>
                 <Button>Conheça Todos</Button>
@@ -141,7 +141,7 @@ export const QuemPensaFaz = () => {
                 <Typography variant="h1" color={colors.blueLighter} paddingY="20px">NO BRASIL</Typography>
                 <Grid container spacing={2} marginBottom={2}>
                     {Array.from(Array(10)).map(a => ( 
-                        <ParceiroImg src="white-placeholder.png" />
+                        <ParceiroImg src="/white-placeholder.png" />
                     ))}
                 </Grid>
                 <Button>Conheça Todos</Button>

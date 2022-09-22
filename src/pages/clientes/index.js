@@ -11,7 +11,7 @@ export const Clientes = () => (
                 name: 'Home' }
             ]}
             title="Clientes"
-            backgroundImage="default-head-bg.png"
+            backgroundImage="/default-head-bg.png"
         />
             
         <ParceirosContainer>
@@ -20,7 +20,7 @@ export const Clientes = () => (
             <Typography variant="h1" color={colors.blueLighter} paddingY="20px">NO MUNDO</Typography>
             <Grid container spacing={2} marginBottom={2}>
                 {Array.from(Array(10)).map(a => ( 
-                    <ParceiroImg src="white-placeholder.png" />
+                    <ParceiroImg src="/white-placeholder.png" />
                 ))}
             </Grid>
 
@@ -29,7 +29,7 @@ export const Clientes = () => (
             <Typography variant="h1" color={colors.blueLighter} paddingY="20px">NO BRASIL</Typography>
             <Grid container spacing={2} marginBottom={2}>
                 {Array.from(Array(10)).map(a => ( 
-                    <ParceiroImg src="white-placeholder.png" />
+                    <ParceiroImg src="/white-placeholder.png" />
                 ))}
             </Grid>
 
