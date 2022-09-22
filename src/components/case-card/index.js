@@ -1,18 +1,24 @@
-import { Box, Typography } from "@mui/material";
+import { Button, Typography, Box } from "@mui/material";
 import { colors } from "../../theme/colors";
+import { BoxContainer } from "./styles";
 
-export const CaseCard = ({ coverImg, project, client, where, when}) => (
-    <Box>
-        <img src={coverImg} alt={project} width="100%" />
-        <Typography variant="body1" color={colors.blueLighter} my="20px">
-            Projeto / evento: <br />
-            {project} <br/><br/>
-            Cliente: <br/>
-            {client} <br/><br/>
-            Onde: <br/>
-            {where}<br/><br/>
-            Quando: <br/>
-            {when}
-        </Typography>
-    </Box>
+export const CaseCard = ({ coverImg, project, client, where, when, saibaMaisFunction }) => (
+    <BoxContainer>
+        <Box height="250px">
+            <img src={coverImg} alt={project} width="100%" />
+        </Box>
+        <Box my="10px" px="5px">
+            <Typography variant="body1" color={colors.blueLighter} mb="20px">
+                Projeto / evento: <br />
+                <Typography variant="body3">{project}</Typography> <br/><br/>
+                Cliente: <br/>
+                <Typography variant="body3">{client}</Typography> <br/><br/>
+                Onde: <br/>
+                <Typography variant="body3">{where}</Typography> <br/><br/>
+                Quando: <br/>
+                <Typography variant="body3">{when}</Typography>
+            </Typography>
+            <Button onClick={saibaMaisFunction}>Saiba Mais</Button>
+        </Box>
+    </BoxContainer>
 );
