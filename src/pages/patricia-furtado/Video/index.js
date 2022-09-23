@@ -3,7 +3,7 @@ import { ContainerVideo, Section } from './styles';
 
 export const Video = ({ img, title, subtitle }) => (
 	<ContainerVideo>
-		<img src={img} />
+		<img src={img} alt="videop" />
 		<Section>
 			<Typography
 				fontWeight='bold'

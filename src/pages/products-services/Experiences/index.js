@@ -112,6 +112,7 @@ const Experiences = () => {
 									fontWeight: 'bold',
 									color: colors.primary,
 								}}
+								href="/cases"
 							>
 								Clique aqui{' '}
 							</a>{' '}

@@ -1,6 +1,4 @@
-import { Container, Tooltip, Typography } from '@mui/material';
 import styled from 'styled-components';
-import { colors } from '../../../theme/colors';
 
 export const ContainerTestimony = styled.div`
 	background-color: rgb(237, 240, 240, 0.5);

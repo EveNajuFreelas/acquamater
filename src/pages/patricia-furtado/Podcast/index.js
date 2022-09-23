@@ -3,7 +3,7 @@ import { ContainerPodcast, Section } from './styles';
 
 export const Podcast = ({ img, title, subtitle, participation }) => (
 	<ContainerPodcast>
-		<img src={img} />
+		<img src={img} alt="img" />
 		<Section>
 			<Typography
 				fontWeight='bold'

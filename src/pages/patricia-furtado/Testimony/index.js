@@ -11,7 +11,7 @@ export const Testimony = ({ author, name, country, role, children }) => (
 			{children}
 		</Typography>
 		<Section>
-			<img src={author} />
+			<img src={author} alt="Autor" />
 			<Text>
 				<Typography
 					color='primary'

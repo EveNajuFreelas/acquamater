@@ -1,6 +1,5 @@
-import { Container, Tooltip, Typography } from '@mui/material';
+import { Container } from '@mui/material';
 import styled from 'styled-components';
-import { colors } from '../../theme/colors';
 
 export const Head = styled.div`
 	background: no-repeat url('/patricia-head.png');
@@ -10,11 +9,7 @@ export const Head = styled.div`
 `;
 
 export const WrapperHead = styled.div`
-	height: 30vh;
-
-	@media (max-width: 1280px) {
-		height: 50vh;
-	}
+	height: 50vh;
 `;
 
 export const ContainerHead = styled.div`

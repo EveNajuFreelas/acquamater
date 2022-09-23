@@ -1,4 +1,4 @@
-import { Box, Container, Divider, Typography } from '@mui/material';
+import { Container, Typography } from '@mui/material';
 import styled from 'styled-components';
 
 export const StripContainer = styled.div`

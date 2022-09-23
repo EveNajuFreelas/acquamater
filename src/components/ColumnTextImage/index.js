@@ -44,6 +44,16 @@ const ColumnTextImage = ({
 	const { isBg, img } = image;
 	const navigate = useNavigate();
 
+	const handleNavigate = (url) => {
+		const regex = /[(http)(https)]:\/\//;
+
+		if(regex.test(url)) {
+			window.open(url);
+		} else {
+			navigate(url);	
+		}
+	}
+
 	return (
 		<ContainerColumn
 			backgroundImage={isBg && img}
@@ -93,7 +103,7 @@ const ColumnTextImage = ({
 					{buttons?.map(({ title, url }, index) => (
 						<Button
 							key={index}
-							onClick={() => navigate(url)}
+							onClick={() => handleNavigate(url)}
 							style={{ width: 'fit-content' }}
 							color={invertedColors ? 'secondary' : 'primary'}
 						>
