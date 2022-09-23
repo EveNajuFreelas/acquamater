@@ -29,7 +29,7 @@ export const PatriciaFurtado = () => {
 		<Head />
 		<WrapperHead>
 			<ContainerHead>
-				<img src='/patricia-first.png' alt="Patricia Furtado"></img>
+				<img src='/acquamater/patricia-first.png' alt="Patricia Furtado"></img>
 				<Text>
 					<Typography
 						variant='h2'
@@ -77,7 +77,7 @@ export const PatriciaFurtado = () => {
 
 			<WrapperTestimony>
 				<Testimony
-					author='/patricia-marcelo.png'
+					author='/acquamater/patricia-marcelo.png'
 					name='MARCELO LLÉVENES'
 					country='Chile'
 					role='Cofundador e Diretor Executivo da Clickie e ex-CEO da Enel Brasil - Distribuição'
@@ -96,7 +96,7 @@ export const PatriciaFurtado = () => {
 				</Testimony>
 
 				<Testimony
-					author='/patricia-susana.png'
+					author='/acquamater/patricia-susana.png'
 					name='SUSANA SALVADOR'
 					country='Portugal / França'
 					role='Secretária Executiva ACCOBAMS'
@@ -122,17 +122,17 @@ export const PatriciaFurtado = () => {
 				VÍDEOS
 			</Typography>
 			<Videos>
-				<Video img='/patricia-video-1.png' title='COI-UNESCO' />
-				<Video img='/patricia-video-2.png' title='GALP ENERGIA' />
-				<Video img='/patricia-video-3.png' title='A ÁGUA QUE FALTA' />
-				<Video img='/patricia-video-4.png' title='SOMOS ÁGUA' />
+				<Video img='/acquamater/patricia-video-1.png' title='COI-UNESCO' />
+				<Video img='/acquamater/patricia-video-2.png' title='GALP ENERGIA' />
+				<Video img='/acquamater/patricia-video-3.png' title='A ÁGUA QUE FALTA' />
+				<Video img='/acquamater/patricia-video-4.png' title='SOMOS ÁGUA' />
 				<Video
-					img='/patricia-video-5.png'
+					img='/acquamater/patricia-video-5.png'
 					title='A ÁGUA QUE FALTA'
 					subtitle='(Making of)'
 				/>
 				<Video
-					img='/patricia-video-6.png'
+					img='/acquamater/patricia-video-6.png'
 					title='A ÁGUA QUE FALTA'
 					subtitle='(Teaser)'
 				/>
@@ -149,19 +149,19 @@ export const PatriciaFurtado = () => {
 			</Typography>
 			<Podcasts>
 				<Podcast
-					img='/patricia-podcast-1.png'
+					img='/acquamater/patricia-podcast-1.png'
 					title='T1 E19: Propósito e realização'
 					subtitle='Patricia Furtado'
 					participation='Com Éder Monteiro'
 				/>
 				<Podcast
-					img='/patricia-podcast-2.png'
+					img='/acquamater/patricia-podcast-2.png'
 					title='UM OCEANO DE MEMÓRIAS'
 					subtitle='Especial Água - Sob a perspectiva delas'
 					participation='Com Mariana Godoy'
 				/>
 				<Podcast
-					img='/patricia-podcast-3.png'
+					img='/acquamater/patricia-podcast-3.png'
 					title='BEE MY GUEST'
 					participation='Com Cláudia Penteado'
 				/>
@@ -177,9 +177,9 @@ export const PatriciaFurtado = () => {
 				Patricia atuando como Performer Subaquática
 			</Typography>
 			<Performers>
-				<img src='/patricia-performer-1.png' alt="patricia performando" />
-				<img src='/patricia-performer-2.png' alt="patricia performando" />
-				<img src='/patricia-performer-3.png' alt="patricia performando" />
+				<img src='/acquamater/patricia-performer-1.png' alt="patricia performando" />
+				<img src='/acquamater/patricia-performer-2.png' alt="patricia performando" />
+				<img src='/acquamater/patricia-performer-3.png' alt="patricia performando" />
 			</Performers>
 			<Typography>Fotógrafia: Ary Amarante</Typography>
 		</PerformerSection>

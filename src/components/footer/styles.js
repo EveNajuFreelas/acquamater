@@ -7,7 +7,7 @@ const FooterContainer = styled(props => <Grid {...props} />)`
 	min-height: 200px;
 	justify-content: center;
 	padding: 20px 110px;
-	background-image: url('/footer-bg.svg');
+	background-image: url('/acquamater/footer-bg.svg');
 	margin: 0;
 	width: 100%;
 `;

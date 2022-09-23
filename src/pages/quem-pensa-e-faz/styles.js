@@ -5,7 +5,7 @@ import { colors } from '../../theme/colors';
 export const OrgSectionContainer = styled.div`
     margin-top: -65px;
     padding: 100px 0;
-    background-image: url('/quem-pensa-faz/quem-pensa-faz-section-1.png');
+    background-image: url('/acquamater/quem-pensa-faz/quem-pensa-faz-section-1.png');
     background-size: 100%;
     background-repeat: no-repeat;
     height: 28.2em;
@@ -19,7 +19,7 @@ export const TextOrganism = styled(Typography)`
 export const AdvisoryBoardSectionContainer = styled.div`
     padding: 100px 10%;
     background-size: 100% 100%;
-    background-image: url('/advisory-board-bg.png');
+    background-image: url('/acquamater/advisory-board-bg.png');
     background-repeat: no-repeat;
 
     display: flex;
@@ -39,7 +39,7 @@ export const SectionBlueTitle = styled(Typography)`
 export const ParceirosContainer = styled.div`
     padding: 100px 10%;
     background-size: 100%;
-    background-image: url('/quem-pensa-faz/parceiros-bg.png');
+    background-image: url('/acquamater/quem-pensa-faz/parceiros-bg.png');
     background-repeat: no-repeat;
 
     display: flex;

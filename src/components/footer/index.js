@@ -50,7 +50,7 @@ const Footer = () => {
 			)}
 			<SectionDivider variant='middle' />
 			<Grid item xs={3}>
-				<img src='/acquamater-logo-white.svg' alt='logo' />
+				<img src='/acquamater/acquamater-logo-white.svg' alt='logo' />
 			</Grid>
 			<Grid item md={3} sx={{ alignItems: 'center', display: 'flex' }}>
 				<SectionTitle as='a' href='mailto:contato@acquamater.com'>

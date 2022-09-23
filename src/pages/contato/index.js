@@ -62,7 +62,7 @@ export const Contato = () => {
     <Head 
         breadcrumbs={[]}
         title="Contato"
-        backgroundImage="/default-head-bg.png"
+        backgroundImage="/acquamater/default-head-bg.png"
     />
     <Box mt="100px" px="10%" textAlign="center" mb="50px">
         <Typography variant="h1" color={colors.blueLighter}>VAMOS CONVERSAR?</Typography>

@@ -14,7 +14,7 @@ export const QuemSomos = () => (<Box overflow="hidden">
     <Head
         breadcrumbs={[ { url: '/home', name: 'Home' }, { url: '/acqua-mater', name: 'Acqua Mater' } ]}
         title="Quem somos"
-        backgroundImage="/default-head-bg.png"
+        backgroundImage="/acquamater/default-head-bg.png"
     >
         Somos uma organização brasileira com atuação global que incentiva a geração de mais saúde e mais vida  a partir do cuidado de todas as águas que circulam no planeta.
         <br />
@@ -36,7 +36,7 @@ export const QuemSomos = () => (<Box overflow="hidden">
             mt="20px" 
             divTitle="Regeneração" 
         />
-        <InteractiveGraph src="/quem-somos-graph.png" alt="Gráfico" />
+        <InteractiveGraph src="/acquamater/quem-somos-graph.png" alt="Gráfico" />
         <GraphTooltipContainer>
             <GraphTooltip 
                 placement="top" 
@@ -55,14 +55,14 @@ export const QuemSomos = () => (<Box overflow="hidden">
 
     <QuoteSection 
         text="Por que falamos em mundo ÁGUA-OCEANO?" 
-        background="quem-somos-quote-bg.png" 
+        background="/acquamater/quem-somos-quote-bg.png" 
         textStyle="h2lite" 
     />
 
     <ColumnTextImage
         reverse
         paddingText
-        image={{ isBg: true, img: '/quem-somos-crianca-agua-bg.png' }}
+        image={{ isBg: true, img: '/acquamater/quem-somos-crianca-agua-bg.png' }}
     >
         Todas as águas que circulam em nosso planeta estão conectadas. Isso acontece desde quando elas vieram do espaço e deram origem ao oceano primordial. Por sua vez, dele saíram as águas que hoje integram o ciclo natural hídrico, que continua promovendo o transporte das águas entre mar, céu e terra, sob suas variadas formas. Essas águas naturais também se conectam às águas que foram “domesticadas” pelo ser humano, por meio de variados serviços de tratamento, transporte e saneamento que viabilizam a vida urbana e a produção dos inúmeros bens materiais que consumimos.
         <br />
@@ -81,5 +81,5 @@ export const QuemSomos = () => (<Box overflow="hidden">
         <br/>
         <br />
     </ColumnTextImage>
-    <img alt="Água" src="/quem-somos-bottom.png" />
+    <img alt="Água" src="/acquamater/quem-somos-bottom.png" />
 </Box>);

@@ -31,7 +31,7 @@ const Training = () => {
 
 	return (
 		<>
-			<HeadPage image='head-training.png' noMargin>
+			<HeadPage image='/acquamater/head-training.png' noMargin>
 				<ContainerTextSingle maxWidth='lg'>
 					<Typography variant='subtitle1' sx={{ color: '#fff' }}>
 						Oferecemos{' '}
@@ -49,7 +49,7 @@ const Training = () => {
 			</ContainerTitle>
 			<Wrapper>
 				<ColumnTextImage
-					image={{ isBg: false, img: 'training-first.png' }}
+					image={{ isBg: false, img: '/acquamater/training-first.png' }}
 					title='ESCOLA NÔMADE DA ÁGUA'
 				>
 					São projetos de Educação Ambiental que promovem “Uma Nova
@@ -63,7 +63,7 @@ const Training = () => {
 				</ColumnTextImage>
 			</Wrapper>
 			<ColumnTextImage
-				image={{ isBg: true, img: 'training-second-bg.png' }}
+				image={{ isBg: true, img: '/acquamater/training-second-bg.png' }}
 				title=''
 				invertedColors
 				noDivision
@@ -72,7 +72,7 @@ const Training = () => {
 					<ContainerColumn2>
 						<WrapperContainer>
 							<ContainerImage>
-								<img src='training-second-image.png' alt="Training"></img>
+								<img src='/acquamater/training-second-image.png' alt="Training"></img>
 							</ContainerImage>
 						</WrapperContainer>
 						<div>
@@ -105,7 +105,7 @@ const Training = () => {
 
 			<Wrapper style={{ marginTop: '50px' }}>
 				<ColumnTextImage
-					image={{ isBg: false, img: 'training-third.png' }}
+					image={{ isBg: false, img: '/acquamater/training-third.png' }}
 					title='OCTOPUS'
 				>
 					São diversos Workshops, Treinamentos e Cursos (presenciais e
@@ -129,7 +129,7 @@ const Training = () => {
 				<div style={{ width: '100%' }}>
 					<BoxGray dense waterMark>
 						<ColumnTextImage
-							image={{ isBg: false, img: 'training-last.png' }}
+							image={{ isBg: false, img: '/acquamater/training-last.png' }}
 							noPadding
 							textRight
 							reverse
@@ -149,8 +149,8 @@ const Training = () => {
 				</div>
 			</Wrapper>
 			<Strip
-				img='/training-ball.png'
-				imgBG='/training-bg-bola.png'
+				img='/acquamater/training-ball.png'
+				imgBG='/acquamater/training-bg-bola.png'
 				textBall='De que CAPACITAÇÃO você precisa?'
 			/>
 		</>

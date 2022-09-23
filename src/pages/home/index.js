@@ -6,10 +6,10 @@ import { ImgContainer } from './styles';
 const Home = () => {
 	return (
 		<>
-			<ImgContainer src='/home-intro.png' alt='Acqua Mater introdução' />
+			<ImgContainer src='/acquamater/home-intro.png' alt='Acqua Mater introdução' />
 			<Container>
 				<ColumnTextImage
-					image={{ img: '/acqua-mater-name.png', isBg: false }}
+					image={{ img: '/acquamater/acqua-mater-name.png', isBg: false }}
 					buttons={[
 						{ title: 'Saiba Mais', url: '/quem-somos' },
 						{
@@ -27,7 +27,7 @@ const Home = () => {
 				</ColumnTextImage>
 				<ColumnTextImage
 					title='Patrícia Furtado de Mendonça'
-					image={{ img: '/patricia-furtado.png', isBg: false }}
+					image={{ img: '/acquamater/patricia-furtado.png', isBg: false }}
 					buttons={[
 						{
 							title: 'Saiba Mais',
@@ -52,16 +52,16 @@ const Home = () => {
 				</ColumnTextImage>
 			</Container>
 			<QuoteSection
-				background='/bg-prada-quote.png'
+				background='/acquamater/bg-prada-quote.png'
 				text='"Estamos extremamente orgulhosos de continuar tendo Patricia Furtado de Mendonça desempenhando um papel ativo no projeto SEA BEYOND, o programa educacional desenvolvido pelo Grupo Prada em colaboração com a COI-UNESCO, para difundir os princípios da Cultura Oceânica em todo o mundo."'
 				author='EQUIPE DE COMUNICAÇÃO CORPORATIVA DO GRUPO PRADA/ITÁLIA'
-				authorLogo='/prada-logo.png'
+				authorLogo='/acquamater/prada-logo.png'
 				textStyle="body1bold"
 			/>
 			<ColumnTextImage
 				reverse
 				invertedColors
-				image={{ img: '/o-que-oferecemos-bg.png', isBg: true }}
+				image={{ img: '/acquamater/o-que-oferecemos-bg.png', isBg: true }}
 				title='O que Oferecemos'
 				buttons={[{ title: 'Saiba Mais', url: '/o-que-oferecemos' }]}
 				paddingText
@@ -70,14 +70,14 @@ const Home = () => {
 				ÁGUA e O OCEANO e tem sinergia entre si, podendo se articular
 				dependendo das necessidades do cliente
 				<img
-					src='/o-que-oferecemos-graph.png'
+					src='/acquamater/o-que-oferecemos-graph.png'
 					alt='o-que-oferecemos gráfico'
 					style={{ marginTop: '15px', width: '350px' }}
 				/>
 			</ColumnTextImage>
 			<ColumnTextImage
 				reverse
-				image={{ img: '/como-atuamos-bg.png', isBg: true }}
+				image={{ img: '/acquamater/como-atuamos-bg.png', isBg: true }}
 				title='Como atuamos'
 				buttons={[
 					{ title: 'Conheça nosso Advisory Board', url: '/quem-pensa-e-faz#advisory-board' },

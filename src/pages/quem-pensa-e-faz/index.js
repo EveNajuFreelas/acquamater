@@ -53,19 +53,19 @@ export const QuemPensaFaz = () => {
             <Head 
                 breadcrumbs={[{ url: '/home', name: 'Home'}, { url: '/acqua-mater', name: 'Acqua Mater' }]}
                 title="Quem Pensa e Faz"
-                backgroundImage='/quem-pensa-faz/quem-pensa-faz-head.png'
+                backgroundImage='/acquamater/quem-pensa-faz/quem-pensa-faz-head.png'
             />
             <OrgSectionContainer>
                 <Container sx={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
                     <TextOrganism variant="body1" color="primary.main">
                         Funcionamos como um organismo multicelular, composto de várias células, que são PESSOAS e ORGANIZAÇÕES com as quais trocamos ideias, idealizamos e realizamos projetos, potencializados por meio da cooperação e da diversidade cultural que caracteriza nossos parceiros, com os quais compartilhamos valores e objetivos.
                     </TextOrganism>
-                    <img src="/quem-pensa-faz/quem-pensa-faz-grafico.png" alt="gráfico" width="400px" />
+                    <img src="/acquamater/quem-pensa-faz/quem-pensa-faz-grafico.png" alt="gráfico" width="400px" />
                 </Container>
             </OrgSectionContainer>
             <ColumnTextImage
                 title="Patrícia Furtado de Mendonça"
-                image={{ isBg: false, img: '/patricia-furtado-2.png' }}
+                image={{ isBg: false, img: '/acquamater/patricia-furtado-2.png' }}
                 buttons={[{ url: '/patricia-furtado', title: "Saiba Mais"}]}
             >
                 - Brasileira e Italiana, Empreendedora, Palestrante Inspiracional / Storyteller, Defensora do Oceano e das Águas, Facilitadora de Experiências de Reconexão com a Água e com o Oceano, Mergulhadora;
@@ -93,7 +93,7 @@ export const QuemPensaFaz = () => {
                         <Grid item sx={1} minHeight="520px">
                             <PersonCard
                                name={wab.name}
-                               img={wab.image}
+                               img={`/acquamater${wab.image}`}
                                country={wab.country}
                                description={wab.description}
                                section={worldAdvisoryBoard}
@@ -108,12 +108,12 @@ export const QuemPensaFaz = () => {
                 <Divider width="80%" sx={{ marginTop: '30px' }} />
 
                 <Typography variant="h1" color={colors.blueLighter} paddingY="20px">NO BRASIL</Typography>
-                <Grid container>
+                <Grid container justifyContent="center">
                     {brazilABView.map(bab => (
                         <Grid item sx={1} minHeight="520px">
                             <PersonCard 
                                 name={bab.name}
-                                img={bab.image}
+                                img={`/acquamater${bab.image}`}
                                 description={bab.description}
                                 section={brazilAdvisoryBoard}
                                 id={bab.id}
@@ -131,7 +131,7 @@ export const QuemPensaFaz = () => {
                 <Typography variant="h1" color={colors.blueLighter} paddingY="20px">NO MUNDO</Typography>
                 <Grid container spacing={2} marginBottom={2}>
                     {Array.from(Array(10)).map(a => ( 
-                        <ParceiroImg src="/white-placeholder.png" />
+                        <ParceiroImg src="/acquamater/white-placeholder.png" />
                     ))}
                 </Grid>
                 <Button>Conheça Todos</Button>
@@ -141,7 +141,7 @@ export const QuemPensaFaz = () => {
                 <Typography variant="h1" color={colors.blueLighter} paddingY="20px">NO BRASIL</Typography>
                 <Grid container spacing={2} marginBottom={2}>
                     {Array.from(Array(10)).map(a => ( 
-                        <ParceiroImg src="/white-placeholder.png" />
+                        <ParceiroImg src="/acquamater/white-placeholder.png" />
                     ))}
                 </Grid>
                 <Button>Conheça Todos</Button>

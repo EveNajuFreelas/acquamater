@@ -2,7 +2,7 @@ import { Container } from '@mui/material';
 import styled from 'styled-components';
 
 export const Head = styled.div`
-	background: no-repeat url('/patricia-head.png');
+	background: no-repeat url('/acquamater/patricia-head.png');
 	position: relative;
 	display: flex;
 	height: 70vh;
@@ -53,7 +53,7 @@ export const WrapperTestimony = styled.div`
 
 export const VideoSection = styled.div`
 	display: flex;
-	background: no-repeat url('/patricia-second.png');
+	background: no-repeat url('/acquamater/patricia-second.png');
 	text-align: center;
 	flex-direction: column;
 	padding: 170px 0px 200px;

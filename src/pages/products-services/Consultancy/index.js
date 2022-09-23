@@ -35,7 +35,7 @@ const Training = () => {
 
 	return (
 		<>
-			<HeadPage image='head-consultancy.png' noMargin>
+			<HeadPage image='/acquamater/head-consultancy.png' noMargin>
 				<ContainerTextSingle maxWidth='lg'>
 					<Typography variant='subtitle1' sx={{ color: '#fff' }}>
 						Oferecemos Consultorias de{' '}
@@ -52,7 +52,7 @@ const Training = () => {
 			</ContainerTitle>
 			<Wrapper>
 				<ColumnTextImage
-					image={{ isBg: false, img: 'Consultancy-first.png' }}
+					image={{ isBg: false, img: '/acquamater/Consultancy-first.png' }}
 					title='de conteúdo'
 					reverse
 				>
@@ -65,14 +65,14 @@ const Training = () => {
 			</Wrapper>
 
 			<ColumnTextImage
-				image={{ isBg: true, img: 'Consultancy-second-bg.png' }}
+				image={{ isBg: true, img: '/acquamater/Consultancy-second-bg.png' }}
 				title=''
 				invertedColors
 				noDivision
 			>
 				<Wrapper>
 					<ContainerColumn2>
-						<img src='Consultancy-second.png' alt="Consultoria"></img>
+						<img src='/acquamater/Consultancy-second.png' alt="Consultoria"></img>
 						<div>
 							<Typography variant='h1' color='white'>
 								DE CURADORIA
@@ -101,7 +101,7 @@ const Training = () => {
 
 			<Wrapper style={{ marginTop: '50px' }}>
 				<ColumnTextImage
-					image={{ isBg: false, img: 'Consultancy-third.png' }}
+					image={{ isBg: false, img: '/acquamater/Consultancy-third.png' }}
 					title='de soluções integradas'
 					reverse
 					noPadding
@@ -140,8 +140,8 @@ const Training = () => {
 				</div>
 			</Wrapper>
 			<Strip
-				img='/consultancy-ball.png'
-				imgBG='/consultancy-bg-bola.png'
+				img='/acquamater/consultancy-ball.png'
+				imgBG='/acquamater/consultancy-bg-bola.png'
 				textBall='De que CONSULTORIA você precisa?'
 			/>
 		</>
