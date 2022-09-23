@@ -1,11 +1,11 @@
 import { Themes, Wave } from './styles';
-const BoxGray = ({ dense, children, waterMark }) => {
+const BoxGray = ({ dense, children, waterMark, white }) => {
 	return (
-		<Themes dense={dense}>
+		<Themes dense={dense} white={white}>
 			{children}
 			{waterMark && (
 				<Wave>
-					<img src='/wave.png' alt="wave" />
+					<img src='/wave.png' alt='wave' />
 				</Wave>
 			)}
 		</Themes>

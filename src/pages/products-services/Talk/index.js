@@ -1,9 +1,12 @@
 import { Grid, Typography } from '@mui/material';
 import ColumnTextImage from '../../../components/ColumnTextImage';
-import { ContainerTextSingle, HeadPage } from '../styles';
 import {
+	ContainerTextSingle,
 	ContainerTitle,
+	HeadPage,
 	Title,
+} from '../styles';
+import {
 	List,
 	TitleThemesBox,
 	TitleThemesBlue,
@@ -11,6 +14,7 @@ import {
 } from './styles';
 import { Wrapper } from '../../styles';
 import BoxGray from '../../../components/BoxGray';
+import { Strip } from '../../../components/Strip';
 
 const Talk = () => {
 	const listAllThemesLeft = [
@@ -70,7 +74,7 @@ const Talk = () => {
 
 	return (
 		<>
-			<HeadPage image='/head-talk.png'>
+			<HeadPage image='/head-talk.png' noMargin>
 				<ContainerTextSingle maxWidth='lg'>
 					<Typography variant='subtitle1' sx={{ color: '#fff' }}>
 						Oferecemos uma série de Palestras ligadas ao Mundo
@@ -83,7 +87,7 @@ const Talk = () => {
 					</Typography>
 				</ContainerTextSingle>
 			</HeadPage>
-			<ContainerTitle>
+			<ContainerTitle color='#00376d'>
 				<Title maxWidth='lg'>Palestras</Title>
 			</ContainerTitle>
 			<Wrapper>
@@ -183,6 +187,11 @@ const Talk = () => {
 					</BoxGray>
 				</ContainerThemes>
 			</Wrapper>
+			<Strip
+				img='/talk-ball.png'
+				imgBG='/talk-bg-bola.png'
+				textBall='De que PALESTRA você precisa?'
+			/>
 		</>
 	);
 };

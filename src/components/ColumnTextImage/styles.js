@@ -5,17 +5,18 @@ export const ContainerColumn = styled.div`
 	gap: 60px;
 	flex-direction: ${props => props.reverse && 'row-reverse'};
 	justify-content: center;
-	padding: 50px 0;
+	padding: ${props => (props.noPadding ? '0px' : '50px 0')};
 	align-items: center;
 	background-image: ${props => `url(${props.backgroundImage})`};
 	background-size: cover;
+	overflow: hidden;
 `;
 
 export const ImageColumn = styled.div`
 	margin-top: 15px;
-	width: 50%;
+	width: ${props => (props.noDivision ? '0%' : '50%')};
 	img {
-		width: 100%;
+		width: ${props => (props.noDivision ? '0%' : '100%')};
 	}
 `;
 
@@ -26,18 +27,18 @@ export const TitleContainer = styled.div`
 `;
 
 export const TextColumn = styled.div`
-	width: 50%;
+	width: ${props => (props.noDivision ? '100%' : '50%')};
 	gap: 20px;
-	padding-left: ${props => props.paddingText && '20%'};
+	padding: ${props => props.paddingText && '7% 18%'};
 
 	@media (max-width: 1280px) {
-		padding-left: ${props => props.paddingText && '5%'};
+		padding-left: ${props => props.paddingText && '0 5%'};
 	}
 `;
 
 export const ButtonSection = styled.div`
-	margin-top: 40px;
-	display: flex;
+	margin-top: 20px;
+	display: ${props => (props.button ? 'flex' : 'none')};
 	flex-direction: column;
 
 	Button {
