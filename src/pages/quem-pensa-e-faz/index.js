@@ -51,7 +51,7 @@ export const QuemPensaFaz = () => {
     return (
         <Box>
             <Head 
-                breadcrumbs={[{ url: '/', name: 'Home'}, { url: '/acqua-mater', name: 'Acqua Mater' }]}
+                breadcrumbs={[{ url: '/home', name: 'Home'}, { url: '/acqua-mater', name: 'Acqua Mater' }]}
                 title="Quem Pensa e Faz"
                 backgroundImage='/quem-pensa-faz/quem-pensa-faz-head.png'
             />

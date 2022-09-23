@@ -16,7 +16,7 @@ let theme = createTheme({
 	typography: {
 		fontFamily: 'Museo',
 		body1: {
-			fontSize: '16px',
+			fontSize: '18px',
 		},
 		body1bold: {
 			fontSize: '16px',
@@ -30,10 +30,9 @@ let theme = createTheme({
 			color: colors.gray,
 		},
 		h1: {
-			fontSize: "35px",
-			textTransform: "capitalize",
-			marginTop: "20px",
-		 },
+			fontSize: '35px',
+			marginTop: '20px',
+		},
 		h2: {
 			fontSize: '25px',
 			fontWeight: 'bold',
@@ -56,6 +55,19 @@ let theme = createTheme({
 theme = createTheme(theme, {
 	components: {
 		MuiButton: {
+			variants: [
+				{
+					props: { variant: 'outline' },
+					style: {
+						backgroundColor: theme.palette.primary.contrastText,
+						color: colors.grayDark,
+						border: `1px solid ${theme.palette.primary.main}`,
+						fontSize: '18px',
+						fontWeight: 'bold',
+						padding: '10px 25px',
+					},
+				},
+			],
 			styleOverrides: {
 				root: {
 					'backgroundColor': theme.palette.primary.main,
@@ -100,12 +112,11 @@ theme = createTheme(theme, {
 				tooltip: {
 					backgroundColor: 'none',
 					padding: 0,
-				}
-			}
-		}
+				},
+			},
+		},
 	},
 });
-
 
 theme = responsiveFontSizes(theme);
 

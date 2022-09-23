@@ -42,7 +42,7 @@ const ProductsServices = () => {
 							buttons={[
 								{
 									title: 'Saiba mais',
-									url: '/talk',
+									url: '/palestras',
 								},
 							]}
 						>
@@ -65,7 +65,7 @@ const ProductsServices = () => {
 							buttons={[
 								{
 									title: 'Saiba mais',
-									url: '/talk',
+									url: '/capacitacao',
 								},
 							]}
 							reverse
@@ -90,7 +90,7 @@ const ProductsServices = () => {
 							buttons={[
 								{
 									title: 'Saiba mais',
-									url: '/talk',
+									url: '/consultoria',
 								},
 							]}
 						>
@@ -113,7 +113,7 @@ const ProductsServices = () => {
 							buttons={[
 								{
 									title: 'Saiba mais',
-									url: '/talk',
+									url: '/experiencia',
 								},
 							]}
 							reverse
