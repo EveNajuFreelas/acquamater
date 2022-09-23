@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Head } from "../../components/head";
 import { colors } from "../../theme/colors";
 import { contatoColaborar, contatoSubjects } from "../../utils/contato";
+import { VamosColaborarContainer } from "./styles";
 
 export const Contato = () => {
     const [contactFormInfo, setContactFormInfo] = useState({ subjects: [] });
@@ -50,7 +51,11 @@ export const Contato = () => {
     }
 
     const sendKeepContactEmail = () => {
-        console.log('send keep contact email:', keepContactInfo);
+        if(keepContactInfo.termosDeUso) {
+            console.log('send keep contact email:', keepContactInfo);
+        } else { 
+            alert('Você precisa aceitar os termos de uso antes de submeter seus dados.');
+        }
     }
     
     return (<Box>
@@ -59,7 +64,7 @@ export const Contato = () => {
         title="Contato"
         backgroundImage="/default-head-bg.png"
     />
-    <Box mt="100px" px="10%" textAlign="center">
+    <Box mt="100px" px="10%" textAlign="center" mb="50px">
         <Typography variant="h1" color={colors.blueLighter}>VAMOS CONVERSAR?</Typography>
         <Typography variant="body1" my="20px" px="10%">
             Estamos sempre prontos a gerar ideias e encontrar soluções para suas necessidades ligadas ao Mundo ÁGUA-OCEANO, no Brasil e fora dele. <br/> <br/>
@@ -129,7 +134,7 @@ export const Contato = () => {
 
     </Box>
 
-    <Box mt="100px" px="10%" textAlign="center">
+    <VamosColaborarContainer>
         <Typography variant="h1" color={colors.blueLighter}>VAMOS COLABORAR?</Typography>
         <Typography variant="body1" my="20px" px="10%">Você quer integrar a rede de Parceiros da Acqua Mater? Seu projeto está ligado a qual dos tópicos abaixo?</Typography>
         
@@ -205,7 +210,7 @@ export const Contato = () => {
         </Box>
         <Button onClick={sendCollabEmail}>Enviar</Button>
 
-    </Box>
+    </VamosColaborarContainer>
 
     <Box my="50px" px="10%" textAlign="center">
         <Typography variant="h1" color={colors.blueLighter}>VAMOS MANTER CONTATO?</Typography>
@@ -266,6 +271,8 @@ export const Contato = () => {
                 </Box>
             </Grid>
         </Grid>
+
+        <FormControlLabel sx={{ marginY: '20px', paddingX: '10%' }} control={<Checkbox onChange={({ target }) => handleKeepContactInput(target.checked, 'termosDeUso')} />} label="Eu concordo em receber comunicações. Ao informar meus dados, eu concordo com a Política de Privacidade." />
 
         <Button onClick={sendKeepContactEmail}>Enviar</Button>
 
