@@ -20,8 +20,8 @@ export const InspirarHeader = ({ sectionName, subtitle, img, hasTopDivider }) =>
                 </Box>
                 <Divider variant="middle" w="100%" color="#7FC31B" />
                 <Stack direction="row" spacing={2} mx="15px" my="10px">
-                    <Chip label="Ciência, Pesquisa e Tecnologia" avatar={<img src="/para-inspirar/science-icon.png" alt="Science" />} />
-                    <Chip label="Relação, Conexão e Emoção" avatar={<img src="/para-inspirar/heart-icon.png" alt="Heart" />} />
+                    <Chip label="Ciência, Pesquisa e Tecnologia" avatar={<img src="/acquamater/para-inspirar/science-icon.png" alt="Science" />} />
+                    <Chip label="Relação, Conexão e Emoção" avatar={<img src="/acquamater/para-inspirar/heart-icon.png" alt="Heart" />} />
                 </Stack>
             </Grid>
         </Grid>

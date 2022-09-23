@@ -44,7 +44,7 @@ const Experiences = () => {
 	];
 	return (
 		<>
-			<HeadPage image='head-experience.png' noMargin>
+			<HeadPage image='/acquamater/head-experience.png' noMargin>
 				<ContainerTextSingle maxWidth='lg'>
 					<Typography variant='subtitle1' sx={{ color: '#fff' }}>
 						Oferecemos Workshops, Viagens e Eventos Artísticos para
@@ -62,7 +62,7 @@ const Experiences = () => {
 			</ContainerTitle>
 			<Wrapper>
 				<ColumnTextImage
-					image={{ isBg: false, img: 'experience-first.png' }}
+					image={{ isBg: false, img: '/acquamater/experience-first.png' }}
 					title='worshops'
 				>
 					São vivências que acontecem dentro de piscinas aquecidas ou
@@ -123,7 +123,7 @@ const Experiences = () => {
 				</div>
 			</Wrapper>
 			<ColumnTextImage
-				image={{ isBg: true, img: 'experience-second.png' }}
+				image={{ isBg: true, img: '/acquamater/experience-second.png' }}
 				title=''
 				subtitle=''
 				reverse
@@ -194,15 +194,15 @@ const Experiences = () => {
 						<SecondColumn>
 							<ColumnPhotos>
 								<Photo
-									img='experience-fernando-noronha.png'
+									img='/acquamater/experience-fernando-noronha.png'
 									title='Fernando de Noronha'
 								/>
 								<Photo
-									img='experience-serra-mantiqueira.png'
+									img='/acquamater/experience-serra-mantiqueira.png'
 									title='Serra da Mantiqueira'
 								/>
 								<Photo
-									img='experience-amazonia-paraense.png'
+									img='/acquamater/experience-amazonia-paraense.png'
 									title='Amazônia Paraense (rios Arapiuns e Tapajós).'
 								/>
 							</ColumnPhotos>
@@ -217,7 +217,7 @@ const Experiences = () => {
 			<BoxGray waterMark>
 				<Wrapper>
 					<ColumnTextImage
-						image={{ isBg: false, img: 'experience-first.png' }}
+						image={{ isBg: false, img: '/acquamater/experience-first.png' }}
 						title='ARTES & ENTRETENIMENTO'
 						noPadding
 					>
@@ -271,8 +271,8 @@ const Experiences = () => {
 				</Wrapper>
 			</BoxGray>
 			<Strip
-				img='/experience-ball.png'
-				imgBG='/experience-bg-bola.png'
+				img='/acquamater/experience-ball.png'
+				imgBG='/acquamater/experience-bg-bola.png'
 				textBall='De que EXPERIÊNCIA você precisa?'
 			/>
 		</>

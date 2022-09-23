@@ -13,21 +13,21 @@ export const ParaInspirar = () => (
                 name: 'Home' }
             ]}
             title="Para Inspirar"
-            backgroundImage="/default-head-bg.png"
+            backgroundImage="/acquamater/default-head-bg.png"
         />
 
         <BoxContainer px="10%">
             <InspirarHeader 
                 sectionName="PARA VER"
                 subtitle="Vídeos, filmes"
-                img="/para-inspirar/para-ver-icon.png"
+                img="/acquamater/para-inspirar/para-ver-icon.png"
             />
 
             <Container ml="20%">
                 {ParaVer.map((value, index) => (
                     <InspirarItem 
                         key={index}
-                        img={value.imagem}
+                        img={`/acquamater${value.imagem}`}
                         date={value.data}
                         author={value.autor}
                         name={value.nome}
@@ -40,7 +40,7 @@ export const ParaInspirar = () => (
             <InspirarHeader 
                 sectionName="PARA LER"
                 subtitle="Textos, artigos"
-                img="/para-inspirar/para-ler-icon.png"
+                img="/acquamater/para-inspirar/para-ler-icon.png"
                 hasTopDivider
             />
 
@@ -48,7 +48,7 @@ export const ParaInspirar = () => (
                 {ParaLer.map((value, index) => (
                     <InspirarItem 
                         key={index}
-                        img={value.imagem}
+                        img={`/acquamater${value.imagem}`}
                         date={value.data}
                         author={value.autor}
                         name={value.nome}
@@ -60,14 +60,14 @@ export const ParaInspirar = () => (
             <InspirarHeader 
                 sectionName="PARA OUVIR"
                 subtitle="Podcasts, música"
-                img="/para-inspirar/para-ouvir-icon.png"
+                img="/acquamater/para-inspirar/para-ouvir-icon.png"
                 hasTopDivider
             />
 
             <Container ml="20%" mb="50px">
                 {ParaOuvir.map((value, index) => (
                     <InspirarItem 
-                        img={value.imagem}
+                        img={`/acquamater${value.imagem}`}
                         date={value.data}
                         author={value.autor}
                         name={value.nome}

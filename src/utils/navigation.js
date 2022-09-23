@@ -14,12 +14,13 @@ import { ComoAtuamos } from '../pages/como-atuamos';
 import { PactoGlobalONU } from '../pages/pacto-global-onu';
 import { UNESCO } from '../pages/unesco';
 import { ParaInspirar } from '../pages/para-inspirar';
+import { Contato } from '../pages/contato';
 
 export const navigation = [
 	{
 		id: 0,
 		name: 'Home',
-		url: '/home',
+		url: '/',
 		element: <Home />,
 		subelements: [],
 	},
@@ -169,7 +170,7 @@ export const navigation = [
 		id: 6,
 		name: 'Contato',
 		url: '/contato',
-		element: '',
+		element: <Contato />,
 		subelements: [
 			{
 				id: 6 - 0,

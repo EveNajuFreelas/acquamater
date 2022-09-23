@@ -21,7 +21,7 @@ import { colors } from '../../theme/colors';
  * `image` prop example:
   {
      isBg: Bool,
-     img: '/image.png',
+     img: '/acquamater/image.png',
   }
  */
 

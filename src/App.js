@@ -24,7 +24,7 @@ export default function App() {
 	};
 	return (
 		<ThemeProvider theme={theme}>
-			<Router>
+			<Router basename={process.env.PUBLIC_URL}>
 				<Header />
 				<Routes>{renderRoutes([...navigation, ...extraRoutes])}</Routes>
 				<Footer />
