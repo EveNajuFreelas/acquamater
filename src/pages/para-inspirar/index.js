@@ -1,5 +1,6 @@
 import { Box, Container } from "@mui/material";
 import { Head } from "../../components/head";
+import { ParaLer, ParaOuvir, ParaVer } from "../../utils/para-inspirar-items";
 import { InspirarHeader } from "./inspirar-header";
 import { InspirarItem } from "./inspirar-item";
 import { BoxContainer } from "./styles";
@@ -23,36 +24,16 @@ export const ParaInspirar = () => (
             />
 
             <Container ml="20%">
-                <InspirarItem 
-                    img="/para-inspirar/science-icon.png"
-                    date="10 / 10 / 2022"
-                    author="Fulano"
-                    name="Namenamenamenamenamenamenamename"
-                />
-                <InspirarItem 
-                    img="/para-inspirar/science-icon.png"
-                    date="10 / 10 / 2022"
-                    author="Fulano"
-                    name="Namenamenamenamenamenamenamename"
-                />
-                <InspirarItem 
-                    img="/para-inspirar/science-icon.png"
-                    date="10 / 10 / 2022"
-                    author="Fulano"
-                    name="Namenamenamenamenamenamenamename"
-                />
-                <InspirarItem 
-                    img="/para-inspirar/science-icon.png"
-                    date="10 / 10 / 2022"
-                    author="Fulano"
-                    name="Namenamenamenamenamenamenamename"
-                />
-                <InspirarItem 
-                    img="/para-inspirar/science-icon.png"
-                    date="10 / 10 / 2022"
-                    author="Fulano"
-                    name="Namenamenamenamenamenamenamename"
-                />
+                {ParaVer.map((value, index) => (
+                    <InspirarItem 
+                        key={index}
+                        img={value.imagem}
+                        date={value.data}
+                        author={value.autor}
+                        name={value.nome}
+                        link={value.link}
+                    />
+                ))}
             </Container>
 
 
@@ -64,36 +45,16 @@ export const ParaInspirar = () => (
             />
 
             <Container ml="20%">
-                <InspirarItem 
-                    img="/para-inspirar/science-icon.png"
-                    date="10 / 10 / 2022"
-                    author="Fulano"
-                    name="Namenamenamenamenamenamenamename"
-                />
-                <InspirarItem 
-                    img="/para-inspirar/science-icon.png"
-                    date="10 / 10 / 2022"
-                    author="Fulano"
-                    name="Namenamenamenamenamenamenamename"
-                />
-                <InspirarItem 
-                    img="/para-inspirar/science-icon.png"
-                    date="10 / 10 / 2022"
-                    author="Fulano"
-                    name="Namenamenamenamenamenamenamename"
-                />
-                <InspirarItem 
-                    img="/para-inspirar/science-icon.png"
-                    date="10 / 10 / 2022"
-                    author="Fulano"
-                    name="Namenamenamenamenamenamenamename"
-                />
-                <InspirarItem 
-                    img="/para-inspirar/science-icon.png"
-                    date="10 / 10 / 2022"
-                    author="Fulano"
-                    name="Namenamenamenamenamenamenamename"
-                />
+                {ParaLer.map((value, index) => (
+                    <InspirarItem 
+                        key={index}
+                        img={value.imagem}
+                        date={value.data}
+                        author={value.autor}
+                        name={value.nome}
+                        link={value.link}
+                    />
+                ))}
             </Container>
 
             <InspirarHeader 
@@ -103,37 +64,16 @@ export const ParaInspirar = () => (
                 hasTopDivider
             />
 
-            <Container ml="20%">
-                <InspirarItem 
-                    img="/para-inspirar/science-icon.png"
-                    date="10 / 10 / 2022"
-                    author="Fulano"
-                    name="Namenamenamenamenamenamenamename"
-                />
-                <InspirarItem 
-                    img="/para-inspirar/science-icon.png"
-                    date="10 / 10 / 2022"
-                    author="Fulano"
-                    name="Namenamenamenamenamenamenamename"
-                />
-                <InspirarItem 
-                    img="/para-inspirar/science-icon.png"
-                    date="10 / 10 / 2022"
-                    author="Fulano"
-                    name="Namenamenamenamenamenamenamename"
-                />
-                <InspirarItem 
-                    img="/para-inspirar/science-icon.png"
-                    date="10 / 10 / 2022"
-                    author="Fulano"
-                    name="Namenamenamenamenamenamenamename"
-                />
-                <InspirarItem 
-                    img="/para-inspirar/science-icon.png"
-                    date="10 / 10 / 2022"
-                    author="Fulano"
-                    name="Namenamenamenamenamenamenamename"
-                />
+            <Container ml="20%" mb="50px">
+                {ParaOuvir.map((value, index) => (
+                    <InspirarItem 
+                        img={value.imagem}
+                        date={value.data}
+                        author={value.autor}
+                        name={value.nome}
+                        link={value.link}
+                    />
+                ))}
             </Container>
 
         </BoxContainer>
