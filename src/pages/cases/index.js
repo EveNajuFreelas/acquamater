@@ -15,7 +15,7 @@ export const Cases = () => {
         <Head
             breadcrumbs={[ { url: '/home', name: 'Home'} ]}
             title="Cases"
-            backgroundImage="default-head-bg.png"
+            backgroundImage="/default-head-bg.png"
         >
             <Typography variant="body1" color="white">
                 Desde 2017, ano de sua fundação, a Acqua Mater tem sido convidada a colaborar com os mais variados parceiros, no Brasil e no exterior, para promover <br/>
