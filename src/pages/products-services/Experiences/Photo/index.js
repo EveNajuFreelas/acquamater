@@ -4,7 +4,7 @@ import { Container } from './styles';
 const Photo = ({ img, title }) => {
 	return (
 		<Container>
-			<img src={img} />
+			<img src={img} alt={title} />
 			<Typography
 				fontWeight='bold'
 				style={{ textAlign: 'center', marginTop: '15px' }}

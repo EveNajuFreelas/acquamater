@@ -11,7 +11,7 @@ export const Strip = ({ textBall, img, color, imgBG }) => (
 	<StripContainer img={imgBG}>
 		<WrapperStrip maxWidth='md'>
 			<StripImg>
-				<img src={img} />
+				<img src={img} alt="img" />
 				<TextImg>{textBall}</TextImg>
 			</StripImg>
 			<Text>

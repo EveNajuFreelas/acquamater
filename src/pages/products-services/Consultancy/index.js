@@ -72,7 +72,7 @@ const Training = () => {
 			>
 				<Wrapper>
 					<ContainerColumn2>
-						<img src='Consultancy-second.png'></img>
+						<img src='Consultancy-second.png' alt="Consultoria"></img>
 						<div>
 							<Typography variant='h1' color='white'>
 								DE CURADORIA

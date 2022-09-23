@@ -1,4 +1,4 @@
-import { Grid, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 import ColumnTextImage from '../../../components/ColumnTextImage';
 import {
 	ContainerTextSingle,
@@ -8,9 +8,6 @@ import {
 } from '../styles';
 import {
 	List,
-	TitleThemesBox,
-	TitleThemesBlue,
-	ContainerThemes,
 	Link,
 	ContainerColumn2,
 	ContainerImage,
@@ -75,7 +72,7 @@ const Training = () => {
 					<ContainerColumn2>
 						<WrapperContainer>
 							<ContainerImage>
-								<img src='training-second-image.png'></img>
+								<img src='training-second-image.png' alt="Training"></img>
 							</ContainerImage>
 						</WrapperContainer>
 						<div>

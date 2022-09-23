@@ -15,18 +15,21 @@ import {
 	Performers,
 } from './style';
 import { colors } from '../../theme/colors';
-import { QuoteSection } from '../../components/quote-section';
-import ColumnTextImage from '../../components/ColumnTextImage';
 import { Testimony } from './Testimony';
 import { Video } from './Video';
 import { Podcast } from './Podcast';
 
-export const PatriciaFurtado = () => (
+export const PatriciaFurtado = () => {
+	const downloadPDF = () => {
+		window.open('/BIO_LONGA_PAT.pdf');
+	}
+	
+	return (
 	<Box overflow='hidden'>
 		<Head />
 		<WrapperHead>
 			<ContainerHead>
-				<img src='/patricia-first.png'></img>
+				<img src='/patricia-first.png' alt="Patricia Furtado"></img>
 				<Text>
 					<Typography
 						variant='h2'
@@ -69,7 +72,7 @@ export const PatriciaFurtado = () => (
 				<Typography color='primary' fontWeight='bold'>
 					Para a acessar a Bio completa, baixe o pdf
 				</Typography>
-				<Button>Download</Button>
+				<Button onClick={downloadPDF}>Download</Button>
 			</WrapperSecond>
 
 			<WrapperTestimony>
@@ -174,11 +177,11 @@ export const PatriciaFurtado = () => (
 				Patricia atuando como Performer Subaquática
 			</Typography>
 			<Performers>
-				<img src='/patricia-performer-1.png' />
-				<img src='/patricia-performer-2.png' />
-				<img src='/patricia-performer-3.png' />
+				<img src='/patricia-performer-1.png' alt="patricia performando" />
+				<img src='/patricia-performer-2.png' alt="patricia performando" />
+				<img src='/patricia-performer-3.png' alt="patricia performando" />
 			</Performers>
 			<Typography>Fotógrafia: Ary Amarante</Typography>
 		</PerformerSection>
 	</Box>
-);
+)};
