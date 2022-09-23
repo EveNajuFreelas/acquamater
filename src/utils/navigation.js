@@ -1,5 +1,6 @@
 import { NossaHistoria } from '../pages/nossa-historia';
 import Home from '../pages/home';
+import { Cases } from '../pages/cases';
 import ProductsServices from '../pages/products-services';
 import Talk from '../pages/products-services/Talk';
 import { QuemPensaFaz } from "../pages/quem-pensa-e-faz";
@@ -9,6 +10,7 @@ import { QuemSomos } from '../pages/quem-somos';
 import { ComoAtuamos } from '../pages/como-atuamos';
 import { PactoGlobalONU } from '../pages/pacto-global-onu';
 import { UNESCO } from '../pages/unesco';
+import { ParaInspirar } from '../pages/para-inspirar';
 import { Contato } from '../pages/contato';
 
 export const navigation = [
@@ -99,7 +101,7 @@ export const navigation = [
 		id: 3,
 		name: 'Cases',
 		url: '/cases',
-		element: '',
+		element: <Cases />,
 		subelements: [{
 			id: 3 - 0,
 			name: 'No Brasil',
@@ -134,7 +136,7 @@ export const navigation = [
 		id: 5,
 		name: 'Para inspirar',
 		url: '/para-inspirar',
-		element: '',
+		element: <ParaInspirar />,
 		subelements: [
 			{
 				id: 5 - 0,
