@@ -21,7 +21,7 @@ export const ComoAtuamos = () => {
     return (
         <Box>
             <Head 
-                breadcrumbs={[ { url: '/home', name: 'Home' }, { url: '/acqua-mater', name: 'Acqua Mater' } ]}
+                breadcrumbs={[ { url: '/', name: 'Home' }, { url: '/acqua-mater', name: 'Acqua Mater' } ]}
                 title="Como Atuamos"
                 backgroundImage="/acquamater/default-head-bg.png"
             />

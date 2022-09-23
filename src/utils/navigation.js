@@ -20,7 +20,7 @@ export const navigation = [
 	{
 		id: 0,
 		name: 'Home',
-		url: '/home',
+		url: '/',
 		element: <Home />,
 		subelements: [],
 	},
