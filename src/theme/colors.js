@@ -1,4 +1,6 @@
 export const colors = {
+	lighterGray: '#EDF0F0',
+	lightGray: '#E4EBF0',
 	gray: '#E4E9EF',
 	grayDark: '#616A71',
 	primary: '#003b80',
