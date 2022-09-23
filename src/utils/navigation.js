@@ -13,6 +13,7 @@ import { QuemSomos } from '../pages/quem-somos';
 import { ComoAtuamos } from '../pages/como-atuamos';
 import { PactoGlobalONU } from '../pages/pacto-global-onu';
 import { UNESCO } from '../pages/unesco';
+import { ParaInspirar } from '../pages/para-inspirar';
 
 export const navigation = [
 	{
@@ -142,7 +143,7 @@ export const navigation = [
 		id: 5,
 		name: 'Para inspirar',
 		url: '/para-inspirar',
-		element: '',
+		element: <ParaInspirar />,
 		subelements: [
 			{
 				id: 5 - 0,
