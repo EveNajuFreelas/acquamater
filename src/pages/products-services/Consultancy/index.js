@@ -16,6 +16,7 @@ import {
 import { Wrapper } from '../../styles';
 import BoxGray from '../../../components/BoxGray';
 import { colors } from '../../../theme/colors';
+import { Strip } from '../../../components/Strip';
 
 const Training = () => {
 	const list = [
@@ -138,6 +139,11 @@ const Training = () => {
 					</BoxGray>
 				</div>
 			</Wrapper>
+			<Strip
+				img='/consultancy-ball.png'
+				imgBG='/consultancy-bg-bola.png'
+				textBall='De que CONSULTORIA você precisa?'
+			/>
 		</>
 	);
 };

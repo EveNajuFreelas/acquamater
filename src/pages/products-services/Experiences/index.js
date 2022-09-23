@@ -20,6 +20,7 @@ import { Wrapper } from '../../styles';
 import BoxGray from '../../../components/BoxGray';
 import { colors } from '../../../theme/colors';
 import Photo from './Photo';
+import { Strip } from '../../../components/Strip';
 
 const Experiences = () => {
 	const firstList = [
@@ -268,6 +269,11 @@ const Experiences = () => {
 					</div>
 				</Wrapper>
 			</BoxGray>
+			<Strip
+				img='/experience-ball.png'
+				imgBG='/experience-bg-bola.png'
+				textBall='De que EXPERIÊNCIA você precisa?'
+			/>
 		</>
 	);
 };

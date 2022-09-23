@@ -14,6 +14,7 @@ import {
 } from './styles';
 import { Wrapper } from '../../styles';
 import BoxGray from '../../../components/BoxGray';
+import { Strip } from '../../../components/Strip';
 
 const Talk = () => {
 	const listAllThemesLeft = [
@@ -73,7 +74,7 @@ const Talk = () => {
 
 	return (
 		<>
-			<HeadPage image='/head-talk.png'>
+			<HeadPage image='/head-talk.png' noMargin>
 				<ContainerTextSingle maxWidth='lg'>
 					<Typography variant='subtitle1' sx={{ color: '#fff' }}>
 						Oferecemos uma série de Palestras ligadas ao Mundo
@@ -186,6 +187,11 @@ const Talk = () => {
 					</BoxGray>
 				</ContainerThemes>
 			</Wrapper>
+			<Strip
+				img='/talk-ball.png'
+				imgBG='/talk-bg-bola.png'
+				textBall='De que PALESTRA você precisa?'
+			/>
 		</>
 	);
 };

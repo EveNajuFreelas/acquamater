@@ -39,3 +39,24 @@ export const Link = styled.a`
 	text-decoration: underline;
 	margin-top: 20px;
 `;
+
+export const ContainerColumn2 = styled.div`
+	display: flex;
+	flex-direction: row-reverse;
+	gap: 60px;
+	margin: 120px 0px;
+	justify-content: space-between;
+
+	div {
+		width: 45%;
+	}
+`;
+
+export const WrapperContainer = styled.div`
+	position: relative;
+`;
+
+export const ContainerImage = styled.div`
+	position: absolute;
+	top: 70px;
+`;

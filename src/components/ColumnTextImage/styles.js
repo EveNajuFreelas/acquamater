@@ -9,6 +9,7 @@ export const ContainerColumn = styled.div`
 	align-items: center;
 	background-image: ${props => `url(${props.backgroundImage})`};
 	background-size: cover;
+	overflow: hidden;
 `;
 
 export const ImageColumn = styled.div`
