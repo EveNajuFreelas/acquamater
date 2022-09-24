@@ -36,7 +36,7 @@ const ProductsServices = () => {
 				<ContainerProduct>
 					<Wrapper>
 						<ColumnTextImage
-							image={{ isBg: false, img: '/acquamater/last-products.png' }}
+							image={{ isBg: false, img: '/acquamater/o-que-oferecemos-1.png' }}
 							title='Palestras'
 							pathName='/o-que-oferecemos/palestras'
 							buttons={[
@@ -59,7 +59,7 @@ const ProductsServices = () => {
 				<ContainerProduct>
 					<Wrapper>
 						<ColumnTextImage
-							image={{ isBg: false, img: '/acquamater/last-products.png' }}
+							image={{ isBg: false, img: '/acquamater/o-que-oferecemos-2.png' }}
 							title='Capacitação'
 							pathName='/o-que-oferecemos/capacitacao'
 							buttons={[
@@ -84,7 +84,7 @@ const ProductsServices = () => {
 				<ContainerProduct>
 					<Wrapper>
 						<ColumnTextImage
-							image={{ isBg: false, img: '/acquamater/last-products.png' }}
+							image={{ isBg: false, img: '/acquamater/o-que-oferecemos-3.png' }}
 							title='Consultorias'
 							pathName='/o-que-oferecemos/consultoria'
 							buttons={[

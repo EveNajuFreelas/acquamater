@@ -137,7 +137,7 @@ const Talk = () => {
 				</BoxGray>
 
 				<ColumnTextImage
-					image={{ isBg: false, img: '/acquamater/patricia-palestra.png' }}
+					image={{ isBg: false, img: '/acquamater/palestra-2.png' }}
 					title='Palestras Parceiro'
 					subtitle='(só atende no Brasil)'
 					reverse
