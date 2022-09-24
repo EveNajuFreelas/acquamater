@@ -29,7 +29,7 @@ const ColumnTextImage = ({
 	image,
 	title,
 	buttons,
-	reverse,
+	reverse = false,
 	invertedColors,
 	children,
 	subtitle,

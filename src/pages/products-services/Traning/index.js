@@ -1,4 +1,4 @@
-import { Typography } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 import ColumnTextImage from '../../../components/ColumnTextImage';
 import {
 	ContainerTextSingle,
@@ -9,9 +9,7 @@ import {
 import {
 	List,
 	Link,
-	ContainerColumn2,
-	ContainerImage,
-	WrapperContainer,
+	BlueBusinessHubContainer,
 } from './styles';
 import { Wrapper } from '../../styles';
 import BoxGray from '../../../components/BoxGray';
@@ -62,46 +60,37 @@ const Training = () => {
 					<Link>Conheça o Case do Projeto SOMOS ÁGUA</Link>
 				</ColumnTextImage>
 			</Wrapper>
-			<ColumnTextImage
-				image={{ isBg: true, img: '/acquamater/training-second-bg.png' }}
-				title=''
-				invertedColors
-				noDivision
-			>
-				<Wrapper>
-					<ContainerColumn2>
-						<WrapperContainer>
-							<ContainerImage>
-								<img src='/acquamater/training-second-image.png' alt="Training"></img>
-							</ContainerImage>
-						</WrapperContainer>
-						<div>
-							<Typography variant='h1' color='white'>
-								BLUE BUSINESS HUB
-							</Typography>
+			<BlueBusinessHubContainer>
+				<Grid container spacing={2}>
+					<Grid item md={5}>
+						<Typography variant='h1' color='white'>
+							BLUE BUSINESS HUB
+						</Typography>
+						<br />
+						<Typography variant="body3" color='white'>
+							São Webinars e Treinamentos (presenciais e
+							online) voltados, especificamente, ao público
+							corporativo, para promover transformações
+							socioambientais tendo como ponto de partida o
+							cuidado com o Mundo ÁGUA-OCEANO.
 							<br />
-							<Typography color='white'>
-								São Webinars e Treinamentos (presenciais e
-								online) voltados, especificamente, ao público
-								corporativo, para promover transformações
-								socioambientais tendo como ponto de partida o
-								cuidado com o Mundo ÁGUA-OCEANO.
-								<br />
-								<br />
-								Neste momento, a Acqua Mater está desenvolvendo
-								um treinamento de “Cultura Oceânica para o Setor
-								Privado” dentro do Programa OLWA (Ocean Literacy
-								With All) coordenado pela COI-UNESCO e endossado
-								pela Década da ONU da Ciência Oceânica para o
-								Desenvolvimento Sustentável.
-								<br />
-								<br />
-								<strong>Mais informações em breve!</strong>
-							</Typography>
-						</div>
-					</ContainerColumn2>
-				</Wrapper>
-			</ColumnTextImage>
+							<br />
+							Neste momento, a Acqua Mater está desenvolvendo
+							um treinamento de “Cultura Oceânica para o Setor
+							Privado” dentro do Programa OLWA (Ocean Literacy
+							With All) coordenado pela COI-UNESCO e endossado
+							pela Década da ONU da Ciência Oceânica para o
+							Desenvolvimento Sustentável.
+							<br />
+							<br />
+							<strong>Mais informações em breve!</strong>
+						</Typography>
+					</Grid>
+					<Grid item md={6} display="flex" alignItems="end" justifyContent="center">
+						<img src='/acquamater/training-second-image.png' alt="Training" width="90%" />
+					</Grid>
+				</Grid>
+			</BlueBusinessHubContainer>
 
 			<Wrapper style={{ marginTop: '50px' }}>
 				<ColumnTextImage

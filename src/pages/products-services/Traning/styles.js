@@ -1,4 +1,4 @@
-import { Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import styled from 'styled-components';
 import { colors } from '../../../theme/colors';
 
@@ -59,4 +59,11 @@ export const WrapperContainer = styled.div`
 export const ContainerImage = styled.div`
 	position: absolute;
 	top: 70px;
+`;
+
+export const BlueBusinessHubContainer = styled(Box)`
+	background-image: url('/acquamater/training-second-bg.png');
+	padding: 2% 10%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
 `;
