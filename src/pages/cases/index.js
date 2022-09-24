@@ -8,7 +8,7 @@ import { MundoContainer } from "./styles";
 export const Cases = () => {
 
     const baixarPDFCase = (place, caseIndex) => {
-        window.open(place === 'br' ? BrasilCases[caseIndex] : WorldCases[caseIndex]);
+        //window.open(place === 'br' ? BrasilCases[caseIndex] : WorldCases[caseIndex]);
     }
 
     return (<Box>

@@ -1,6 +1,7 @@
+import { Grid } from '@mui/material';
 import styled from 'styled-components';
 
-export const ContainerColumn = styled.div`
+export const ContainerColumn = styled((props) => <Grid container {...props}/>)`
 	display: flex;
 	gap: 60px;
 	flex-direction: ${props => props.reverse && 'row-reverse'};
@@ -12,7 +13,7 @@ export const ContainerColumn = styled.div`
 	overflow: hidden;
 `;
 
-export const ImageColumn = styled.div`
+export const ImageColumn = styled((props) => <Grid item md={5} {...props} />)`
 	margin-top: 15px;
 	width: ${props => (props.noDivision ? '0%' : '50%')};
 	img {
@@ -26,10 +27,9 @@ export const TitleContainer = styled.div`
 	margin-bottom: 20px;
 `;
 
-export const TextColumn = styled.div`
+export const TextColumn = styled((props) => <Grid item md={5} {...props} />)`
 	width: ${props => (props.noDivision ? '100%' : '50%')};
-	gap: 20px;
-	padding: ${props => props.paddingText && '7% 18%'};
+	padding: ${props => props.paddingText ? '7% 18%' : '0'};
 
 	@media (max-width: 1280px) {
 		padding-left: ${props => props.paddingText && '0 5%'};

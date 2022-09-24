@@ -6,7 +6,9 @@ import AddIcon from '@mui/icons-material/Add';
 export const PersonCard = ({ name, img, country, description, personClick, section, id }) => (
     <Box width="200px" height="400px" marginX="30px" key={id}>
         <img width="150px" src={img} alt={name} />
-        <Typography variant="h3" color={colors.blueLighter} height="50px">{name}</Typography>
+        <Box height="65px" display="flex" alignItems="center">
+            <Typography variant="h3" color={colors.blueLighter} width="80%" margin="auto">{name}</Typography>
+        </Box>
         <InfoDivider />
         {country && <Typography variant="body1bold">{country}</Typography>}
         <Typography height="150px" textOverflow="ellipsis" overflow="hidden">{description}</Typography>

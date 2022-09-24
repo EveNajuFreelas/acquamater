@@ -49,7 +49,7 @@ export const ParceirosContainer = styled.div`
 `;
 
 export const ParceiroImg = styled(({ src }) => (
-    <Grid item xs>
+    <Grid item md={1}>
         <img src={src} alt="parceiro" width="180px" height="180px" />
     </Grid>))``;
 

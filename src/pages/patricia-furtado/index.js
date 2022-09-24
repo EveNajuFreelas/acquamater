@@ -1,4 +1,4 @@
-import { Box, Button, Typography } from '@mui/material';
+import { Box, Button, Typography, Grid } from '@mui/material';
 import {
 	ContainerBio,
 	Head,
@@ -29,17 +29,21 @@ export const PatriciaFurtado = () => {
 		<Head />
 		<WrapperHead>
 			<ContainerHead>
-				<img src='/acquamater/patricia-first.png' alt="Patricia Furtado"></img>
-				<Text>
-					<Typography
-						variant='h2'
-						color={colors.primary}
-						fontWeight='bold'
-					>
-						Patricia Furtado de Mendonça
-					</Typography>
-					<Typography>Fundadora & CEO da Acqua Mater</Typography>
-				</Text>
+				<Grid item md={6}>
+					<img src='/acquamater/patricia-first.png' alt="Patricia Furtado" width="100%" height="100%" />
+				</Grid>
+				<Grid item md={6}>
+					<Text>
+						<Typography
+							variant='h2'
+							color={colors.primary}
+							fontWeight='bold'
+						>
+							Patricia Furtado de Mendonça
+						</Typography>
+						<Typography>Fundadora & CEO da Acqua Mater</Typography>
+					</Text>
+				</Grid>
 			</ContainerHead>
 		</WrapperHead>
 

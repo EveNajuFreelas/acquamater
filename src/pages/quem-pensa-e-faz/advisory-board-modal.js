@@ -9,8 +9,8 @@ export const AdvisoryBoardModal = ({modalContent, isOpen, onCloseFunction}) => {
         <Modal open={isOpen} onClose={onCloseFunction}>
             <ModalContainer>
                 <Grid container spacing={2} justifyContent="center">
-                    <Grid item md={4} >
-                        <img src={image} alt={name} width="200px" />
+                    <Grid item md={5} >
+                        <img src={`/acquamater${image}`} alt={name} width="100%" />
                     </Grid>
                     <Grid item md={6}>  
                         <Box display="flex" justifyContent="flex-end" width="100%" height="60px">

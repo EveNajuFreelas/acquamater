@@ -1,37 +1,20 @@
-import { useState } from 'react';
 import {
 	AppBar,
 	Box,
 	Container,
 	Toolbar,
-	Menu,
-	MenuItem,
-	Link,
 	useMediaQuery,
 } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import { navigation } from '../../utils/navigation';
+import { CustomMenuItem } from './menu-item';
 
 const Header = () => {
 	const navigate = useNavigate();
 	const isDesktop = useMediaQuery('(min-width:600px)', { noSsr: true });
 
-
-	const [activeFacet, setActiveFacet] = useState(null);
-	const [anchorMenu, setAnchorMenu] = useState(null);
-
 	const handleRedirect = url => {
 		navigate(url);
-	};
-
-	const handleHover = (event, element, isHovering = false) => {
-		if (isHovering) {
-			setActiveFacet(element.id);
-			setAnchorMenu(event.currentTarget);
-		} else {
-			setActiveFacet(null);
-			setAnchorMenu(null);
-		}
 	};
 
 	return (
@@ -45,53 +28,12 @@ const Header = () => {
 						justifyContent: 'center',
 					}}
 				>
-					<Box>
+					<Box onClick={() => { navigate('/') }}>
 						<img src='/acquamater/acquamater-logo.svg' alt='logo' />
 					</Box>
 
 					{isDesktop && navigation.map(nav => (
-						<>
-							<Link
-								variant='body1'
-								underline='none'
-								key={nav.id}
-								sx={{
-									px: 1,
-									textTransform: 'none',
-									cursor: 'pointer',
-								}}
-								onClick={() => handleRedirect(nav.url)}
-								onMouseEnter={e => handleHover(e, nav, true)}
-							>
-								<p>{nav.name}</p>
-							</Link>
-							{nav.subelements.length > 0 ? (
-								<Menu
-									key='menuDropdown'
-									open={activeFacet === nav.id}
-									anchorEl={anchorMenu}
-									MenuListProps={{
-										onMouseLeave: handleHover,
-									}}
-									sx={{
-										marginTop: '15px',
-										borderTopLeftRadius: 0,
-										borderTopRightRadius: 0,
-									}}
-								>
-									{nav.subelements.map(el => (
-										<MenuItem
-											key={el.id}
-											onClick={() =>
-												handleRedirect(el.url)
-											}
-										>
-											{el.name}
-										</MenuItem>
-									))}
-								</Menu>
-							) : null}
-						</>
+						<CustomMenuItem nav={nav} handleRedirect={handleRedirect}  />
 					))}
 				</Toolbar>
 			</Container>

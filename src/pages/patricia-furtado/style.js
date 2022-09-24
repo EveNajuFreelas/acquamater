@@ -1,4 +1,4 @@
-import { Container } from '@mui/material';
+import { Container, Grid } from '@mui/material';
 import styled from 'styled-components';
 
 export const Head = styled.div`
@@ -10,9 +10,13 @@ export const Head = styled.div`
 
 export const WrapperHead = styled.div`
 	height: 50vh;
+
+	@media(max-width: 1280px) {
+		height: 30vh;
+	}
 `;
 
-export const ContainerHead = styled.div`
+export const ContainerHead = styled((props) => <Grid container {...props} />)`
 	position: absolute;
 	top: 400px;
 	display: flex;
