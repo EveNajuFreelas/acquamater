@@ -5,6 +5,7 @@ import {
 	Container,
 	Drawer,
 	IconButton,
+	List,
 	Toolbar,
 	useMediaQuery,
 } from '@mui/material';
@@ -52,9 +53,14 @@ const Header = () => {
 							open={openDrawer}
 							onClose={handleDrawer}
 						>
-							{navigation.map((nav, index) =>
-								<CustomListItem key={index} nav={nav} />	
-							)}
+							<List>
+								{navigation.map((nav, index) =>
+									<CustomListItem key={index} nav={nav} handleNav={(prop) => {
+										handleRedirect(prop);
+										handleDrawer();
+									}} />	
+								)}
+							</List>
 						</Drawer>
 					</>)}
 

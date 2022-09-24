@@ -61,7 +61,6 @@ export const QuemSomos = () => (<Box overflow="hidden">
 
     <ColumnTextImage
         reverse
-        paddingText
         image={{ isBg: true, img: '/acquamater/quem-somos-crianca-agua-bg.png' }}
     >
         Todas as águas que circulam em nosso planeta estão conectadas. Isso acontece desde quando elas vieram do espaço e deram origem ao oceano primordial. Por sua vez, dele saíram as águas que hoje integram o ciclo natural hídrico, que continua promovendo o transporte das águas entre mar, céu e terra, sob suas variadas formas. Essas águas naturais também se conectam às águas que foram “domesticadas” pelo ser humano, por meio de variados serviços de tratamento, transporte e saneamento que viabilizam a vida urbana e a produção dos inúmeros bens materiais que consumimos.

@@ -29,10 +29,10 @@ export const TitleContainer = styled.div`
 
 export const TextColumn = styled((props) => <Grid item md={5} {...props} />)`
 	width: ${props => (props.noDivision ? '100%' : '50%')};
-	padding: ${props => props.paddingText ? '7% 18%' : '0'};
+	padding: 0;
 
 	@media (max-width: 1280px) {
-		padding-left: ${props => props.paddingText && '0 5%'};
+		padding-left: 0;
 	}
 `;
 

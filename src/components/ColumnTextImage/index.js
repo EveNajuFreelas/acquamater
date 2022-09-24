@@ -33,7 +33,6 @@ const ColumnTextImage = ({
 	invertedColors,
 	children,
 	subtitle,
-	paddingText = false,
 	noPadding,
 	textRight,
 	variant,
@@ -64,7 +63,6 @@ const ColumnTextImage = ({
 				{!isBg && <img src={img} alt='imagem' />}
 			</ImageColumn>
 			<TextColumn
-				paddingText={paddingText}
 				sx={{ paddingTop: '25em' }}
 				noDivision={noDivision}
 			>
@@ -92,13 +90,6 @@ const ColumnTextImage = ({
 				>
 					{children}
 				</Typography>
-				{extraImg && (
-					<img
-						src={extraImg}
-						alt='imagem'
-						style={{ marginTop: '15px', width: '350px' }}
-					/>
-				)}
 				<ButtonSection button>
 					{buttons?.map(({ title, url }, index) => (
 						<Button

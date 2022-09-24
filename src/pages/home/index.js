@@ -64,7 +64,7 @@ const Home = () => {
 				image={{ img: '/acquamater/o-que-oferecemos-bg.png', isBg: true }}
 				title='O que Oferecemos'
 				buttons={[{ title: 'Saiba Mais', url: '/o-que-oferecemos' }]}
-				paddingText
+				noDivision
 			>
 				Todos os Produtos da Acqua Mater são realizados tendo por eixo a
 				ÁGUA e O OCEANO e tem sinergia entre si, podendo se articular
@@ -86,7 +86,6 @@ const Home = () => {
 						url: '/parceiros',
 					},
 				]}
-				paddingText
 			>
 				Tudo começa com uma troca: ouvimos as necessidades de cada
 				cliente e, a partir daí, desenhamos e apresentamos a solução que
