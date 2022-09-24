@@ -30,7 +30,7 @@ const Footer = () => {
 			{navigation.map(
 				nav =>
 					nav.subelements.length > 0 && (
-						<Grid item md={2} key={nav.id}>
+						<Grid item xs={12} md={2} key={nav.id}>
 							<SectionTitle
 								onClick={() => handleClick(nav.url)}
 								key={nav.id}
@@ -49,7 +49,7 @@ const Footer = () => {
 					)
 			)}
 			<SectionDivider variant='middle' />
-			<Grid item xs={3}>
+			<Grid item md={3}>
 				<img src='/acquamater/acquamater-logo-white.svg' alt='logo' />
 			</Grid>
 			<Grid item md={3} sx={{ alignItems: 'center', display: 'flex' }}>

@@ -3,7 +3,15 @@ import { colors } from '../../theme/colors';
 
 export const Themes = styled.div`
 	background: ${props => (props.white ? '#fff' : colors.gray)};
-	padding: ${props => (props.dense ? '60px 90px' : '60px 120px')};
+	padding: ${({ dense, isDesktop }) => {
+		if(dense && isDesktop) {
+			return '60px 90px';
+		} else if (dense && !isDesktop) {
+			return 0;
+		} else {
+			return '60px 120px';
+		}
+		}};
 	display: flex;
 	flex-direction: column;
 	gap: 30px;

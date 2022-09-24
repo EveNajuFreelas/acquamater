@@ -33,8 +33,7 @@ export const Cases = () => {
                 {BrasilCases.map(({ image, project, client, where, when }, index) => (
                     <Grid 
                         item 
-                        xs={1} 
-                        sm={2} 
+                        xs={12}
                         md={4} 
                         borderBottom={`1px ${colors.blueLighter} solid`}
                         padding="10px"
@@ -58,8 +57,7 @@ export const Cases = () => {
                 {WorldCases.map(({ image, project, client, where, when }, index) => (
                     <Grid 
                         item 
-                        xs={1} 
-                        sm={2} 
+                        xs={12}
                         md={4} 
                         borderBottom={`1px ${colors.blueLighter} solid`}
                         padding="10px"

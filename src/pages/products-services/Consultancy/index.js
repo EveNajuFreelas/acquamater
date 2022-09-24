@@ -1,4 +1,4 @@
-import { Typography } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 import ColumnTextImage from '../../../components/ColumnTextImage';
 import {
 	ContainerTextSingle,
@@ -10,7 +10,6 @@ import {
 	ContainerList,
 	FirstColumn,
 	SecondColumn,
-	ContainerColumn2,
 	ListConsultancy,
 } from './styles';
 import { Wrapper } from '../../styles';
@@ -71,9 +70,11 @@ const Training = () => {
 				noDivision
 			>
 				<Wrapper>
-					<ContainerColumn2>
-						<img src='/acquamater/Consultancy-second.png' alt="Consultoria"></img>
-						<div>
+					<Grid container>
+						<Grid item md={5}>
+							<img src='/acquamater/Consultancy-second.png' alt="Consultoria" width="80%"></img>
+						</Grid>
+						<Grid item md={5}>
 							<Typography variant='h1' color='white'>
 								DE CURADORIA
 							</Typography>
@@ -94,8 +95,8 @@ const Training = () => {
 								<br />
 								Mais informações em breve!
 							</Typography>
-						</div>
-					</ContainerColumn2>
+						</Grid>
+					</Grid>
 				</Wrapper>
 			</ColumnTextImage>
 

@@ -3,33 +3,35 @@ import {
 	ContainerProducts,
 	HeadPage,
 	Description,
-	ContainerText,
 	ContainerProduct,
 } from './styles';
-import { Typography } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 import { Wrapper } from '../styles';
 
 const ProductsServices = () => {
 	return (
 		<>
 			<HeadPage image={'/acquamater/head-products.png'}>
-				<ContainerText maxWidth='lg'>
-					<Typography
-						variant='h1'
-						sx={{ color: '#fff', fontSize: '2.5rem' }}
-					>
-						O que oferecemos
-					</Typography>
-
-					<Description>
-						<Typography variant='subtitle1' sx={{ color: '#fff' }}>
-							Todos os Produtos da Acqua Mater são realizados
-							tendo por eixo a ÁGUA e o OCEANO e têm sinergia
-							entre si, podendo se articular dependendo das
-							necessidades do cliente
+				<Grid container>
+					<Grid item md={5}>
+						<Typography
+							variant='h1'
+							sx={{ color: '#fff', fontSize: '2.5rem' }}
+						>
+							O que oferecemos
 						</Typography>
-					</Description>
-				</ContainerText>
+					</Grid>
+					<Grid item md={7} display="flex" justifyContent="end">
+						<Description>
+							<Typography variant='subtitle1' sx={{ color: '#fff' }}>
+								Todos os Produtos da Acqua Mater são realizados
+								tendo por eixo a ÁGUA e o OCEANO e têm sinergia
+								entre si, podendo se articular dependendo das
+								necessidades do cliente
+							</Typography>
+						</Description>
+					</Grid>
+				</Grid>
 			</HeadPage>
 
 			<ContainerProducts>

@@ -31,7 +31,7 @@ export const ContainerTextSingle = styled(Container)`
 `;
 
 export const Description = styled.div`
-	max-width: 35%;
+	max-width: 45%;
 	text-align: end;
 `;
 
@@ -54,7 +54,7 @@ export const HeadPage = styled.div`
 	align-items: center;
 	justify-content: center;
 	background: url(${props => props.image});
-	background-size: 100% 100%;
+	background-size: auto 100%;
 	background-repeat: no-repeat;
 	height: 25em;
 	z-index: 10;

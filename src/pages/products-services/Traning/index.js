@@ -17,6 +17,7 @@ import { colors } from '../../../theme/colors';
 import { Strip } from '../../../components/Strip';
 
 const Training = () => {
+
 	const listThemes = [
 		'Permacultura',
 		'Agrofloresta',

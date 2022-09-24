@@ -34,7 +34,7 @@ const Talk = () => {
 		'Água, Oceano & Mulheres',
 		'Saúde da Água / Saúde do Oceano / Saúde Humana',
 		'Por que devemos nos (re)conectar ao Mundo Água-Oceano?',
-		'A Sabedoria da Água: veículo de autoconhecimento,autocuidado e transformação',
+		'A Sabedoria da Água: veículo de autoconhecimento, autocuidado e transformação',
 		'Um Oceano de Memórias: águas que nos atravessam e habitam.',
 	];
 
@@ -119,14 +119,14 @@ const Talk = () => {
 						dos temas sobre os quais Patricia pode falar:
 					</TitleThemesBox>
 					<Grid container spacing={6}>
-						<Grid item xs={6}>
+						<Grid item md={6}>
 							<List>
 								{listAllThemesLeft.map(item => (
 									<li>{item}</li>
 								))}
 							</List>
 						</Grid>
-						<Grid item xs={6}>
+						<Grid item md={6}>
 							<List>
 								{listAllThemesRight.map(item => (
 									<li>{item}</li>
@@ -137,7 +137,7 @@ const Talk = () => {
 				</BoxGray>
 
 				<ColumnTextImage
-					image={{ isBg: false, img: '/acquamater/palestra-2.png' }}
+					image={{ isBg: false, img: '/acquamater/palestras-2.png' }}
 					title='Palestras Parceiro'
 					subtitle='(só atende no Brasil)'
 					reverse
@@ -165,26 +165,33 @@ const Talk = () => {
 				</div>
 
 				<ContainerThemes>
-					<BoxGray dense>
-						<TitleThemesBlue variant='h2'>
-							Macrotemas
-						</TitleThemesBlue>
-						<List>
-							{listMacroThemesLeft.map(item => (
-								<li>{item}</li>
-							))}
-						</List>
-					</BoxGray>
-					<BoxGray dense waterMark>
-						<TitleThemesBlue variant='h2'>
-							Macrotemas
-						</TitleThemesBlue>
-						<List>
-							{listMacroThemesRight.map(item => (
-								<li>{item}</li>
-							))}
-						</List>
-					</BoxGray>
+					<Grid container>
+						<Grid item md={6}>
+							<BoxGray dense>
+								<TitleThemesBlue variant='h2'>
+									Macrotemas
+								</TitleThemesBlue>
+								<List>
+									{listMacroThemesLeft.map(item => (
+										<li>{item}</li>
+									))}
+								</List>
+							</BoxGray>
+						</Grid>
+						
+						<Grid item md={6}>
+							<BoxGray dense waterMark>
+								<TitleThemesBlue variant='h2'>
+									Macrotemas
+								</TitleThemesBlue>
+								<List>
+									{listMacroThemesRight.map(item => (
+										<li>{item}</li>
+									))}
+								</List>
+							</BoxGray>
+						</Grid>
+					</Grid>
 				</ContainerThemes>
 			</Wrapper>
 			<Strip
