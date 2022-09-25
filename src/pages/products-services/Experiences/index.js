@@ -57,12 +57,15 @@ const Experiences = () => {
 					</Typography>
 				</ContainerTextSingle>
 			</HeadPage>
-			<ContainerTitle color='#00B2BE'>
+			<ContainerTitle image='/experience_wave.png'>
 				<Title maxWidth='lg'>Experiências</Title>
 			</ContainerTitle>
 			<Wrapper>
 				<ColumnTextImage
-					image={{ isBg: false, img: '/acquamater/experience-first.png' }}
+					image={{
+						isBg: false,
+						img: '/acquamater/experience-first.png',
+					}}
 					title='worshops'
 				>
 					São vivências que acontecem dentro de piscinas aquecidas ou
@@ -112,7 +115,7 @@ const Experiences = () => {
 									fontWeight: 'bold',
 									color: colors.primary,
 								}}
-								href="/cases"
+								href='/cases'
 							>
 								Clique aqui{' '}
 							</a>{' '}
@@ -217,7 +220,10 @@ const Experiences = () => {
 			<BoxGray waterMark>
 				<Wrapper>
 					<ColumnTextImage
-						image={{ isBg: false, img: '/acquamater/experience-first.png' }}
+						image={{
+							isBg: false,
+							img: '/acquamater/experience-first.png',
+						}}
 						title='ARTES & ENTRETENIMENTO'
 						noPadding
 					>

@@ -46,12 +46,15 @@ const Training = () => {
 					</Typography>
 				</ContainerTextSingle>
 			</HeadPage>
-			<ContainerTitle color='#037D92'>
+			<ContainerTitle image='/consultancy_wave.png'>
 				<Title maxWidth='lg'>Consultoria</Title>
 			</ContainerTitle>
 			<Wrapper>
 				<ColumnTextImage
-					image={{ isBg: false, img: '/acquamater/Consultancy-first.png' }}
+					image={{
+						isBg: false,
+						img: '/acquamater/Consultancy-first.png',
+					}}
 					title='de conteúdo'
 					reverse
 				>
@@ -64,7 +67,10 @@ const Training = () => {
 			</Wrapper>
 
 			<ColumnTextImage
-				image={{ isBg: true, img: '/acquamater/Consultancy-second-bg.png' }}
+				image={{
+					isBg: true,
+					img: '/acquamater/Consultancy-second-bg.png',
+				}}
 				title=''
 				invertedColors
 				noDivision
@@ -72,7 +78,11 @@ const Training = () => {
 				<Wrapper>
 					<Grid container>
 						<Grid item md={5}>
-							<img src='/acquamater/Consultancy-second.png' alt="Consultoria" width="80%"></img>
+							<img
+								src='/acquamater/Consultancy-second.png'
+								alt='Consultoria'
+								width='80%'
+							></img>
 						</Grid>
 						<Grid item md={5}>
 							<Typography variant='h1' color='white'>
@@ -102,7 +112,10 @@ const Training = () => {
 
 			<Wrapper style={{ marginTop: '50px' }}>
 				<ColumnTextImage
-					image={{ isBg: false, img: '/acquamater/Consultancy-third.png' }}
+					image={{
+						isBg: false,
+						img: '/acquamater/Consultancy-third.png',
+					}}
 					title='de soluções integradas'
 					reverse
 					noPadding
