@@ -50,6 +50,10 @@ export const Column = styled.div`
 	grid-template-columns: 1fr 1fr;
 	gap: 60px;
 	margin: 50px 0px 200px;
+
+	@media (max-width: 768px) {
+		grid-template-columns: 1fr;
+	}
 `;
 
 export const ListConsultancy = styled.ul`
@@ -76,21 +80,43 @@ export const ContainerList = styled.div`
 export const ContainerColumns = styled.div`
 	display: grid;
 	grid-template-columns: 1fr 3.5fr;
+
+	@media (max-width: 768px) {
+		grid-template-columns: 1fr;
+		text-align: center;
+	}
 `;
 
 export const FirstColumn = styled.div`
-	padding-right: 20px;
+	border-right: 1px solid ${colors.blueLighter};
 	text-align: right;
+
+	@media (max-width: 768px) {
+		padding-right: 0;
+		text-align: left;
+		margin-bottom: 40px;
+	}
 `;
 
 export const SecondColumn = styled.div`
 	padding-left: 32px;
-	border-left: 1px solid ${colors.blueLighter};
+
+	img {
+		width: 250px;
+	}
 `;
 
 export const ColumnPhotos = styled.div`
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	column-gap: 30px;
+	gap: 30px;
 	margin-bottom: 45px;
+
+	@media (max-width: 768px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@media (max-width: 540px) {
+		grid-template-columns: repeat(1, 1fr);
+	}
 `;

@@ -39,6 +39,10 @@ const ColumnTextImage = ({
 	upperCase,
 	extraImg,
 	noDivision,
+	personalize,
+	personalizeReverse,
+	subfooter,
+	lowercase,
 }) => {
 	const { isBg, img } = image;
 	const navigate = useNavigate();
@@ -58,17 +62,27 @@ const ColumnTextImage = ({
 			backgroundImage={isBg && img}
 			reverse={reverse}
 			noPadding={noPadding}
+			personalize={personalize}
 		>
-			<ImageColumn noDivision={noDivision}>
+			<ImageColumn noDivision={noDivision} subfooter={subfooter}>
 				{!isBg && <img src={img} alt='imagem' />}
 			</ImageColumn>
-			<TextColumn sx={{ paddingTop: '25em' }} noDivision={noDivision}>
+			<TextColumn
+				sx={{ paddingTop: '25em' }}
+				noDivision={noDivision}
+				personalize={personalize}
+				personalizeReverse={personalizeReverse}
+			>
 				<TitleContainer>
 					{title && (
 						<Typography
-							variant='h1'
+							variant={lowercase ? 'h3' : 'h1'}
 							color={invertedColors ? 'white' : 'primary'}
-							style={{ textTransform: 'uppercase' }}
+							style={{
+								textTransform: lowercase
+									? 'capitalize'
+									: 'uppercase',
+							}}
 						>
 							{title}
 						</Typography>

@@ -7,21 +7,25 @@ export const ContainerColumn = styled.div`
 	justify-content: space-between;
 	padding: ${props => (props.noPadding ? '0px' : '50px 0')};
 	align-items: center;
-	background-image: ${props => `url(${props.backgroundImage})`};
-	background-size: cover;
+	background-image: url(${props => props.backgroundImage});
+	background-size: 100% 100%;
 	overflow: hidden;
 
 	@media (max-width: 768px) {
 		flex-direction: column;
-	}
+	} ;
 `;
 
 export const ImageColumn = styled.div`
 	margin-top: 15px;
 	width: ${props => (props.noDivision ? '0%' : '50%')};
+	height: auto;
+	display: ${props => props.subfooter && 'flex'};
+	justify-content: ${props => props.subfooter && 'flex-end'};
 
 	img {
 		width: ${props => (props.noDivision ? '0%' : '100%')};
+		width: ${props => props.subfooter && '50%'};
 	}
 
 	@media (max-width: 768px) {
@@ -38,9 +42,11 @@ export const TitleContainer = styled.div`
 export const TextColumn = styled.div`
 	width: ${props => (props.noDivision ? '100%' : '50%')};
 	padding: 0;
+	padding-left: ${props => props.personalize && '300px'};
+	padding-right: ${props => props.personalizeReverse && '300px'};
 
 	@media (max-width: 1280px) {
-		padding-left: 0;
+		padding-left: ${props => props.personalize && '30px'};
 	}
 
 	@media (max-width: 768px) {

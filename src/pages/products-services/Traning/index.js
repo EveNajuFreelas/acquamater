@@ -60,49 +60,51 @@ const Training = () => {
 				</ColumnTextImage>
 			</Wrapper>
 			<BlueBusinessHubContainer>
-				<Grid
-					container
-					justifyContent='space-between'
-					alignItems='center'
-				>
-					<Grid item md={5}>
-						<Typography variant='h1' color='white'>
-							BLUE BUSINESS HUB
-						</Typography>
-						<br />
-						<Typography variant='body3' color='white'>
-							São Webinars e Treinamentos (presenciais e online)
-							voltados, especificamente, ao público corporativo,
-							para promover transformações socioambientais tendo
-							como ponto de partida o cuidado com o Mundo
-							ÁGUA-OCEANO.
-							<br />
-							<br />
-							Neste momento, a Acqua Mater está desenvolvendo um
-							treinamento de “Cultura Oceânica para o Setor
-							Privado” dentro do Programa OLWA (Ocean Literacy
-							With All) coordenado pela COI-UNESCO e endossado
-							pela Década da ONU da Ciência Oceânica para o
-							Desenvolvimento Sustentável.
-							<br />
-							<br />
-							<strong>Mais informações em breve!</strong>
-						</Typography>
-					</Grid>
+				<Wrapper>
 					<Grid
-						item
-						md={6}
-						display='flex'
-						alignItems='end'
-						justifyContent='center'
+						container
+						justifyContent='space-between'
+						alignItems='center'
 					>
-						<img
-							src='/acquamater/training-second-image.png'
-							alt='Training'
-							width='90%'
-						/>
+						<Grid item md={5}>
+							<Typography variant='h1' color='white'>
+								BLUE BUSINESS HUB
+							</Typography>
+							<br />
+							<Typography variant='body3' color='white'>
+								São Webinars e Treinamentos (presenciais e
+								online) voltados, especificamente, ao público
+								corporativo, para promover transformações
+								socioambientais tendo como ponto de partida o
+								cuidado com o Mundo ÁGUA-OCEANO.
+								<br />
+								<br />
+								Neste momento, a Acqua Mater está desenvolvendo
+								um treinamento de “Cultura Oceânica para o Setor
+								Privado” dentro do Programa OLWA (Ocean Literacy
+								With All) coordenado pela COI-UNESCO e endossado
+								pela Década da ONU da Ciência Oceânica para o
+								Desenvolvimento Sustentável.
+								<br />
+								<br />
+								<strong>Mais informações em breve!</strong>
+							</Typography>
+						</Grid>
+						<Grid
+							item
+							md={6}
+							display='flex'
+							alignItems='end'
+							justifyContent='center'
+						>
+							<img
+								src='/acquamater/training-second-image.png'
+								alt='Training'
+								width='90%'
+							/>
+						</Grid>
 					</Grid>
-				</Grid>
+				</Wrapper>
 			</BlueBusinessHubContainer>
 
 			<Wrapper style={{ marginTop: '50px' }}>

@@ -20,10 +20,11 @@ export const Themes = styled.div`
 	position: relative;
 	overflow: hidden;
 	height: 70%;
+	text-align: ${props => props.center && 'center'};
 
 	@media (max-width: 768px) {
 		height: auto;
-		padding: 65px;
+		padding: 30px;
 	}
 
 	@media (max-width: 540px) {

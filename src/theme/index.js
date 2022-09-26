@@ -11,7 +11,7 @@ let theme = createTheme({
 		action: { main: '#FF0000' },
 		title: { main: '#A5D513' },
 		text: { main: '#44494A' },
-		chip : { main: colors.gray, contrastText: colors.primary },
+		chip: { main: colors.gray, contrastText: colors.primary },
 	},
 	typography: {
 		fontFamily: 'Museo',
@@ -65,6 +65,7 @@ theme = createTheme(theme, {
 						fontSize: '18px',
 						fontWeight: 'bold',
 						padding: '10px 25px',
+						letterSpacing: '1.5px',
 					},
 				},
 			],
@@ -77,6 +78,7 @@ theme = createTheme(theme, {
 					'whiteSpace': 'nowrap',
 					'&:hover': {
 						backgroundColor: colors.blueLighter,
+						color: '#fff',
 					},
 				},
 			},

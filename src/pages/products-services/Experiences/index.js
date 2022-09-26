@@ -60,6 +60,7 @@ const Experiences = () => {
 			<ContainerTitle image='experience-wave.png'>
 				<Title maxWidth='lg'>Experiências</Title>
 			</ContainerTitle>
+
 			<Wrapper>
 				<ColumnTextImage
 					image={{
@@ -82,6 +83,7 @@ const Experiences = () => {
 					Cuidado.
 				</ColumnTextImage>
 			</Wrapper>
+
 			<Wrapper>
 				<div style={{ width: '100%', margin: '50px 0px' }}>
 					<BoxGray dense>
@@ -91,6 +93,7 @@ const Experiences = () => {
 									color={colors.blueLighter}
 									fontWeight='bold'
 									lineHeight='2'
+									style={{ paddingRight: '20px' }}
 								>
 									As práticas são adaptadas segundo às
 									necessidades de cada público:
@@ -125,6 +128,7 @@ const Experiences = () => {
 					</BoxGray>
 				</div>
 			</Wrapper>
+
 			<ColumnTextImage
 				image={{ isBg: true, img: '/acquamater/experience-second.png' }}
 				title=''
@@ -188,6 +192,7 @@ const Experiences = () => {
 								color={colors.blueLighter}
 								fontWeight='bold'
 								lineHeight='2'
+								style={{ paddingRight: '20px' }}
 							>
 								Para 2023, em parceria com a Let Viagens de
 								Experiência, estão sendo organizadas Expedições
@@ -251,6 +256,7 @@ const Experiences = () => {
 										color={colors.blueLighter}
 										fontWeight='bold'
 										lineHeight='2'
+										style={{ paddingRight: '20px' }}
 									>
 										O QUE ORGANIZAMOS
 									</Typography>
