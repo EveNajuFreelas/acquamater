@@ -43,15 +43,15 @@ const ColumnTextImage = ({
 	const { isBg, img } = image;
 	const navigate = useNavigate();
 
-	const handleNavigate = (url) => {
+	const handleNavigate = url => {
 		const regex = /[(http)(https)]:\/\//;
 
-		if(regex.test(url)) {
+		if (regex.test(url)) {
 			window.open(url);
 		} else {
-			navigate(url);	
+			navigate(url);
 		}
-	}
+	};
 
 	return (
 		<ContainerColumn
@@ -62,10 +62,7 @@ const ColumnTextImage = ({
 			<ImageColumn noDivision={noDivision}>
 				{!isBg && <img src={img} alt='imagem' />}
 			</ImageColumn>
-			<TextColumn
-				sx={{ paddingTop: '25em' }}
-				noDivision={noDivision}
-			>
+			<TextColumn sx={{ paddingTop: '25em' }} noDivision={noDivision}>
 				<TitleContainer>
 					{title && (
 						<Typography

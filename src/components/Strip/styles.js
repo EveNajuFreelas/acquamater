@@ -28,6 +28,11 @@ export const StripImg = styled.div`
 export const Text = styled.div`
 	padding-left: 300px;
 	text-align: end;
+	width: 50%;
+
+	@media (max-width: 768px) {
+		padding-left: 300px;
+	}
 `;
 
 export const TextImg = styled(Typography)`

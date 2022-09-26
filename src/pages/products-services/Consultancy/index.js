@@ -46,7 +46,7 @@ const Training = () => {
 					</Typography>
 				</ContainerTextSingle>
 			</HeadPage>
-			<ContainerTitle image='/consultancy_wave.png'>
+			<ContainerTitle image='consultancy-wave.png'>
 				<Title maxWidth='lg'>Consultoria</Title>
 			</ContainerTitle>
 			<Wrapper>

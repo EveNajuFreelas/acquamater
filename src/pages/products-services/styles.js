@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const ContainerTitle = styled.div`
 	display: flex;
-	background: ${props => props.color};
+	background: no-repeat url(${props => props.image});
 	margin-bottom: 24px;
 `;
 
@@ -13,6 +13,9 @@ export const Title = styled(Container)`
 	color: #fff;
 	font-size: 56px;
 	margin-bottom: 24px;
+	@media (max-width: 768px) {
+		justify-content: center;
+	}
 `;
 
 export const ContainerText = styled(Container)`
@@ -54,7 +57,7 @@ export const HeadPage = styled.div`
 	align-items: center;
 	justify-content: center;
 	background: url(${props => props.image});
-	background-size: auto 100%;
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	height: 25em;
 	z-index: 10;

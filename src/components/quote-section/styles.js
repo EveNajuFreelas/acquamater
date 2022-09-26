@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const BackgroundBox = styled(Box)`
 	background-image: url(${props => props.backgroundImg});
-	background-size: auto 100%;
+	background-size: 100% 100%;
 	padding: 50px 20%;
 	min-height: 310px;
 	display: flex;

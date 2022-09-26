@@ -57,7 +57,7 @@ const Experiences = () => {
 					</Typography>
 				</ContainerTextSingle>
 			</HeadPage>
-			<ContainerTitle image='/experience_wave.png'>
+			<ContainerTitle image='experience-wave.png'>
 				<Title maxWidth='lg'>Experiências</Title>
 			</ContainerTitle>
 			<Wrapper>

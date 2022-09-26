@@ -63,7 +63,7 @@ export const ContainerImage = styled.div`
 
 export const BlueBusinessHubContainer = styled(Box)`
 	background-image: url('/acquamater/training-second-bg.png');
-	padding: 2% 10%;
+	padding: 10% 10%;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 `;
