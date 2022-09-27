@@ -1,11 +1,29 @@
+import { Button, Divider, Modal, Typography } from '@mui/material';
+import { useState } from 'react';
 import ColumnTextImage from '../../components/ColumnTextImage';
 import { QuoteSection } from '../../components/quote-section';
+import { ModalContainer } from '../quem-pensa-e-faz/styles';
 import { Wrapper } from '../styles';
 import { ContainerSection, ImgContainer } from './styles';
 
 const Home = () => {
+	const [openModal, setOpenModal] = useState(false);
+
+	const handleModal = () => {
+		setOpenModal(curr => !curr);
+	}
+
 	return (
 		<>
+			<Modal open={openModal} onClose={handleModal}>
+            	<ModalContainer justifyContent="center" overflow="hidden">
+					<Typography variant="h3">
+					"Estamos extremamente orgulhosos de continuar tendo Patricia Furtado De Mendonça desempenhando um papel ativo no projeto SEA BEYOND, o programa educacional desenvolvido pelo Grupo Prada em colaboração com a COI-UNESCO, para difundir os princípios da Cultura Oceânica em todo o mundo. Sua paixão pela educação e sua empatia são uma verdadeira fonte de inspiração. A água é seu elemento nativo e sua profunda ligação com o Mar é verdadeira e pura poesia!"
+					</Typography>
+					<Divider variant="middle" width="100%" borderColor="black" sx={{ marginY: '40px'}} />
+					<Typography variant="body3">Equipe de Comunicação Corporativa do Grupo Prada</Typography>
+				</ModalContainer>
+			</Modal>
 			<ImgContainer
 				src='/acquamater/home-intro.png'
 				alt='Acqua Mater introdução'
@@ -66,7 +84,9 @@ const Home = () => {
 				author='EQUIPE DE COMUNICAÇÃO CORPORATIVA DO GRUPO PRADA/ITÁLIA'
 				authorLogo='/acquamater/prada-logo.png'
 				textStyle='body1bold'
-			/>
+			>
+				<Button onClick={handleModal} sx={{ marginBottom: '20px' }}>Ler mais</Button>
+			</QuoteSection>
 
 			<ColumnTextImage
 				reverse

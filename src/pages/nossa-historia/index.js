@@ -4,8 +4,24 @@ import BoxGray from '../../components/BoxGray';
 import { colors } from '../../theme/colors';
 import { PersonQuoteCard } from '../../components/person-quote-card';
 import { Wrapper } from '../styles';
+import { useState } from 'react';
 
 export const NossaHistoria = () => {
+	const fullDawnText = "'Os projetos da Acqua Mater produzem um resultado extremamente potente e raro por fazerem convergir o olhar humano, técnico e artístico sobre a água. A parceria entre a Acqua Mater e a Waterlution começou em 2018, e todas as vivências que coproduzimos (Palestras, Mentorias, Facilitações na Água) foram de alta qualidade e de efeito transformador para os participantes, ressoando em todos ainda hoje. Que nossa parceria continue por muitos anos ainda!'";
+
+	const smallDawnText = "'Os projetos da Acqua Mater produzem um resultado extremamente potente e raro por fazerem convergir o olhar humano, técnico e artístico sobre a água.'";
+
+	const [text, setText] = useState(smallDawnText);
+
+	const expandText = () => {
+		setText(curr => {
+			if(curr === fullDawnText) {
+				return smallDawnText;
+			} else {
+				return fullDawnText;
+			}
+		});
+	}
 	return (
 		<Box>
 			<Head
@@ -97,15 +113,15 @@ export const NossaHistoria = () => {
 				</Box>
 				<Box display='flex' alignItems='center' justifyContent='center'>
 					<PersonQuoteCard
-						quote='"Os projetos da Acqua Mater produzem um resultado extremamente potente e raro por fazerem convergir o olhar humano, técnico e artístico sobre a água."'
+						quote={text}
 						personImg='/acquamater/quem-pensa-faz/people/dawn-fleming.png'
 						name='Dawn Fleming'
-						extraContent={
-							<Typography variant='body1'>
-								Canadá / Brasil
-							</Typography>
-						}
+						extraContent={<Typography variant='body1'>
+									Canadá / Brasil
+								</Typography>}
 						description='Diretora do Water Innovation Lab Brasil / WIL BRASIL'
+						seeMoreButton={expandText}
+						isTextExpanded={text === fullDawnText}
 					/>
 					<PersonQuoteCard
 						quote='"Patrícia Furtado é uma inspiração e uma Empoderadora Mulher Global, porque suas ações inspiram outras pessoas a sonhar mais, aprender mais, fazer mais e se tornar mais. Ela é uma verdadeira líder!"'

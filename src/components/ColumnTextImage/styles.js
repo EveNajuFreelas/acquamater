@@ -10,6 +10,9 @@ export const ContainerColumn = styled.div`
 	background-image: url(${props => props.backgroundImage});
 	background-size: 100% 100%;
 	overflow: hidden;
+	
+    width: 100%;
+    height: 100%;
 
 	@media (max-width: 768px) {
 		flex-direction: column;

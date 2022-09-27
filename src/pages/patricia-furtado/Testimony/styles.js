@@ -7,6 +7,7 @@ export const ContainerTestimony = styled.div`
 	width: 350px;
 	text-align: center;
 	justify-content: space-between;
+	min-height: fit-content;
 `;
 
 export const Text = styled.div`

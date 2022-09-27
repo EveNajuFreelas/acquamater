@@ -9,10 +9,10 @@ export const Head = styled.div`
 `;
 
 export const WrapperHead = styled.div`
-	height: 50vh;
+	height: 30vw;
 
-	@media(max-width: 1280px) {
-		height: 30vh;
+	@media(max-width: 880px) {
+		height: 50vw;
 	}
 `;
 
@@ -20,11 +20,12 @@ export const ContainerHead = styled((props) => <Grid container {...props} />)`
 	position: absolute;
 	top: 400px;
 	display: flex;
+	height: auto;
 	img {
 		margin-left: 10vw;
 	}
 
-	@media (max-width: 1280px) {
+	@media (max-width: 880px) {
 		img {
 			margin-left: 0;
 		}
@@ -38,9 +39,18 @@ export const Text = styled.div`
 	width: 100%;
 	height: 500px;
 	margin-left: 50px;
+
+	@media (max-width: 880px) {
+		height: auto;
+		margin-left: 0;
+	}
 `;
 
-export const ContainerBio = styled(Container)``;
+export const ContainerBio = styled(Container)`
+	@media (max-width: 880px) {
+		margin-top: 10vw;
+	}
+`;
 export const WrapperSecond = styled.div`
 	display: flex;
 	gap: 20px;
@@ -48,11 +58,10 @@ export const WrapperSecond = styled.div`
 	margin-top: 20px;
 `;
 
-export const WrapperTestimony = styled.div`
+export const WrapperTestimony = styled((props) => (<Grid container spacing={2} {...props} />))`
 	margin-top: 50px;
 	justify-content: center;
 	display: flex;
-	gap: 60px;
 `;
 
 export const VideoSection = styled.div`
@@ -69,6 +78,10 @@ export const Videos = styled(Container)`
 	grid-template-columns: repeat(3, 350px);
 	gap: 50px;
 	justify-content: center;
+
+	@media (max-width: 880px) {
+		grid-template-columns: repeat(1, 350px);
+	}
 `;
 
 export const PodcastSection = styled(Container)`
@@ -99,6 +112,10 @@ export const Performers = styled(Container)`
 	gap: 20px;
 
 	img {
-		height: 350px;
+		min-height: 350px;
+	}
+
+	@media (max-width: 880px) {
+		flex-direction: column;
 	}
 `;
