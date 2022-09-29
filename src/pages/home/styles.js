@@ -1,7 +1,13 @@
 import styled from 'styled-components';
 
-const ImgContainer = styled.img`
+export const ImgContainer = styled.img`
 	width: 100%;
 `;
 
-export { ImgContainer };
+export const ContainerSection = styled.div`
+	padding-left: 300px;
+
+	@media (max-width: 1280px) {
+		padding-left: 30px;
+	}
+`;

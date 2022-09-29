@@ -6,18 +6,13 @@ import {
 	HeadPage,
 	Title,
 } from '../styles';
-import {
-	List,
-	Link,
-	BlueBusinessHubContainer,
-} from './styles';
+import { List, Link, BlueBusinessHubContainer } from './styles';
 import { Wrapper } from '../../styles';
 import BoxGray from '../../../components/BoxGray';
 import { colors } from '../../../theme/colors';
 import { Strip } from '../../../components/Strip';
 
 const Training = () => {
-
 	const listThemes = [
 		'Permacultura',
 		'Agrofloresta',
@@ -43,12 +38,15 @@ const Training = () => {
 					</Typography>
 				</ContainerTextSingle>
 			</HeadPage>
-			<ContainerTitle color='#005980'>
+			<ContainerTitle image='training-wave.png'>
 				<Title maxWidth='lg'>Capacitação</Title>
 			</ContainerTitle>
 			<Wrapper>
 				<ColumnTextImage
-					image={{ isBg: false, img: '/acquamater/training-first.png' }}
+					image={{
+						isBg: false,
+						img: '/acquamater/training-first.png',
+					}}
 					title='ESCOLA NÔMADE DA ÁGUA'
 				>
 					São projetos de Educação Ambiental que promovem “Uma Nova
@@ -62,40 +60,59 @@ const Training = () => {
 				</ColumnTextImage>
 			</Wrapper>
 			<BlueBusinessHubContainer>
-				<Grid container spacing={2}>
-					<Grid item md={5}>
-						<Typography variant='h1' color='white'>
-							BLUE BUSINESS HUB
-						</Typography>
-						<br />
-						<Typography variant="body3" color='white'>
-							São Webinars e Treinamentos (presenciais e
-							online) voltados, especificamente, ao público
-							corporativo, para promover transformações
-							socioambientais tendo como ponto de partida o
-							cuidado com o Mundo ÁGUA-OCEANO.
+				<Wrapper>
+					<Grid
+						container
+						justifyContent='space-between'
+						alignItems='center'
+					>
+						<Grid item md={5}>
+							<Typography variant='h1' color='white'>
+								BLUE BUSINESS HUB
+							</Typography>
 							<br />
-							<br />
-							Neste momento, a Acqua Mater está desenvolvendo
-							um treinamento de “Cultura Oceânica para o Setor
-							Privado” dentro do Programa OLWA (Ocean Literacy
-							With All) coordenado pela COI-UNESCO e endossado
-							pela Década da ONU da Ciência Oceânica para o
-							Desenvolvimento Sustentável.
-							<br />
-							<br />
-							<strong>Mais informações em breve!</strong>
-						</Typography>
+							<Typography variant='body3' color='white'>
+								São Webinars e Treinamentos (presenciais e
+								online) voltados, especificamente, ao público
+								corporativo, para promover transformações
+								socioambientais tendo como ponto de partida o
+								cuidado com o Mundo ÁGUA-OCEANO.
+								<br />
+								<br />
+								Neste momento, a Acqua Mater está desenvolvendo
+								um treinamento de “Cultura Oceânica para o Setor
+								Privado” dentro do Programa OLWA (Ocean Literacy
+								With All) coordenado pela COI-UNESCO e endossado
+								pela Década da ONU da Ciência Oceânica para o
+								Desenvolvimento Sustentável.
+								<br />
+								<br />
+								<strong>Mais informações em breve!</strong>
+							</Typography>
+						</Grid>
+						<Grid
+							item
+							md={6}
+							display='flex'
+							alignItems='end'
+							justifyContent='center'
+						>
+							<img
+								src='/acquamater/training-second-image.png'
+								alt='Training'
+								width='90%'
+							/>
+						</Grid>
 					</Grid>
-					<Grid item md={6} display="flex" alignItems="end" justifyContent="center">
-						<img src='/acquamater/training-second-image.png' alt="Training" width="90%" />
-					</Grid>
-				</Grid>
+				</Wrapper>
 			</BlueBusinessHubContainer>
 
 			<Wrapper style={{ marginTop: '50px' }}>
 				<ColumnTextImage
-					image={{ isBg: false, img: '/acquamater/training-third.png' }}
+					image={{
+						isBg: false,
+						img: '/acquamater/training-third.png',
+					}}
 					title='OCTOPUS'
 				>
 					São diversos Workshops, Treinamentos e Cursos (presenciais e
@@ -119,7 +136,10 @@ const Training = () => {
 				<div style={{ width: '100%' }}>
 					<BoxGray dense waterMark>
 						<ColumnTextImage
-							image={{ isBg: false, img: '/acquamater/training-last.png' }}
+							image={{
+								isBg: false,
+								img: '/acquamater/training-last.png',
+							}}
 							noPadding
 							textRight
 							reverse

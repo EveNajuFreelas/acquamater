@@ -1,4 +1,4 @@
-import { Box, Button, Typography, Grid } from '@mui/material';
+import { Box, Button, Typography, Grid, Modal, Divider } from '@mui/material';
 import {
 	ContainerBio,
 	Head,
@@ -18,8 +18,34 @@ import { colors } from '../../theme/colors';
 import { Testimony } from './Testimony';
 import { Video } from './Video';
 import { Podcast } from './Podcast';
+import { useState } from 'react';
+import { ModalContainer } from '../quem-pensa-e-faz/styles';
+import { Add } from '@mui/icons-material';
 
 export const PatriciaFurtado = () => {
+	const fullMarceloText = <>Trabalhei com Patricia na Ampla (atual Enel Distribuição, Rio de Janeiro) em diversos projetos de transformação cultural. Sua contribuição foi muito significativa: por sua diversidade, pela intensidade e pela paixão que colocava em tudo o que fazia. Ela se envolvia 100% em todos os projetos, emocionalmente e profissionalmente. Sempre trouxe um ponto de vista diferente que, sem dúvida, ajudou na transformação da nossa empresa. <br/> Fico feliz em ver que hoje ela está liderando sua própria organização, Aqua Mater, e estou convencido de que seu trabalho terá um grande impacto. <br/> Cuidar da forma como nos relacionamos com a água é muito importante, devido ao momento crítico que nossa civilização vive. Enfrentamos uma crise ambiental que foi gerada por nós mesmos! <br/> Acho que se a água tivesse que escolher um porta-voz, sem dúvida a Patrícia seria uma das principais candidatas! Ele consegue transmitir o que a água precisa, o que a água quer nos dizer. <br/> Patricia é clara sobre o impacto que temos no meio ambiente e a importância de saber se conectar com outros seres vivos, com toda a natureza. Ela sabe que é preciso usar outro tipo de linguagem. A água nos pede uma conexão que vai além das palavras! <br/>	Patricia entende a linguagem usada pela água, pelo meio ambiente , e consegue traduzi-la com uma paixão e uma energia invejáveis.</>;
+
+	const fullSusanaText = <>Lembro-me bem do dia em que cruzei a Patricia Furtado de Mendonça. Foi numa Conferência em Cascais sobre o mar e a proteção dos oceanos – a Ocean Talks, organizado pela Galp no Museu do Mar de Cascais - em que tive a honra de participar como Secretária Executiva da OSPAR, uma Convenção internacional para a Proteção do Ambiente Marinho do Nordeste do Atlântico. Isso aconteceu num momento em que eu estava a organizar a Reunião Ministerial da OSPAR que teria lugar em Cascais, e imediatamente a convidei para fazer a abertura da mesma, que no entanto acabou por ser adiada para 2021 devido à pandemia. 
+	A força inspiradora da Patricia deve-se a tão genuinamente conseguir expressar a sua verdade, que é também a nossa, a de todos os seres humanos e seres vivos deste planeta: a de que sem água não há vida, a de que sem oceanos saudáveis não pode haver vida saudável. <br/>
+	Naturalmente, como muitos outros colegas, habituados a estes eventos, participo em debates mais ou menos técnicos e/ou científicos, estruturados de forma semelhante, resultando em conclusões, documentos, relatórios, planos de ação. A apresentação da Patricia foi avassaladora porque a revelação da verdade singela surgiu a todos logo ali: proteger a água porque somos água. Graças à sua brilhante capacidade comunicativa e pondo tudo o que sentia nas palavras com que se expressava, a Patricia deu o mote à Conferência. Ela foi início, inspiração e conclusão. Tudo é tão simples e óbvio que nem sempre se vê. A Patricia revela o simples e o verdadeiro, fala a todos e a cada um em simultâneo, lembra-nos essa ligação primordial com a água, berço de vida. <br/>
+	Fiquei emocionada com a autenticidade e a plenitude do seu propósito, com a força da sua convicção e muito grata por conhecer alguém que consegue conciliar e transmitir conhecimento, ciência, cultura e vida, invocando a nossa mãe-água, o mar da nossa infância, o quão somos água. <br/>
+	Acredito profundamente na nobre ação da Acqua Mater liderada pela excelência e profissionalismo da Patricia na luta pela preservação do mar e da biodiversidade marinha, assim como no seu papel fundamental na disseminação do conhecimento sobre o oceano e - como diria Sophia de Mello Breyner Andresen, a poeta da imanência, do concreto e das coisas visíveis - em ajudar-nos a todos a “descobrir a presença do real”. </>;
+
+	const [activeText, setActiveText] = useState({
+		text: null,
+		author: null,
+	});
+	const [modalOpen, setModalOpen] = useState(false);
+	
+	const handleModalContent = (name) => {
+		setActiveText(name === 'MARCELO LLÉVENES' ? { text: fullMarceloText, author: name } : { text: fullSusanaText, author: name });
+		handleModal();
+	}
+
+	const handleModal = () => {
+		setModalOpen(curr => !curr);
+	}
+
 	const downloadPDF = () => {
 		window.open('/BIO_LONGA_PAT.pdf');
 	}
@@ -46,7 +72,15 @@ export const PatriciaFurtado = () => {
 				</Grid>
 			</ContainerHead>
 		</WrapperHead>
-
+		<Modal open={modalOpen} onClose={handleModal}>
+			<ModalContainer>
+				<Typography variant="h3" margin="20px">
+					"{activeText.text}"
+					<Divider variant="middle" width="100%" sx={{ marginY: '20px'}} />
+					{activeText.author}
+				</Typography>
+			</ModalContainer>
+		</Modal>
 		<ContainerBio>
 			<Typography variant='body1'>
 				- Brasileira e Italiana, Empreendedora, Palestrante
@@ -80,40 +114,31 @@ export const PatriciaFurtado = () => {
 			</WrapperSecond>
 
 			<WrapperTestimony>
-				<Testimony
-					author='/acquamater/patricia-marcelo.png'
-					name='MARCELO LLÉVENES'
-					country='Chile'
-					role='Cofundador e Diretor Executivo da Clickie e ex-CEO da Enel Brasil - Distribuição'
-				>
-					“Trabalhei com Patricia na Ampla (atual Enel Distribuição)
-					em diversos projetos de transformação cultural. Sua
-					contribuição foi muito significativa: por sua diversidade,
-					pela intensidade e pela paixão que colocava em tudo o que
-					fazia (...).
-					<br />
-					<br />
-					Acho que se a água tivesse que escolher um porta-voz, sem
-					dúvida a Patrícia seria uma das principais candidatas! Ele
-					consegue transmitir o que a água precisa, o que a água quer
-					nos dizer.”
-				</Testimony>
-
-				<Testimony
-					author='/acquamater/patricia-susana.png'
-					name='SUSANA SALVADOR'
-					country='Portugal / França'
-					role='Secretária Executiva ACCOBAMS'
-				>
-					“Participo em debates mais ou menos técnicos e/ou
-					científicos, estruturados de forma semelhante, resultando em
-					conclusões, documentos, relatórios, planos de ação. A
-					apresentação da Patricia foi avassaladora porque a revelação
-					da verdade singela surgiu a todos logo ali: proteger a água
-					porque somos água. Graças à sua brilhante capacidade
-					comunicativa e pondo tudo o que sentia nas palavras com que
-					se expressava, a Patricia deu o mote à Conferência”
-				</Testimony>
+				<Grid item md={5}>
+					<Testimony
+						author='/acquamater/patricia-marcelo.png'
+						name='MARCELO LLÉVENES'
+						country='Chile'
+						role='Cofundador e Diretor Executivo da Clickie e ex-CEO da Enel Brasil - Distribuição'
+					>
+						“Acho que se a água tivesse que escolher um porta-voz, sem dúvida a Patrícia seria uma das principais candidatas! Ele consegue transmitir o que a água precisa, o que a água quer nos dizer.” <br/><br />
+						<Button onClick={() => handleModalContent('MARCELO LLÉVENES')}><Add /></Button>
+					</Testimony>
+				</Grid>
+				
+				<Grid item md={5}>
+					<Testimony
+						author='/acquamater/patricia-susana.png'
+						name='SUSANA SALVADOR'
+						country='Portugal / França'
+						role='Secretária Executiva ACCOBAMS'
+					>
+						“Graças à sua brilhante capacidade
+						comunicativa e pondo tudo o que sentia nas palavras com que
+						se expressava, a Patricia deu o mote à Conferência”<br /><br /><br /><br />
+						<Button onClick={() => handleModalContent('SUSANA SALVADOR')}><Add /></Button>
+					</Testimony>
+				</Grid>
 			</WrapperTestimony>
 		</ContainerBio>
 

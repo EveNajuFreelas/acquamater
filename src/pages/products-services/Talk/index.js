@@ -87,12 +87,15 @@ const Talk = () => {
 					</Typography>
 				</ContainerTextSingle>
 			</HeadPage>
-			<ContainerTitle color='#00376d'>
+			<ContainerTitle image='talk-wave.png'>
 				<Title maxWidth='lg'>Palestras</Title>
 			</ContainerTitle>
 			<Wrapper>
 				<ColumnTextImage
-					image={{ isBg: false, img: '/acquamater/patricia-palestra.png' }}
+					image={{
+						isBg: false,
+						img: '/acquamater/patricia-palestra.png',
+					}}
 					title='Palestras Patricia'
 				>
 					A formação e a experiência de Patricia como Atriz e
@@ -165,7 +168,7 @@ const Talk = () => {
 				</div>
 
 				<ContainerThemes>
-					<Grid container>
+					<Grid container spacing='20px'>
 						<Grid item md={6}>
 							<BoxGray dense>
 								<TitleThemesBlue variant='h2'>
@@ -178,7 +181,7 @@ const Talk = () => {
 								</List>
 							</BoxGray>
 						</Grid>
-						
+
 						<Grid item md={6}>
 							<BoxGray dense waterMark>
 								<TitleThemesBlue variant='h2'>

@@ -5,4 +5,5 @@ export const Wrapper = styled(Container)`
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	max-width: 1280px;
 `;

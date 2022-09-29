@@ -46,7 +46,7 @@ const Training = () => {
 					</Typography>
 				</ContainerTextSingle>
 			</HeadPage>
-			<ContainerTitle image='/consultancy_wave.png'>
+			<ContainerTitle image='consultancy-wave.png'>
 				<Title maxWidth='lg'>Consultoria</Title>
 			</ContainerTitle>
 			<Wrapper>
@@ -76,12 +76,18 @@ const Training = () => {
 				noDivision
 			>
 				<Wrapper>
-					<Grid container>
-						<Grid item md={5}>
+					<Grid
+						container
+						style={{ padding: '100px 0px' }}
+						justifyContent='space-between'
+						alignItems='center'
+					>
+						<Grid item md={6}>
 							<img
 								src='/acquamater/Consultancy-second.png'
 								alt='Consultoria'
-								width='80%'
+								width='100%'
+								height='auto'
 							></img>
 						</Grid>
 						<Grid item md={5}>
@@ -153,6 +159,7 @@ const Training = () => {
 					</BoxGray>
 				</div>
 			</Wrapper>
+
 			<Strip
 				img='/acquamater/consultancy-ball.png'
 				imgBG='/acquamater/consultancy-bg-bola.png'
