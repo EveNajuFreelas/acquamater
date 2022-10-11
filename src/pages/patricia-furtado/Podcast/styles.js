@@ -9,6 +9,10 @@ export const ContainerPodcast = styled.div`
 
 	img {
 		width: 150px;
+		height: 100%;
+	}
+	@media (max-width: 768px) {
+		flex-direction: column;
 	}
 `;
 
