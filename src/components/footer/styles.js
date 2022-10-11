@@ -1,15 +1,22 @@
 import { Divider, Grid } from '@mui/material';
 import styled from 'styled-components';
 
-const FooterContainer = styled(props => <Grid {...props} />)`
-	bottom: 0;
-	display: flex;
-	min-height: 200px;
-	justify-content: center;
-	padding: 20px 110px;
+const FooterContainer = styled.div`
 	background-image: url('/acquamater/footer-bg.svg');
+	display: flex;
+	justify-content: center;
+`;
+
+const ContainerFooter = styled(props => <Grid {...props} />)`
+	max-width: 1280px;
+	display: flex;
+	bottom: 0;
 	margin: 0;
 	width: 100%;
+
+	min-height: 200px;
+	justify-content: center;
+	padding: 20px 0px;
 `;
 
 const SectionTitle = styled('p')`
@@ -28,4 +35,10 @@ const SectionDivider = styled(Divider)`
 	margin: 20px 0;
 `;
 
-export { FooterContainer, SectionTitle, SectionChild, SectionDivider };
+export {
+	FooterContainer,
+	SectionTitle,
+	SectionChild,
+	SectionDivider,
+	ContainerFooter,
+};

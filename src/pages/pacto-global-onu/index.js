@@ -8,8 +8,8 @@ export const PactoGlobalONU = () => (
 	<Box>
 		<Head
 			breadcrumbs={[
-				{ url: '/', name: 'Home' },
-				{ url: '/acqua-mater', name: 'Acqua Mater' },
+				{ url: '/acquamater', name: 'Home' },
+				{ url: '/acquamater', name: 'Acqua Mater' },
 			]}
 			title='Acqua Mater & Pacto Global da ONU'
 			backgroundImage='/acquamater/default-head-bg.png'

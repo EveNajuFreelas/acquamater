@@ -14,8 +14,8 @@ export const UNESCO = () => (
 	<Box>
 		<Head
 			breadcrumbs={[
-				{ url: '/', name: 'Home' },
-				{ url: '/acqua-mater', name: 'Acqua Mater' },
+				{ url: '/acquamater', name: 'Home' },
+				{ url: '/acquamater', name: 'Acqua Mater' },
 			]}
 			title='Acqua Mater & UNESCO'
 			backgroundImage='/acquamater/default-head-bg.png'

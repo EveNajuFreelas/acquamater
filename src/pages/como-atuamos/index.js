@@ -26,8 +26,8 @@ export const ComoAtuamos = () => {
 		<Box>
 			<Head
 				breadcrumbs={[
-					{ url: '/', name: 'Home' },
-					{ url: '/acqua-mater', name: 'Acqua Mater' },
+					{ url: '/acquamater', name: 'Home' },
+					{ url: '/acquamater', name: 'Acqua Mater' },
 				]}
 				title='Como Atuamos'
 				backgroundImage='/acquamater/default-head-bg.png'
@@ -53,12 +53,14 @@ export const ComoAtuamos = () => {
 							personImg='/acquamater/quem-pensa-faz/people/sergio-mello.png'
 							name='Sérgio Mello'
 							description='Consectetur adipiscing elit, sed do ei temper'
+							heightGradient='250'
 						/>
 						<PersonQuoteCard
 							quote='“Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo ad minim veniam”'
 							personImg='/acquamater/quem-pensa-faz/people/susana-salvador.png'
 							name='Susana Salvador'
 							description='Consectetur adipiscing elit, sed do ei temper'
+							heightGradient='250'
 						/>
 					</PeopleContainer>
 				</IntroContainer>

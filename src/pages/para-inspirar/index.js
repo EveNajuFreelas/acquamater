@@ -9,7 +9,7 @@ import { BoxContainer } from './styles';
 export const ParaInspirar = () => (
 	<Box>
 		<Head
-			breadcrumbs={[{ url: '/', name: 'Home' }]}
+			breadcrumbs={[{ url: '/acquamater', name: 'Home' }]}
 			title='Para Inspirar'
 			backgroundImage='/acquamater/default-head-bg.png'
 		/>

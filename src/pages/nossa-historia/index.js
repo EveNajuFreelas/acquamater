@@ -7,27 +7,29 @@ import { Wrapper } from '../styles';
 import { useState } from 'react';
 
 export const NossaHistoria = () => {
-	const fullDawnText = "'Os projetos da Acqua Mater produzem um resultado extremamente potente e raro por fazerem convergir o olhar humano, técnico e artístico sobre a água. A parceria entre a Acqua Mater e a Waterlution começou em 2018, e todas as vivências que coproduzimos (Palestras, Mentorias, Facilitações na Água) foram de alta qualidade e de efeito transformador para os participantes, ressoando em todos ainda hoje. Que nossa parceria continue por muitos anos ainda!'";
+	const fullDawnText =
+		"'Os projetos da Acqua Mater produzem um resultado extremamente potente e raro por fazerem convergir o olhar humano, técnico e artístico sobre a água. A parceria entre a Acqua Mater e a Waterlution começou em 2018, e todas as vivências que coproduzimos (Palestras, Mentorias, Facilitações na Água) foram de alta qualidade e de efeito transformador para os participantes, ressoando em todos ainda hoje. Que nossa parceria continue por muitos anos ainda!'";
 
-	const smallDawnText = "'Os projetos da Acqua Mater produzem um resultado extremamente potente e raro por fazerem convergir o olhar humano, técnico e artístico sobre a água.'";
+	const smallDawnText =
+		"'Os projetos da Acqua Mater produzem um resultado extremamente potente e raro por fazerem convergir o olhar humano, técnico e artístico sobre a água.'";
 
 	const [text, setText] = useState(smallDawnText);
 
 	const expandText = () => {
 		setText(curr => {
-			if(curr === fullDawnText) {
+			if (curr === fullDawnText) {
 				return smallDawnText;
 			} else {
 				return fullDawnText;
 			}
 		});
-	}
+	};
 	return (
 		<Box>
 			<Head
 				breadcrumbs={[
-					{ url: '/', name: 'Home' },
-					{ url: '/acqua-mater', name: 'Acqua Mater' },
+					{ url: '/acquamater', name: 'Home' },
+					{ url: '/acquamater', name: 'Acqua Mater' },
 				]}
 				title='Nossa História'
 				backgroundImage='/acquamater/default-head-bg.png'
@@ -47,11 +49,9 @@ export const NossaHistoria = () => {
 					pt='100px'
 					pb='20px'
 					mx='auto'
-					spacing={2}
-					justifyContent='center'
-					display='flex'
+					justifyContent='space-between'
 				>
-					<Grid item md={6}>
+					<Grid item md={5.8}>
 						<Typography variant='body1'>
 							Por isso, a Acqua Mater nasce de um propósito de
 							vida que é também Missão: retribuir o que as Águas e
@@ -70,7 +70,7 @@ export const NossaHistoria = () => {
 							após a pandemia.
 						</Typography>
 					</Grid>
-					<Grid item md={6}>
+					<Grid item md={5.8}>
 						<Typography variant='body1'>
 							A missão da Acqua Mater é ambiciosa, pois se propõe
 							a ser um agente de mudanças que oferece soluções
@@ -116,12 +116,15 @@ export const NossaHistoria = () => {
 						quote={text}
 						personImg='/acquamater/quem-pensa-faz/people/dawn-fleming.png'
 						name='Dawn Fleming'
-						extraContent={<Typography variant='body1'>
-									Canadá / Brasil
-								</Typography>}
+						extraContent={
+							<Typography variant='body1'>
+								Canadá / Brasil
+							</Typography>
+						}
 						description='Diretora do Water Innovation Lab Brasil / WIL BRASIL'
 						seeMoreButton={expandText}
 						isTextExpanded={text === fullDawnText}
+						heightGradient='320'
 					/>
 					<PersonQuoteCard
 						quote='"Patrícia Furtado é uma inspiração e uma Empoderadora Mulher Global, porque suas ações inspiram outras pessoas a sonhar mais, aprender mais, fazer mais e se tornar mais. Ela é uma verdadeira líder!"'
@@ -133,6 +136,7 @@ export const NossaHistoria = () => {
 							</Typography>
 						}
 						description='Fundadora da BubblyStarzs & CEO da MEDRadiance Organization'
+						heightGradient='320'
 					/>
 				</Box>
 			</Wrapper>

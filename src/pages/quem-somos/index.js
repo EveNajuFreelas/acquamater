@@ -15,8 +15,8 @@ export const QuemSomos = () => (
 	<Box overflow='hidden'>
 		<Head
 			breadcrumbs={[
-				{ url: '/', name: 'Home' },
-				{ url: '/acqua-mater', name: 'Acqua Mater' },
+				{ url: '/acquamater', name: 'Home' },
+				{ url: '/acquamater', name: 'Acqua Mater' },
 			]}
 			title='Quem somos'
 			backgroundImage='/acquamater/default-head-bg.png'

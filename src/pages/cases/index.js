@@ -14,7 +14,7 @@ export const Cases = () => {
 	return (
 		<Box>
 			<Head
-				breadcrumbs={[{ url: '/', name: 'Home' }]}
+				breadcrumbs={[{ url: '/acquamater', name: 'Home' }]}
 				title='Cases'
 				backgroundImage='/acquamater/default-head-bg.png'
 			>
