@@ -8,7 +8,9 @@ export const ContainerColumn = styled.div`
 	padding: ${props => (props.noPadding ? '0px' : '50px 0')};
 	align-items: center;
 	background-image: url(${props => props.backgroundImage});
-	background-size: 100% 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 	overflow: hidden;
 	
     width: 100%;

@@ -18,7 +18,7 @@ export const Cases = () => {
 				title='Cases'
 				backgroundImage='/acquamater/default-head-bg.png'
 			>
-				<Typography variant='body1' color='white'>
+				<Typography variant='body2' color='white'>
 					Desde 2017, ano de sua fundação, a Acqua Mater tem sido
 					convidada a colaborar com os mais variados parceiros, no
 					Brasil e no exterior, para promover <br />

@@ -21,20 +21,22 @@ export const QuemSomos = () => (
 			title='Quem somos'
 			backgroundImage='/acquamater/default-head-bg.png'
 		>
-			Somos uma organização brasileira com atuação global que incentiva a
-			geração de mais saúde e mais vida a partir do cuidado de todas as
-			águas que circulam no planeta.
-			<br />
-			<br />
-			Promovemos:
-			<ul>
-				<li>uma nova cultura da água;</li>
-				<li>a cultura oceânica;</li>
-				<li>o diálogo entre o ODS 6 e o ODS 14;</li>
-				<li>
-					a reconexão de indivíduos e coletivos com a Água e o Oceano
-				</li>
-			</ul>
+			<Typography variant="body2" color="white">
+				Somos uma organização brasileira com atuação global que incentiva a
+				geração de mais saúde e mais vida a partir do cuidado de todas as
+				águas que circulam no planeta.
+				<br />
+				<br />
+				Promovemos:
+				<ul>
+					<li>uma nova cultura da água;</li>
+					<li>a cultura oceânica;</li>
+					<li>o diálogo entre o ODS 6 e o ODS 14;</li>
+					<li>
+						a reconexão de indivíduos e coletivos com a Água e o Oceano
+					</li>
+				</ul>
+			</Typography>
 		</Head>
 
 		<Wrapper>
@@ -88,6 +90,7 @@ export const QuemSomos = () => (
 				img: '/acquamater/quem-somos-crianca-agua-bg.png',
 			}}
 			personalize
+			noPadding
 		>
 			Todas as águas que circulam em nosso planeta estão conectadas. Isso
 			acontece desde quando elas vieram do espaço e deram origem ao oceano

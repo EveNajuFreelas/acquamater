@@ -34,7 +34,7 @@ export const NossaHistoria = () => {
 				title='Nossa História'
 				backgroundImage='/acquamater/default-head-bg.png'
 			>
-				<Typography variant='body1' color='white'>
+				<Typography variant='body2' color='white'>
 					A missão da Acqua Mater é ambiciosa, pois se propõe a ser um
 					agente de mudanças que oferece soluções inovadoras e
 					criativas para promover a saúde e a vida sob as esferas
@@ -48,10 +48,12 @@ export const NossaHistoria = () => {
 					container
 					pt='100px'
 					pb='20px'
+					maxWidth="1024px"
 					mx='auto'
 					justifyContent='space-between'
+					spacing={3}
 				>
-					<Grid item md={5.8}>
+					<Grid item md={5.5}>
 						<Typography variant='body1'>
 							Por isso, a Acqua Mater nasce de um propósito de
 							vida que é também Missão: retribuir o que as Águas e
@@ -70,7 +72,7 @@ export const NossaHistoria = () => {
 							após a pandemia.
 						</Typography>
 					</Grid>
-					<Grid item md={5.8}>
+					<Grid item md={5.5}>
 						<Typography variant='body1'>
 							A missão da Acqua Mater é ambiciosa, pois se propõe
 							a ser um agente de mudanças que oferece soluções

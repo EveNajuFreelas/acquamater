@@ -8,11 +8,10 @@ const FooterContainer = styled.div`
 `;
 
 const ContainerFooter = styled(props => <Grid {...props} />)`
-	max-width: 1280px;
+	max-width: 1024px;
 	display: flex;
 	bottom: 0;
 	margin: 0;
-	width: 100%;
 
 	min-height: 200px;
 	justify-content: center;
