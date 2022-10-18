@@ -111,7 +111,7 @@ const Experiences = () => {
 						</ContainerList>
 						<Typography
 							variant='body1'
-							style={{ fontSize: '16px' }}
+							style={{ fontSize: '14px' }}
 						>
 							<a
 								style={{

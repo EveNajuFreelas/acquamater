@@ -146,7 +146,7 @@ export const PatriciaFurtado = () => {
 			<Typography
 				variant='h2'
 				color='primary'
-				style={{ marginBottom: '50px', fontSize: '32px' }}
+				style={{ marginBottom: '50px', fontSize: '30px' }}
 			>
 				VÍDEOS
 			</Typography>
@@ -172,7 +172,7 @@ export const PatriciaFurtado = () => {
 			<Typography
 				variant='h2'
 				color='primary'
-				style={{ marginBottom: '50px', fontSize: '32px' }}
+				style={{ marginBottom: '50px', fontSize: '30px' }}
 			>
 				PODCASTS
 			</Typography>
@@ -201,7 +201,7 @@ export const PatriciaFurtado = () => {
 			<Typography
 				variant='h2'
 				color='primary'
-				style={{ fontSize: '28px' }}
+				style={{ fontSize: '26px' }}
 			>
 				Patricia atuando como Performer Subaquática
 			</Typography>

@@ -4,9 +4,10 @@ import styled from 'styled-components';
 export const BackgroundBox = styled(Box)`
 	background-image: url(${props => props.backgroundImg});
 	background-size: cover;
-	background-position: contain;
-	padding: 50px 20%;
-	min-height: 360px;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 20vh 20%;
+	min-height: 50vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;

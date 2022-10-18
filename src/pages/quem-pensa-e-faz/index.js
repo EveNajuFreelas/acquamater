@@ -222,7 +222,7 @@ export const QuemPensaFaz = () => {
 				</Typography>
 				<Grid container spacing={2} marginBottom={2}>
 					{Array.from(Array(10)).map(a => (
-						<ParceiroImg src='/acquamater/white-placeholder.png' />
+						<ParceiroImg src='/acquamater/white-placeholder.png' key={a} />
 					))}
 				</Grid>
 				<Button>Conheça Todos</Button>

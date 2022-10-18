@@ -23,11 +23,11 @@ export const Testimony = ({ author, name, country, role, children }) => (
 				<Typography
 					color='primary'
 					fontWeight='bold'
-					style={{ fontSize: '16px' }}
+					style={{ fontSize: '14px' }}
 				>
 					{country}
 				</Typography>
-				<Typography style={{ fontSize: '14px' }}>{role}</Typography>
+				<Typography style={{ fontSize: '12px' }}>{role}</Typography>
 			</Text>
 		</Section>
 	</ContainerTestimony>

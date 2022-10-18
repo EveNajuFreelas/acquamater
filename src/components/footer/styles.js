@@ -24,7 +24,7 @@ const SectionTitle = styled('p')`
 
 const SectionChild = styled('p')`
 	color: #999;
-	font-size: 14px;
+	font-size: 12px;
 	cursor: pointer;
 `;
 

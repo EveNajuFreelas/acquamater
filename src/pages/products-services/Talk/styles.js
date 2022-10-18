@@ -7,7 +7,7 @@ export const TitleThemesBox = styled(Typography)`
 	font-weight: bold;
 	line-height: 35px;
 	text-align: center;
-	font-size: 22px;
+	font-size: 20px;
 `;
 
 export const List = styled.ul`
@@ -16,7 +16,7 @@ export const List = styled.ul`
 	margin: 0;
 
 	li {
-		font-size: 18px;
+		font-size: 16px;
 		line-height: 30px;
 	}
 `;
@@ -24,7 +24,7 @@ export const List = styled.ul`
 export const TitleThemesBlue = styled(Typography)`
 	color: ${colors.lightBlue};
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 16px;
 	text-transform: uppercase;
 `;
 

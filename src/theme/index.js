@@ -16,37 +16,37 @@ let theme = createTheme({
 	typography: {
 		fontFamily: 'Museo',
 		body1: {
-			fontSize: '18px',
+			fontSize: '16px',
 		},
 		body1bold: {
-			fontSize: '16px',
+			fontSize: '14px',
 			fontWeight: 'bold',
 		},
 		body2: {
-			fontSize: '14px',
+			fontSize: '12px',
 		},
 		body3: {
-			fontSize: '17px',
+			fontSize: '15px',
 			color: colors.gray,
 		},
 		h1: {
-			fontSize: '35px',
+			fontSize: '33px',
 			marginTop: '20px',
 		},
 		h2: {
-			fontSize: '25px',
+			fontSize: '23px',
 			fontWeight: 'bold',
 		},
 		h2lite: {
-			fontSize: '25px',
+			fontSize: '23px',
 			fontWeight: 'normal',
 		},
 		h3: {
-			fontSize: '20px',
+			fontSize: '18px',
 			fontWeight: 'bold',
 		},
 		h3lite: {
-			fontSize: '20px',
+			fontSize: '18px',
 			fontWeight: 'normal',
 		},
 	},
@@ -62,7 +62,7 @@ theme = createTheme(theme, {
 						backgroundColor: theme.palette.primary.contrastText,
 						color: colors.grayDark,
 						border: `1px solid ${theme.palette.primary.main}`,
-						fontSize: '18px',
+						fontSize: '16px',
 						fontWeight: 'bold',
 						padding: '10px 25px',
 						letterSpacing: '1.5px',
@@ -107,6 +107,10 @@ theme = createTheme(theme, {
 					letterSpacing: '1.5px',
 					lineHeight: '1.6',
 				},
+			},
+			defaultProps: {
+				maxWidth: 'md',
+				margin: 'auto'
 			},
 		},
 		MuiTooltip: {

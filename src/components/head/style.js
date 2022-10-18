@@ -11,7 +11,7 @@ export const HeadContainer = styled.div`
 	background-image: ${props => props.bgImg && `url(${props.bgImg})`};
 	background-size: 100%;
 	background-repeat: no-repeat;
-	height: 23em;
+	height: 28em;
 	z-index: 10;
 	padding: 2% 20%;
 	margin-bottom: -60px;

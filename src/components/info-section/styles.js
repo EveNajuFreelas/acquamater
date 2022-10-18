@@ -23,7 +23,7 @@ export const TextColumn = styled.div`
 
    Button {
       width: 150px;
-      font-size: 15px;
+      font-size: 12px;
       padding: 10px;
    }
 `;

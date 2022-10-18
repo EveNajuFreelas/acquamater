@@ -12,7 +12,7 @@ export const Video = ({ img, title, subtitle }) => (
 				{title}
 			</Typography>
 			{subtitle && (
-				<Typography style={{ fontSize: '16px' }}>{subtitle}</Typography>
+				<Typography style={{ fontSize: '14px' }}>{subtitle}</Typography>
 			)}
 		</Section>
 	</ContainerVideo>

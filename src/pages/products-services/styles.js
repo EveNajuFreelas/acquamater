@@ -11,7 +11,7 @@ export const Title = styled(Container)`
 	display: flex;
 	padding: 24px 52px;
 	color: #fff;
-	font-size: 56px;
+	font-size: 54px;
 	margin-bottom: 24px;
 	@media (max-width: 768px) {
 		justify-content: center;
@@ -30,7 +30,7 @@ export const ContainerTextSingle = styled(Container)`
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	font-size: 20px;
+	font-size: 18px;
 `;
 
 export const Description = styled.div`

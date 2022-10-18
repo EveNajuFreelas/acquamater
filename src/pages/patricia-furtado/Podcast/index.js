@@ -12,10 +12,10 @@ export const Podcast = ({ img, title, subtitle, participation }) => (
 				{title}
 			</Typography>
 			{subtitle && (
-				<Typography style={{ fontSize: '16px' }}>{subtitle}</Typography>
+				<Typography style={{ fontSize: '14px' }}>{subtitle}</Typography>
 			)}
 			{participation && (
-				<Typography style={{ fontSize: '16px' }}>
+				<Typography style={{ fontSize: '14px' }}>
 					{participation}
 				</Typography>
 			)}

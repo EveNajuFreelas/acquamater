@@ -16,7 +16,7 @@ const ProductsServices = () => {
 					<Grid item md={5}>
 						<Typography
 							variant='h1'
-							sx={{ color: '#fff', fontSize: '2.5rem' }}
+							sx={{ color: '#fff', fontSize: '2.2rem' }}
 						>
 							O que oferecemos
 						</Typography>

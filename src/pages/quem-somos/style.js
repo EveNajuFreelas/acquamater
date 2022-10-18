@@ -48,5 +48,5 @@ export const TooltipTitleBox = styled.div`
     border: 1px gray solid;
     color: gray;
     padding: 10px;
-    font-size: 16px;
+    font-size: 14px;
 `;

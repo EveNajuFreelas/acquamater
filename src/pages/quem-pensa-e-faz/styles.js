@@ -3,8 +3,8 @@ import styled from "styled-components";
 import { colors } from '../../theme/colors';
 
 export const OrgSectionContainer = styled.div`
-    margin-top: -65px;
-    padding: 100px 0;
+    margin-top: -10%;
+    padding: 15% 0;
     background-image: url('/acquamater/quem-pensa-faz/quem-pensa-faz-section-1.png');
     background-size: 100%;
     background-repeat: no-repeat;
@@ -49,7 +49,7 @@ export const ParceirosContainer = styled.div`
 `;
 
 export const ParceiroImg = styled(({ src }) => (
-    <Grid item md={1}>
+    <Grid item sm={1} md={2.3}>
         <img src={src} alt="parceiro" width="180px" height="180px" />
     </Grid>))``;
 
