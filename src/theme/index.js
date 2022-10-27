@@ -11,7 +11,7 @@ let theme = createTheme({
 		action: { main: '#FF0000' },
 		title: { main: '#A5D513' },
 		text: { main: '#44494A' },
-		chip: { main: colors.gray, contrastText: colors.primary },
+		chip: { main: colors.lightGray, contrastText: colors.primary },
 	},
 	typography: {
 		fontFamily: 'Museo',
@@ -27,7 +27,7 @@ let theme = createTheme({
 		},
 		body3: {
 			fontSize: '15px',
-			color: colors.gray,
+			color: colors.lightGray,
 		},
 		h1: {
 			fontSize: '33px',
@@ -110,7 +110,7 @@ theme = createTheme(theme, {
 			},
 			defaultProps: {
 				maxWidth: 'md',
-				margin: 'auto'
+				margin: 'auto',
 			},
 		},
 		MuiTooltip: {

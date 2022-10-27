@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { colors } from '../../theme/colors';
 
 export const Themes = styled.div`
-	background: ${props => (props.white ? '#fff' : colors.gray)};
+	background: ${props => (props.white ? '#fff' : colors.lightGray)};
 	padding: ${({ dense, isDesktop }) => {
 		if (dense && isDesktop) {
 			return '60px 90px';

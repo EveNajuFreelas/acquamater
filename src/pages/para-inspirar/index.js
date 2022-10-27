@@ -7,7 +7,7 @@ import { InspirarItem } from './inspirar-item';
 import { BoxContainer } from './styles';
 
 export const ParaInspirar = () => (
-	<Box>
+	<Box mb='50px'>
 		<Head
 			breadcrumbs={[{ url: '/acquamater', name: 'Home' }]}
 			title='Para Inspirar'
@@ -22,7 +22,7 @@ export const ParaInspirar = () => (
 					img='/acquamater/para-inspirar/para-ver-icon.png'
 				/>
 
-				<Container ml='20%'>
+				<Container style={{ padding: '0 0.5% 0 12%' }}>
 					{ParaVer.map((value, index) => (
 						<InspirarItem
 							key={index}
@@ -42,7 +42,7 @@ export const ParaInspirar = () => (
 					hasTopDivider
 				/>
 
-				<Container ml='20%'>
+				<Container style={{ padding: '0 0.5% 0 12%' }}>
 					{ParaLer.map((value, index) => (
 						<InspirarItem
 							key={index}
@@ -62,7 +62,7 @@ export const ParaInspirar = () => (
 					hasTopDivider
 				/>
 
-				<Container ml='20%' mb='50px'>
+				<Container style={{ padding: '0 0.5% 0 12%' }}>
 					{ParaOuvir.map((value, index) => (
 						<InspirarItem
 							img={`/acquamater${value.imagem}`}
