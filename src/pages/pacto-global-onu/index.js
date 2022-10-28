@@ -1,4 +1,4 @@
-import { Box, Grid, Typography, Link } from '@mui/material';
+import { Box, Grid, Typography, Link, Container } from '@mui/material';
 import { Head } from '../../components/head';
 import { PersonQuoteCard } from '../../components/person-quote-card';
 import { ObjetivosContainer, LinksContainer } from './styles';
@@ -15,16 +15,16 @@ export const PactoGlobalONU = () => (
 			backgroundImage='/acquamater/default-head-bg.png'
 		/>
 		<Wrapper>
-			<Box my='100px' mx='auto'>
-				<Grid container spacing={2} mb='50px'>
-					<Grid item md={6}>
+			<Box mx='auto'>
+				<Grid container spacing={2} mb='50px' justifyContent="center">
+					<Grid item md={5}>
 						<img
 							src='/acquamater/ods-wheel.png'
 							alt='ODS wheel'
 							width='80%'
 						/>
 					</Grid>
-					<Grid item md={6}>
+					<Grid item md={4}>
 						<Typography variant='body1' textAlign='end'>
 							A fundadora e CEO da Acqua Mater, Patricia Furtado,
 							começou a trabalhar pelas 8 Metas do Milênio e pela
@@ -48,15 +48,15 @@ export const PactoGlobalONU = () => (
 					"Profissional de ImPacto" do Pacto Global da ONU Brasil.
 				</Typography>
 
-				<Grid container spacing={2} my='50px'>
-					<Grid item md={6}>
+				<Grid container spacing={2} my='50px' justifyContent="center">
+					<Grid item md={5}>
 						<img
 							src='/acquamater/profissionais-impacto.png'
 							alt='Selo Profissionais de imPacto'
 							width='70%'
 						/>
 					</Grid>
-					<Grid item md={6}>
+					<Grid item md={5}>
 						<Typography variant='body1'>
 							Em 2022, envolveu-se com mais três projetos
 							coordenados pela plataforma Ação pela Água e Oceano
@@ -85,24 +85,22 @@ export const PactoGlobalONU = () => (
 			</Box>
 		</Wrapper>
 		<ObjetivosContainer>
-			<Wrapper style={{ alignItems: 'flex-start' }}>
-				<Box width='70%'>
-					<Typography variant='h2' color='white' mb='20px'>
-						ACQUA MATER & OS OBJETIVOS DO DESENVOLVIMENTO
-						SUSTENTÁVEL DA ONU (ODS)
-					</Typography>
-					<Typography variant='body1' color='white'>
-						A Acqua Mater também promove o avanço dos 17 ODS da
-						Agenda 2030 da ONU, mas com foco no diálogo entre o ODS
-						6 (Água & Saneamento) e o ODS 14 (Oceano), sem excluir
-						sua relação com o ODS 13 (Ação Climática). Ela faz isso,
-						principalmente, por meio dos ODS 4 (Educação) e do ODS
-						17 (Parcerias).
-						<br /> <br />
-						Por isso, esses são os 5 principais ODS na estratégia da
-						organização:
-					</Typography>
-				</Box>
+			<Container maxW="lg">
+				<Typography variant='h2' color='white' style={{ margin: '0 0 20px 0'}}>
+					ACQUA MATER & OS OBJETIVOS DO DESENVOLVIMENTO
+					SUSTENTÁVEL DA ONU (ODS)
+				</Typography>
+				<Typography variant='body1' color='white' style={{ margin: '0 0 20px 0'}}>
+					A Acqua Mater também promove o avanço dos 17 ODS da
+					Agenda 2030 da ONU, mas com foco no diálogo entre o ODS
+					6 (Água & Saneamento) e o ODS 14 (Oceano), sem excluir
+					sua relação com o ODS 13 (Ação Climática). Ela faz isso,
+					principalmente, por meio dos ODS 4 (Educação) e do ODS
+					17 (Parcerias).
+					<br /> <br />
+					Por isso, esses são os 5 principais ODS na estratégia da
+					organização:
+				</Typography>
 				<Box mt='30px'>
 					<img
 						width='700px'
@@ -110,106 +108,104 @@ export const PactoGlobalONU = () => (
 						alt='ODSs'
 					/>
 				</Box>
-			</Wrapper>
+			</Container>
 		</ObjetivosContainer>
 
 		<LinksContainer>
-			<Wrapper style={{ alignItems: 'flex-start' }}>
-				<Typography variant='body1bold'>
-					Global Compact:
-					<Link
-						rel='noreferrer'
-						target='_blank'
-						href='https://www.unglobalcompact.org'
-					>
-						{' '}
-						https://www.unglobalcompact.org
-					</Link>
-					<br />
-					Pacto Global da ONU Brasil:
-					<Link
-						rel='noreferrer'
-						target='_blank'
-						href='https://www.pactoglobal.org.br'
-					>
-						{' '}
-						https://www.pactoglobal.org.br
-					</Link>
-					<br />
-					Plataforma Ação pela Água e Oceano:
-					<Link
-						rel='noreferrer'
-						target='_blank'
-						href='https://www.pactoglobal.org.br/plataformas-de-acao/acao-pela-agua'
-					>
-						{' '}
-						https://www.pactoglobal.org.br/plataformas-de-acao/acao-pela-agua
-					</Link>
-					<br />
-					Projeto Blue Keepers:
-					<Link
-						rel='noreferrer'
-						target='_blank'
-						href='https://www.bluekeepers.org'
-					>
-						{' '}
-						https://www.bluekeepers.org
-					</Link>
-					<br />
-					Movimento + Água:
-					<Link
-						rel='noreferrer'
-						target='_blank'
-						href='https://www.pactoglobal.org.br/movimento/maisagua/#sobre'
-					>
-						{' '}
-						https://www.pactoglobal.org.br/movimento/maisagua/#sobre
-					</Link>
-					<br />
-					Ocean Stewardship Coalition:
-					<Link
-						rel='noreferrer'
-						target='_blank'
-						href='https://www.unglobalcompact.org/take-action/ocean'
-					>
-						{' '}
-						https://www.unglobalcompact.org/take-action/ocean
-					</Link>
-				</Typography>
-
-				<Box
-					display='flex'
-					mt='30px'
-					alignItems='center'
-					justifyContent='space-between'
-					width='700px'
+			<Typography variant='body1bold'>
+				Global Compact:
+				<Link
+					rel='noreferrer'
+					target='_blank'
+					href='https://www.unglobalcompact.org'
 				>
-					<img
-						src='/acquamater/un-global-compact-logo.png'
-						alt='ODS6'
-						width='100px'
-						height='100px'
-					/>
-					<img
-						src='/acquamater/blue-keepers-logo.png'
-						alt='ODS6'
-						width='100px'
-						height='100px'
-					/>
-					<img
-						src='/acquamater/pacto-global-rb-logo.png'
-						alt='ODS6'
-						width='150px'
-						height='50px'
-					/>
-					<img
-						src='/acquamater/movimento-+-agua-logo.png'
-						alt='ODS6'
-						width='200px'
-						height='100px'
-					/>
-				</Box>
-			</Wrapper>
+					{' '}
+					https://www.unglobalcompact.org
+				</Link>
+				<br />
+				Pacto Global da ONU Brasil:
+				<Link
+					rel='noreferrer'
+					target='_blank'
+					href='https://www.pactoglobal.org.br'
+				>
+					{' '}
+					https://www.pactoglobal.org.br
+				</Link>
+				<br />
+				Plataforma Ação pela Água e Oceano:
+				<Link
+					rel='noreferrer'
+					target='_blank'
+					href='https://www.pactoglobal.org.br/plataformas-de-acao/acao-pela-agua'
+				>
+					{' '}
+					https://www.pactoglobal.org.br/plataformas-de-acao/acao-pela-agua
+				</Link>
+				<br />
+				Projeto Blue Keepers:
+				<Link
+					rel='noreferrer'
+					target='_blank'
+					href='https://www.bluekeepers.org'
+				>
+					{' '}
+					https://www.bluekeepers.org
+				</Link>
+				<br />
+				Movimento + Água:
+				<Link
+					rel='noreferrer'
+					target='_blank'
+					href='https://www.pactoglobal.org.br/movimento/maisagua/#sobre'
+				>
+					{' '}
+					https://www.pactoglobal.org.br/movimento/maisagua/#sobre
+				</Link>
+				<br />
+				Ocean Stewardship Coalition:
+				<Link
+					rel='noreferrer'
+					target='_blank'
+					href='https://www.unglobalcompact.org/take-action/ocean'
+				>
+					{' '}
+					https://www.unglobalcompact.org/take-action/ocean
+				</Link>
+			</Typography>
+
+			<Box
+				display='flex'
+				mt='30px'
+				alignItems='center'
+				justifyContent='space-between'
+				width='700px'
+			>
+				<img
+					src='/acquamater/un-global-compact-logo.png'
+					alt='ODS6'
+					width='100px'
+					height='100px'
+				/>
+				<img
+					src='/acquamater/blue-keepers-logo.png'
+					alt='ODS6'
+					width='100px'
+					height='100px'
+				/>
+				<img
+					src='/acquamater/pacto-global-rb-logo.png'
+					alt='ODS6'
+					width='150px'
+					height='50px'
+				/>
+				<img
+					src='/acquamater/movimento-+-agua-logo.png'
+					alt='ODS6'
+					width='200px'
+					height='100px'
+				/>
+			</Box>
 		</LinksContainer>
 	</Box>
 );

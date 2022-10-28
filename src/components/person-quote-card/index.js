@@ -13,17 +13,28 @@ export const PersonQuoteCard = ({
 	seeMoreButton,
 	isTextExpanded,
 }) => {
-	const newStyle = {
+	const style = {
 		width: horizontal ? '700px' : '350px',
 		minHeight: horizontal ? '300px' : '500px',
 		display: horizontal ? 'flex' : 'block',
 		margin: horizontal ? 'auto' : '50px 20px',
 	}
 
+	const quoteStyle = {
+		padding: horizontal ? '30px' : '30px 30px 80px 30px',
+	};
+
+	const descriptionStyle = {
+		img: {
+			marginBottom: horizontal ? 0 : '-60px',
+		},
+		padding: horizontal ? '20px' : '0 0 20px 0',
+	};
+
 	return (
-		<CardBox sx={newStyle}>
-			<QuoteContainer>
-				<Typography variant='body1bold' color={colors.blueLighter} pb='10px'>
+		<CardBox sx={style}>
+			<QuoteContainer style={quoteStyle}>
+				<Typography variant='body1bold' color={colors.blueLighter} pb={horizontal ? 0 : '10px'}>
 					{quote}
 				</Typography>
 				{seeMoreButton && (
@@ -36,8 +47,8 @@ export const PersonQuoteCard = ({
 					</Button>
 				)}
 			</QuoteContainer>
-			<DescriptionContainer seeMoreButton>
-				<img width='145px' src={personImg} alt={name} />
+			<DescriptionContainer style={descriptionStyle}>
+				<img width='145px' src={personImg} alt={name} style={descriptionStyle.img} />
 			 		<Typography
 			 			variant='body1'
 			 			color={colors.blueLighter}
