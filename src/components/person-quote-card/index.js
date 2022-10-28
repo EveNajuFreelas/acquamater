@@ -20,7 +20,7 @@ export const PersonQuoteCard = ({
 
 	const style = {
 		width: horizontal ? '700px' : '350px',
-		minHeight: horizontal ? '300px' : '400px',
+		minHeight: horizontal ? '300px' : '500px',
 		background: `linear-gradient(${gradient})`,
 		display: horizontal ? 'flex' : 'block',
 		margin: horizontal ? 'auto' : '50px 20px',
@@ -44,7 +44,7 @@ export const PersonQuoteCard = ({
 					<Button
 						onClick={seeMoreButton}
 						variant='outlined'
-						sx={{ marginBottom: '10px' }}
+						sx={{ marginBottom: '10px', minWidth: 0 }}
 					>
 						{isTextExpanded ? <Close /> : <Add />}
 					</Button>

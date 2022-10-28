@@ -13,7 +13,7 @@ const BoxGray = ({ dense, children, waterMark, white, center }) => {
 			{children}
 			{waterMark && (
 				<Wave>
-					<img src='/acquamater/wave.png' alt='wave' />
+					<img src='/acquamater/wave.png' alt='wave' width="100%"/>
 				</Wave>
 			)}
 		</Themes>

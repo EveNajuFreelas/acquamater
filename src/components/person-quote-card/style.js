@@ -10,7 +10,7 @@ export const QuoteContainer = styled(Box)`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 20px;
+	padding: 30px;
 `;
 
 export const DescriptionContainer = styled(Box)`

@@ -47,7 +47,7 @@ export const NossaHistoria = () => {
 				<Grid
 					container
 					pt='100px'
-					pb='20px'
+					pb='100px'
 					maxWidth="1024px"
 					mx='auto'
 					justifyContent='space-between'

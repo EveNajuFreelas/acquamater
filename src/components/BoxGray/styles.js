@@ -34,7 +34,6 @@ export const Themes = styled.div`
 
 export const Wave = styled.div`
 	position: absolute;
-	top: 20px;
-	right: -329px;
-	left: 524px;
+	bottom: 0;
+	left: 600px;
 `;
