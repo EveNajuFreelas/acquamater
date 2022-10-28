@@ -12,65 +12,41 @@ export const PersonQuoteCard = ({
 	horizontal,
 	seeMoreButton,
 	isTextExpanded,
-	heightGradient,
 }) => {
-	const gradient = horizontal
-		? '90deg, #EDEEEF 57%, #E3E4E3 45%'
-		: `180deg, #EDEEEF ${heightGradient}px, #E3E4E3 200px`;
-
-	const style = {
+	const newStyle = {
 		width: horizontal ? '700px' : '350px',
 		minHeight: horizontal ? '300px' : '500px',
-		background: `linear-gradient(${gradient})`,
 		display: horizontal ? 'flex' : 'block',
 		margin: horizontal ? 'auto' : '50px 20px',
-	};
+	}
 
 	return (
-		<CardBox sx={{ ...style }}>
-			<QuoteContainer
-				width={horizontal ? '55%' : 'auto'}
-				height={horizontal ? '300px' : 'auto'}
-				flexDirection='column'
-			>
-				<Typography
-					variant='body1bold'
-					color={colors.blueLighter}
-					paddingBottom='10px'
-				>
+		<CardBox sx={newStyle}>
+			<QuoteContainer>
+				<Typography variant='body1bold' color={colors.blueLighter} pb='10px'>
 					{quote}
 				</Typography>
 				{seeMoreButton && (
 					<Button
 						onClick={seeMoreButton}
 						variant='outlined'
-						sx={{ marginBottom: '10px', minWidth: 0 }}
+						sx={{ padding: 0, minWidth: 0 }}
 					>
 						{isTextExpanded ? <Close /> : <Add />}
 					</Button>
 				)}
 			</QuoteContainer>
-			{!horizontal && <img width='145px' src={personImg} alt={name} />}
-			<DescriptionContainer
-				width={horizontal ? '45%' : 'auto'}
-				height={horizontal ? '300px' : '100px'}
-			>
-				{horizontal && (
-					<img
-						width={horizontal ? '150px' : '110px'}
-						src={personImg}
-						alt={name}
-					/>
-				)}
-				<Typography
-					variant='body1'
-					color={colors.blueLighter}
-					style={{ marginTop: '30px' }}
-				>
-					{name}
-				</Typography>
-				{extraContent && extraContent}
-				<Typography variant='body1'>{description}</Typography>
+			<DescriptionContainer seeMoreButton>
+				<img width='145px' src={personImg} alt={name} />
+			 		<Typography
+			 			variant='body1'
+			 			color={colors.blueLighter}
+			 			style={{ marginTop: '10px', padding: '10px' }}
+			 		>
+			 			{name}
+			 		</Typography>
+			 		{extraContent && extraContent}
+			 		<Typography variant='body1' style={{ padding: '10px'}}>{description}</Typography>
 			</DescriptionContainer>
 		</CardBox>
 	);

@@ -113,32 +113,30 @@ export const NossaHistoria = () => {
 						alt='Acqua Mater logos'
 					/>
 				</Box>
-				<Box display='flex' alignItems='center' justifyContent='center'>
+				<Box display='flex' alignItems='start' justifyContent='center'>
 					<PersonQuoteCard
 						quote={text}
 						personImg='/acquamater/quem-pensa-faz/people/dawn-fleming.png'
 						name='Dawn Fleming'
 						extraContent={
-							<Typography variant='body1'>
+							<Typography variant='body1' color={colors.blueLighter}>
 								Canadá / Brasil
 							</Typography>
 						}
 						description='Diretora do Water Innovation Lab Brasil / WIL BRASIL'
 						seeMoreButton={expandText}
 						isTextExpanded={text === fullDawnText}
-						heightGradient='320'
 					/>
 					<PersonQuoteCard
 						quote='"Patrícia Furtado é uma inspiração e uma Empoderadora Mulher Global, porque suas ações inspiram outras pessoas a sonhar mais, aprender mais, fazer mais e se tornar mais. Ela é uma verdadeira líder!"'
 						personImg='/acquamater/quem-pensa-faz/people/anais-barclay.png'
 						name='Anais Barclay'
 						extraContent={
-							<Typography variant='body1'>
+							<Typography variant='body1' color={colors.blueLighter}>
 								Laos / Hong Kong
 							</Typography>
 						}
 						description='Fundadora da BubblyStarzs & CEO da MEDRadiance Organization'
-						heightGradient='320'
 					/>
 				</Box>
 			</Wrapper>
