@@ -11,5 +11,5 @@ export const HeadContainer = styled.div`
 	height: 50vh;
 	z-index: 10;
 	color: white;
-	margin-bottom: 5%;
+	margin-bottom: 10%;
 `;

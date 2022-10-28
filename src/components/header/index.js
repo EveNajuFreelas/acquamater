@@ -17,7 +17,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 
 const Header = () => {
 	const navigate = useNavigate();
-	const isDesktop = useMediaQuery('(min-width:1024px)', { noSsr: true });
+	const isDesktop = useMediaQuery('(min-width:1000px)', { noSsr: true });
 	const [openDrawer, setOpenDrawer] = useState(false);
 
 	const handleRedirect = url => {

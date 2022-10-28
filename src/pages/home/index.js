@@ -4,8 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import ColumnTextImage from '../../components/ColumnTextImage';
 import { colors } from '../../theme/colors';
 import { ModalContainer } from '../quem-pensa-e-faz/styles';
-import { Wrapper } from '../styles';
-import { BackgroundImage, BoxContainer } from './styles';
+import { Wrapper, BackgroundImage } from '../styles';
+import { BoxContainer } from './styles';
 import AddIcon from '@mui/icons-material/Add';
 
 const Home = () => {

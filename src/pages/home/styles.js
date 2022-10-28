@@ -10,10 +10,3 @@ export const BoxContainer = styled(Box)`
 	width: 100%;
 	padding: 10% 0;
 `;
-
-export const BackgroundImage = styled.img`
-	position: absolute;
-	z-index: -1;
-	height: auto;
-	width: 100%;
-`;
