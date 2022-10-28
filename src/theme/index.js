@@ -126,6 +126,14 @@ theme = createTheme(theme, {
 				},
 			},
 		},
+		MuiFilledInput: {
+			styleOverrides: {
+				root: {
+					borderRadius: '25px',
+					borderBottom: 'none',
+				}
+			}
+		}
 	},
 });
 

@@ -80,8 +80,8 @@ export const Contato = () => {
 				title='Contato'
 				backgroundImage='/acquamater/default-head-bg.png'
 			/>
-			<Box mt='100px' textAlign='center' mb='50px'>
-				<Typography variant='h1' color={colors.blueLighter}>
+			<Box mt='50px' textAlign='center' mb='50px'>
+				<Typography variant='h1' color={colors.blueLighter} style={{ marginBottom: '40px' }}>
 					VAMOS CONVERSAR?
 				</Typography>
 				<Typography variant='body1' my='20px' px='10%'>
@@ -98,7 +98,7 @@ export const Contato = () => {
 
 				<Grid
 					container
-					spacing={2}
+					spacing={8}
 					textAlign='start'
 					paddingX='10%'
 					mt='3%'
@@ -112,6 +112,7 @@ export const Contato = () => {
 								Nome*
 							</Typography>
 							<TextField
+								InputProps={{ disableUnderline: true }}
 								required
 								fullWidth
 								variant='filled'
@@ -129,6 +130,7 @@ export const Contato = () => {
 								E-mail*
 							</Typography>
 							<TextField
+								InputProps={{ disableUnderline: true }}
 								required
 								fullWidth
 								variant='filled'
@@ -146,6 +148,7 @@ export const Contato = () => {
 								Empresa
 							</Typography>
 							<TextField
+								InputProps={{ disableUnderline: true }}
 								fullWidth
 								variant='filled'
 								id='empresa'
@@ -166,11 +169,7 @@ export const Contato = () => {
 										<FormControlLabel
 											control={
 												<Checkbox
-													onChange={() =>
-														handleCheckedSubjects(
-															cs
-														)
-													}
+													onChange={() => handleCheckedSubjects(cs)}
 												/>
 											}
 											label={cs}
@@ -188,6 +187,7 @@ export const Contato = () => {
 								Mensagem*
 							</Typography>
 							<TextField
+								InputProps={{ disableUnderline: true }}
 								required
 								fullWidth
 								variant='filled'
@@ -201,11 +201,13 @@ export const Contato = () => {
 						</Box>
 					</Grid>
 				</Grid>
-				<Button onClick={sendContactEmail}>Enviar</Button>
+				<Button onClick={sendContactEmail} style={{ fontSize: '18px', padding: '0 30px' }}>
+					Enviar
+				</Button>
 			</Box>
 
 			<VamosColaborarContainer>
-				<Typography variant='h1' color={colors.blueLighter}>
+				<Typography variant='h1' color={colors.blueLighter} style={{ marginBottom: '40px' }}>
 					VAMOS COLABORAR?
 				</Typography>
 				<Typography variant='body1' my='20px' px='10%'>
@@ -240,6 +242,7 @@ export const Contato = () => {
 						solução que ele oferece).
 					</Typography>
 					<TextField
+						InputProps={{ disableUnderline: true }}
 						fullWidth
 						variant='filled'
 						id='empresa'
@@ -260,6 +263,7 @@ export const Contato = () => {
 									Seu site (se tiver)
 								</Typography>
 								<TextField
+									InputProps={{ disableUnderline: true }}
 									required
 									fullWidth
 									variant='filled'
@@ -277,6 +281,7 @@ export const Contato = () => {
 									Linkedin
 								</Typography>
 								<TextField
+									InputProps={{ disableUnderline: true }}
 									required
 									fullWidth
 									variant='filled'
@@ -299,6 +304,7 @@ export const Contato = () => {
 									YouTube
 								</Typography>
 								<TextField
+									InputProps={{ disableUnderline: true }}
 									required
 									fullWidth
 									variant='filled'
@@ -319,6 +325,7 @@ export const Contato = () => {
 									Instagram
 								</Typography>
 								<TextField
+									InputProps={{ disableUnderline: true }}
 									required
 									fullWidth
 									variant='filled'
@@ -334,11 +341,13 @@ export const Contato = () => {
 						</Grid>
 					</Grid>
 				</Box>
-				<Button onClick={sendCollabEmail}>Enviar</Button>
+				<Button onClick={sendCollabEmail} style={{ fontSize: '18px', padding: '0 30px'}}>
+					Enviar
+				</Button>
 			</VamosColaborarContainer>
 
 			<Box my='50px' px='10%' textAlign='center'>
-				<Typography variant='h1' color={colors.blueLighter}>
+				<Typography variant='h1' color={colors.blueLighter} style={{ marginBottom: '40px' }}>
 					VAMOS MANTER CONTATO?
 				</Typography>
 				<Typography variant='body1' my='20px' px='10%'>
@@ -363,6 +372,7 @@ export const Contato = () => {
 								Nome*
 							</Typography>
 							<TextField
+								InputProps={{ disableUnderline: true }}
 								required
 								fullWidth
 								variant='filled'
@@ -380,6 +390,7 @@ export const Contato = () => {
 								E-mail*
 							</Typography>
 							<TextField
+								InputProps={{ disableUnderline: true }}
 								required
 								fullWidth
 								variant='filled'
@@ -400,6 +411,7 @@ export const Contato = () => {
 								Linkedin
 							</Typography>
 							<TextField
+								InputProps={{ disableUnderline: true }}
 								fullWidth
 								variant='filled'
 								id='linkedin'
@@ -421,6 +433,7 @@ export const Contato = () => {
 								Instagram
 							</Typography>
 							<TextField
+								InputProps={{ disableUnderline: true }}
 								required
 								fullWidth
 								variant='filled'
@@ -441,6 +454,7 @@ export const Contato = () => {
 								Twitter
 							</Typography>
 							<TextField
+								InputProps={{ disableUnderline: true }}
 								required
 								fullWidth
 								variant='filled'
@@ -471,7 +485,9 @@ export const Contato = () => {
 					label='Eu concordo em receber comunicações. Ao informar meus dados, eu concordo com a Política de Privacidade.'
 				/>
 
-				<Button onClick={sendKeepContactEmail}>Enviar</Button>
+				<Button onClick={sendKeepContactEmail} style={{ fontSize: '18px', padding: '0 30px'}}>
+					Enviar
+				</Button>
 			</Box>
 		</Box>
 	);
