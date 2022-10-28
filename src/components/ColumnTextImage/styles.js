@@ -6,7 +6,8 @@ export const ContainerColumn = styled.div`
 	flex-direction: ${props => props.reverse && 'row-reverse'};
 	justify-content: space-between;
 	padding: ${props => (props.noPadding ? '0px' : '50px 0')};
-	align-items: center;
+	align-items: start;
+	
 	background-image: url(${props => props.backgroundImage});
 	background-size: cover;
 	background-position: center;
@@ -22,14 +23,13 @@ export const ContainerColumn = styled.div`
 `;
 
 export const ImageColumn = styled.div`
-	margin-top: 15px;
 	width: ${props => (props.noDivision ? '0%' : '50%')};
 	height: auto;
-	display: ${props => props.subfooter && 'flex'};
-	justify-content: ${props => props.subfooter && 'flex-end'};
+	display: flex;
+	justify-content: ${props => !props.reverse && 'flex-end'};
 
 	img {
-		width: ${props => (props.noDivision ? '0%' : '100%')};
+		width: ${props => (props.noDivision ? '0%' : '60%')};
 		width: ${props => props.subfooter && '50%'};
 	}
 
