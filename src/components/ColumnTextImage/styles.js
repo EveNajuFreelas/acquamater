@@ -4,18 +4,18 @@ export const ContainerColumn = styled.div`
 	display: flex;
 	gap: 60px;
 	flex-direction: ${props => props.reverse && 'row-reverse'};
-	justify-content: space-between;
+	justify-content: ${props => (props.reverse ? 'flex-end' : 'flex-start')};
 	padding: ${props => (props.noPadding ? '0px' : '50px 0')};
-	align-items: start;
-	
+	align-items: center;
+
 	background-image: url(${props => props.backgroundImage});
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	overflow: hidden;
-	
-    width: 100%;
-    height: 100%;
+
+	width: 100%;
+	height: 100%;
 
 	@media (max-width: 768px) {
 		flex-direction: column;
@@ -23,13 +23,14 @@ export const ContainerColumn = styled.div`
 `;
 
 export const ImageColumn = styled.div`
+	margin-top: 15px;
 	width: ${props => (props.noDivision ? '0%' : '50%')};
 	height: auto;
-	display: flex;
-	justify-content: ${props => !props.reverse && 'flex-end'};
+	display: ${props => props.subfooter && 'flex'};
+	justify-content: ${props => props.subfooter && 'flex-end'};
 
 	img {
-		width: ${props => (props.noDivision ? '0%' : '60%')};
+		width: ${props => (props.noDivision ? '0%' : '100%')};
 		width: ${props => props.subfooter && '50%'};
 	}
 
@@ -42,10 +43,12 @@ export const TitleContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 20px;
+	width: fit-content;
 `;
 
 export const TextColumn = styled.div`
-	width: ${props => (props.noDivision ? '100%' : '50%')};
+	width: ${props => (props.noDivision ? '100%' : '40%')};
+
 	padding: 0;
 	padding-left: ${props => props.personalize && '300px'};
 	padding-right: ${props => props.personalizeReverse && '300px'};

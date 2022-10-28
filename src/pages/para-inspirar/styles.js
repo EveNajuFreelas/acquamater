@@ -2,9 +2,8 @@ import { Box, Grid } from '@mui/material';
 import styled from 'styled-components';
 
 export const BoxContainer = styled(Box)`
-	background-image: url('/acquamater/para-inspirar-bg.png');
-	background-size: 100%;
-	padding-top: 100px;
+	/* background-image: url('/acquamater/para-inspirar-bg.png');
+	background-size: 100%; */
 `;
 
 export const InspirarItemContainer = styled(Grid)`

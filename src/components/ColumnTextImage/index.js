@@ -40,10 +40,10 @@ const ColumnTextImage = ({
 	personalizeReverse,
 	subfooter,
 	lowercase,
+	widthText,
 }) => {
 	const { isBg, img } = image;
 	const navigate = useNavigate();
-
 	const handleNavigate = url => {
 		const regex = /[(http)(https)]:\/\//;
 
@@ -80,12 +80,17 @@ const ColumnTextImage = ({
 									? 'capitalize'
 									: 'uppercase',
 							}}
+							fontWeight='bold'
 						>
 							{title}
 						</Typography>
 					)}
 					{subtitle && (
-						<Typography variant='subtitle' color={colors.grayDark}>
+						<Typography
+							variant='subtitle'
+							color={colors.grayDark}
+							style={{ width: '100%' }}
+						>
 							{subtitle}
 						</Typography>
 					)}

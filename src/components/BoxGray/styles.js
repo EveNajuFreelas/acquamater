@@ -35,5 +35,16 @@ export const Themes = styled.div`
 export const Wave = styled.div`
 	position: absolute;
 	bottom: 0;
-	left: 600px;
+	left: 731px;
+	right: -463px;
+	top: 49px;
+
+	@media (max-width: 1280px) {
+		height: auto;
+		position: absolute;
+		bottom: 0;
+		left: 487px;
+		right: -446px;
+		top: 101px;
+	}
 `;

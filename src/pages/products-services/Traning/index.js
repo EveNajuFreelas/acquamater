@@ -6,7 +6,7 @@ import {
 	HeadPage,
 	Title,
 } from '../styles';
-import { List, Link, BlueBusinessHubContainer } from './styles';
+import { List, Link, BlueBusinessHubContainer, ImgBlue } from './styles';
 import { Wrapper } from '../../styles';
 import BoxGray from '../../../components/BoxGray';
 import { colors } from '../../../theme/colors';
@@ -56,7 +56,11 @@ const Training = () => {
 					festivais, eventos ao ar-livre etc.
 					<br />
 					<br />
-					<Link>Conheça o Case do Projeto SOMOS ÁGUA</Link>
+					<Link>
+						<strong style={{ textTransform: 'uppercase' }}>
+							Conheça o Case do Projeto SOMOS ÁGUA
+						</strong>
+					</Link>
 				</ColumnTextImage>
 			</Wrapper>
 			<BlueBusinessHubContainer>
@@ -90,7 +94,7 @@ const Training = () => {
 								<strong>Mais informações em breve!</strong>
 							</Typography>
 						</Grid>
-						<Grid
+						<ImgBlue
 							item
 							md={6}
 							display='flex'
@@ -100,9 +104,9 @@ const Training = () => {
 							<img
 								src='/acquamater/training-second-image.png'
 								alt='Training'
-								width='90%'
+								width='100%'
 							/>
-						</Grid>
+						</ImgBlue>
 					</Grid>
 				</Wrapper>
 			</BlueBusinessHubContainer>
@@ -124,7 +128,9 @@ const Training = () => {
 					centros comerciais etc).
 					<br />
 					<br />
-					<Typography color={colors.primary}>ALGUNS DELES</Typography>
+					<Typography color={colors.primary} fontWeight='bold'>
+						ALGUNS DELES
+					</Typography>
 					<br />
 					<List>
 						{listThemes.map(item => (
@@ -148,6 +154,7 @@ const Training = () => {
 							Parceiros de confiança da Acqua Mater, que possuem
 							diversas especializações e encontram-se em
 							diferentes Estados do Brasil.
+							<br />
 							<br />
 							Por isso, esse projeto chama-se OCTOPUS: eles são
 							seus braços, ou tentáculos, que alcançam para além

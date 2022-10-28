@@ -26,6 +26,8 @@ export const TitleThemesBlue = styled(Typography)`
 	font-weight: bold;
 	font-size: 16px;
 	text-transform: uppercase;
+	margin: 0;
+	width: 100%;
 `;
 
 export const ContainerThemes = styled.div`
