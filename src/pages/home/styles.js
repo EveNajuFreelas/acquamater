@@ -1,14 +1,6 @@
 import { Box } from '@mui/material';
 import styled from 'styled-components';
 
-export const ContainerSection = styled.div`
-	padding-left: 300px;
-
-	@media (max-width: 1280px) {
-		padding-left: 30px;
-	}
-`;
-
 export const BoxContainer = styled(Box)`
 	position: relative;
 	max-height: 100vh;

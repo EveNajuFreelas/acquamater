@@ -8,12 +8,8 @@ export const HeadBreadcrumbs = styled(Breadcrumbs)`
 
 export const HeadContainer = styled.div`
 	position: relative;
-	background-image: ${props => props.bgImg && `url(${props.bgImg})`};
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position: bottom;
-	height: 30%;
+	height: 50vh;
 	z-index: 10;
-	padding: 5% 20%;
 	color: white;
+	margin-bottom: 5%;
 `;

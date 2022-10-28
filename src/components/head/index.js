@@ -1,30 +1,42 @@
-import { Grid, Link, Typography } from '@mui/material';
+import { Container, Grid, Link, Typography } from '@mui/material';
 import { HeadBreadcrumbs, HeadContainer } from './style';
 
 export const Head = ({ breadcrumbs, title, backgroundImage, children }) => (
-	<HeadContainer bgImg={backgroundImage}>
-		<Grid container>
-			<Grid item sm={5}>
-				<HeadBreadcrumbs>
-					{breadcrumbs.map(bc => (
-						<Link underline='hover' color='inherit' href={bc.url}>
-							{bc.name}
-						</Link>
-					))}
-					<Typography color='white'>{title}</Typography>
-				</HeadBreadcrumbs>
+	<HeadContainer>
+		<img 
+			src={backgroundImage} 
+			alt="page head" 
+			width="100%" 
+			style={{
+				position: 'absolute',
+				zIndex: -1,
+				height: 'auto',
+			}}
+		/>
+		<Container maxW='lg' style={{ paddingTop: '30px' }}>
+			<Grid container>
+					<Grid item sm={4} style={{ margin: 'auto' }}>
+						<HeadBreadcrumbs separator=">">
+							{breadcrumbs.map(bc => (
+								<Link underline='hover' color='inherit' href={bc.url}>
+									{bc.name}
+								</Link>
+							))}
+							<Typography color='white'>{title}</Typography>
+						</HeadBreadcrumbs>
 
-				<Typography
-					variant='h1'
-					color='white'
-					textTransform='capitalize'
-				>
-					{title}
-				</Typography>
+						<Typography
+							variant='h1'
+							color='white'
+							textTransform='uppercase'
+						>
+							{title}
+						</Typography>
+					</Grid>
+					<Grid item sm={6} sx={{ paddingTop: '40px' }}>
+						{children}
+					</Grid>
 			</Grid>
-			<Grid item sm={7} sx={{ paddingTop: '40px' }}>
-				{children}
-			</Grid>
-		</Grid>
+		</Container>
 	</HeadContainer>
 );

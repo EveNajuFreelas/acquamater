@@ -74,8 +74,10 @@ const Header = () => {
 							navigate('/');
 						}}
 					>
-						<img src='/acquamater/acquamater-logo.svg' alt='logo' />
+						<img src='/acquamater/acquamater-logo.svg' alt='logo' style={{ marginRight: '40px'}} />
 					</Box>
+					
+					<Box style={{ display: 'flex', alignItems: 'end'}}>
 
 					{isDesktop &&
 						navigation.map(nav => (
@@ -84,6 +86,7 @@ const Header = () => {
 								handleRedirect={handleRedirect}
 							/>
 						))}
+					</Box>
 				</Toolbar>
 			</Container>
 		</AppBar>

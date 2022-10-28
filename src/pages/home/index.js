@@ -5,7 +5,7 @@ import ColumnTextImage from '../../components/ColumnTextImage';
 import { colors } from '../../theme/colors';
 import { ModalContainer } from '../quem-pensa-e-faz/styles';
 import { Wrapper } from '../styles';
-import { BackgroundImage, BoxContainer, ContainerSection } from './styles';
+import { BackgroundImage, BoxContainer } from './styles';
 import AddIcon from '@mui/icons-material/Add';
 
 const Home = () => {

@@ -23,7 +23,7 @@ let theme = createTheme({
 			fontWeight: 'bold',
 		},
 		body2: {
-			fontSize: '12px',
+			fontSize: '13px',
 		},
 		body3: {
 			fontSize: '15px',
