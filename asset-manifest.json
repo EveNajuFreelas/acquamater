@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/acquamater/static/css/main.fecf8e13.css",
-    "main.js": "/acquamater/static/js/main.75457ecc.js",
+    "main.css": "/acquamater/static/css/main.e909acb0.css",
+    "main.js": "/acquamater/static/js/main.8ea4453d.js",
     "static/media/Museo 300.otf": "/acquamater/static/media/Museo 300.bc42e4fb98594205f713.otf",
     "index.html": "/acquamater/index.html",
-    "main.fecf8e13.css.map": "/acquamater/static/css/main.fecf8e13.css.map",
-    "main.75457ecc.js.map": "/acquamater/static/js/main.75457ecc.js.map"
+    "main.e909acb0.css.map": "/acquamater/static/css/main.e909acb0.css.map",
+    "main.8ea4453d.js.map": "/acquamater/static/js/main.8ea4453d.js.map"
   },
   "entrypoints": [
-    "static/css/main.fecf8e13.css",
-    "static/js/main.75457ecc.js"
+    "static/css/main.e909acb0.css",
+    "static/js/main.8ea4453d.js"
   ]
 }
