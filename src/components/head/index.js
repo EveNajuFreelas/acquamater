@@ -1,8 +1,8 @@
 import { Container, Grid, Link, Typography } from '@mui/material';
 import { HeadBreadcrumbs, HeadContainer } from './style';
 
-export const Head = ({ breadcrumbs, title, backgroundImage, children }) => (
-	<HeadContainer>
+export const Head = ({ breadcrumbs, title, backgroundImage, children, ...props }) => (
+	<HeadContainer {...props}>
 		<img 
 			src={backgroundImage} 
 			alt="page head" 

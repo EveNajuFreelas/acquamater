@@ -12,6 +12,7 @@ export const Clientes = () => (
             ]}
             title="Clientes"
             backgroundImage="/acquamater/default-head-bg.png"
+            style={{ marginBottom: 0 }}
         />
             
         <ParceirosContainer>

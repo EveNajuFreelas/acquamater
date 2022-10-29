@@ -17,7 +17,7 @@ export const SectionBlueTitle = styled(Typography)`
 `;
 
 export const ParceirosContainer = styled.div`
-    padding: 100px 10%;
+    padding: 10%;
     background-size: 100%;
     background-image: url('/acquamater/quem-pensa-faz/parceiros-bg.png');
     background-repeat: no-repeat;
@@ -29,7 +29,7 @@ export const ParceirosContainer = styled.div`
 `;
 
 export const ParceiroImg = styled(({ src }) => (
-    <Grid item sm={1} md={2.3}>
+    <Grid item sm={1}>
         <img src={src} alt="parceiro" width="180px" height="180px" />
     </Grid>))``;
 

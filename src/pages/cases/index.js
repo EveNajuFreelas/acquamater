@@ -45,8 +45,8 @@ export const Cases = () => {
 									item
 									xs={12}
 									md={4}
-									borderBottom={`1px ${colors.blueLighter} solid`}
-									padding='10px'
+									borderBottom={`2px ${colors.blueLighter} solid`}
+									padding='30px 0'
 									key={`case-${index}`}
 								>
 									<CaseCard
@@ -84,8 +84,8 @@ export const Cases = () => {
 									item
 									xs={12}
 									md={4}
-									borderBottom={`1px ${colors.blueLighter} solid`}
-									padding='10px'
+									borderBottom={`2px ${colors.blueLighter} solid`}
+									padding='30px 0'
 									key={`case-${index}`}
 								>
 									<CaseCard
