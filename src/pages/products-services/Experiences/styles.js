@@ -46,14 +46,14 @@ export const ContainerColumn = styled.div`
 `;
 
 export const Column = styled.div`
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 60px;
-	margin: 50px 0px 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin: 50px 0px;
 
-	@media (max-width: 768px) {
-		grid-template-columns: 1fr;
-	}
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const ListConsultancy = styled.ul`

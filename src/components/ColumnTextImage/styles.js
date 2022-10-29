@@ -1,25 +1,24 @@
 import styled from 'styled-components';
 
 export const ContainerColumn = styled.div`
-	display: flex;
-	gap: 60px;
-	flex-direction: ${props => props.reverse && 'row-reverse'};
-	justify-content: ${props => (props.reverse ? 'flex-end' : 'flex-start')};
-	padding: ${props => (props.noPadding ? '0px' : '50px 0')};
-	align-items: center;
+  display: flex;
+  gap: 60px;
+  flex-direction: ${(props) => props.reverse && "row-reverse"};
+  justify-content: ${(props) => (props.reverse ? "flex-end" : "flex-start")};
+  padding: ${(props) => (props.noPadding ? "0px" : "50px 0")};
+  align-items: center;
 
-	background-image: url(${props => props.backgroundImage});
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	overflow: hidden;
+  background-image: url(${(props) => props.backgroundImage});
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
 
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 
-	@media (max-width: 768px) {
-		flex-direction: column;
-	} ;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  } ;
 `;
 
 export const ImageColumn = styled.div`

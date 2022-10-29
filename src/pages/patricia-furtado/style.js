@@ -9,79 +9,102 @@ export const Head = styled.div`
 `;
 
 export const WrapperHead = styled.div`
-	height: 30vw;
+  height: 22vw;
 
-	@media(max-width: 880px) {
-		height: 50vw;
-	}
+  @media (max-width: 880px) {
+    height: 50vw;
+  }
 `;
 
 export const ContainerHead = styled((props) => <Grid container {...props} />)`
-	position: absolute;
-	top: 400px;
-	display: flex;
-	height: auto;
-	img {
-		margin-left: 10vw;
-	}
+  position: absolute;
+  top: 400px;
+  display: flex;
+  height: auto;
+  img {
+    margin-left: 10vw;
+  }
 
-	@media (max-width: 880px) {
-		img {
-			margin-left: 0;
-		}
-	}
+  @media (max-width: 880px) {
+    img {
+      margin-left: 0;
+    }
+  }
 `;
 
 export const Text = styled.div`
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	width: 100%;
-	height: 500px;
-	margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 480px;
+  margin-left: 200px;
 
-	@media (max-width: 880px) {
-		height: auto;
-		margin-left: 0;
-	}
+  @media (max-width: 1280px) {
+    margin-top: 335px;
+    margin-left: 150px;
+  }
+
+  @media (max-width: 1024px) {
+    margin-top: 255px;
+    margin-left: 125px;
+  }
+
+  @media (max-width: 880px) {
+    height: auto;
+    margin-left: 0;
+  }
 `;
 
 export const ContainerBio = styled(Container)`
-	@media (max-width: 880px) {
-		margin-top: 10vw;
-	}
-`;
-export const WrapperSecond = styled.div`
-	display: flex;
-	gap: 20px;
-	align-items: center;
-	margin-top: 20px;
+  @media (max-width: 1024px) {
+    display: flex;
+    margin-top: 8vw;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (max-width: 880px) {
+    margin-top: 10vw;
+  }
 `;
 
-export const WrapperTestimony = styled((props) => (<Grid container spacing={2} {...props} />))`
-	margin-top: 50px;
-	justify-content: center;
-	display: flex;
+export const WrapperSecond = styled.div`
+  display: grid;
+  grid-template-columns: 0.65fr 1fr;
+
+  margin-top: 20px;
+`;
+
+export const WrapperTestimony = styled.div`
+  margin-top: 50px;
+  justify-content: center;
+  display: flex;
+  gap: 60px;
 `;
 
 export const VideoSection = styled.div`
-	display: flex;
-	background: no-repeat url('/acquamater/patricia-second.png');
-	text-align: center;
-	flex-direction: column;
-	padding: 170px 0px 200px;
-	margin: 40px 0;
+  display: flex;
+  background: no-repeat url("/acquamater/patricia-second.png");
+  text-align: center;
+  flex-direction: column;
+  padding: 170px 0px 200px;
+  margin: 40px 0;
 `;
 
 export const Videos = styled(Container)`
-	display: grid;
-	grid-template-columns: repeat(3, 350px);
-	gap: 50px;
-	justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  gap: 50px;
+  justify-content: center;
 
-	@media (max-width: 880px) {
-		grid-template-columns: repeat(1, 350px);
-	}
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 350px);
+  }
+
+  @media (max-width: 880px) {
+    grid-template-columns: repeat(1, 350px);
+  }
 `;
 
 export const PodcastSection = styled(Container)`

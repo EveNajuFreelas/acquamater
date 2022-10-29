@@ -17,8 +17,11 @@ export const ContainerPodcast = styled.div`
 `;
 
 export const Section = styled.div`
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  p {
+    margin: 0;
+  }
 `;
