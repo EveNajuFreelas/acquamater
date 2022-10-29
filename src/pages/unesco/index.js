@@ -1,4 +1,4 @@
-import { Box, Grid, Typography, Link, Chip, Stack } from '@mui/material';
+import { Box, Grid, Typography, Link, Chip, Stack, useMediaQuery } from '@mui/material';
 import { Head } from '../../components/head';
 import { PersonQuoteCard } from '../../components/person-quote-card';
 import {
@@ -8,9 +8,11 @@ import {
 } from './style';
 import { colors } from '../../theme/colors';
 import { Wrapper } from '../styles';
-import ColumnTextImage from '../../components/ColumnTextImage';
 
-export const UNESCO = () => (
+export const UNESCO = () => {
+	const isLargeDesktop = useMediaQuery('(min-width:1330px)', { noSsr: true });
+
+	return (
 	<Box>
 		<Head
 			breadcrumbs={[
@@ -22,27 +24,28 @@ export const UNESCO = () => (
 		/>
 
 		<Wrapper>
-			<ColumnTextImage
-				image={{
-					isBg: false,
-					img: '/acquamater/unesco-section-img.png',
-				}}
-				title='Palestras Patricia'
-			>
-				A UNESCO é uma agência da ONU fundada em 1945 e voltada para a
-				Educação, a Ciência e a Cultura.
-				<br />
-				<br />A Acqua Mater acredita que esses três âmbitos do saber são
-				fundamentais para os projetos que desenvolve, inclusive no campo
-				da Sustentabilidade. Ainda que, para a maioria, esta se baseie
-				apenas no tripé Economia-Meio Ambiente-Sociedade – o famoso
-				triple bottom line –há quem some a estes a dimensão da CULTURA,
-				por considerá-la fundamental para o desenvolvimento sustentável.
-				A UNESCO também apoia essa ideia.
-			</ColumnTextImage>
+			<Grid container justifyContent="center">
+				<Grid item xs={12} md={5}>
+					<img src="/acquamater/unesco-section-img.png" alt="unesco" width="90%" />
+				</Grid>
+				<Grid item xs={12} md={4}>
+					<Typography>
+						A UNESCO é uma agência da ONU fundada em 1945 e voltada para a
+						Educação, a Ciência e a Cultura.
+						<br />
+						<br />A Acqua Mater acredita que esses três âmbitos do saber são
+						fundamentais para os projetos que desenvolve, inclusive no campo
+						da Sustentabilidade. Ainda que, para a maioria, esta se baseie
+						apenas no tripé Economia-Meio Ambiente-Sociedade – o famoso
+						triple bottom line –há quem some a estes a dimensão da CULTURA,
+						por considerá-la fundamental para o desenvolvimento sustentável.
+						A UNESCO também apoia essa ideia.
+					</Typography>
+				</Grid>
+			</Grid>
 		</Wrapper>
 
-		<CulturaOceanicaContainer>
+		<CulturaOceanicaContainer style={{ marginTop: '30px'}}>
 			<Wrapper>
 				<Typography variant='body1' textAlign='center'>
 					Em 1961, nasce a Comissão Oceanográfica Intergovernamental
@@ -51,8 +54,8 @@ export const UNESCO = () => (
 					na Terra.{' '}
 				</Typography>
 			</Wrapper>
-			<Box mt='40vh' mb='25vh'>
-				<Typography variant='h1' color='white'>
+			<Box mt='40vh' textAlign="start" display="flex" flexDirection="column">
+				<Typography variant='h1' color='white' style={{ margin: 0 }}>
 					ACQUA MATER <br /> & CULTURA OCEÂNICA
 				</Typography>
 
@@ -103,16 +106,18 @@ export const UNESCO = () => (
 				</Grid>
 			</Box>
 
-			<PersonQuoteCard
-				horizontal
-				quote='"Patricia é uma rara combinação de talento artístico e compromisso sério com a proteção do oceano. Tive o prazer de conhecê-la por ocasião de um workshop que organizei em Veneza em 2019 e, desde então, continuamos a trabalhar juntas para promover a Cultura Oceânica para Todos e com Todos!"'
-				personImg='/acquamater/quem-pensa-faz/people/francesca-santoro.png'
-				name='Francesca Santoro'
-				description='Responsável Cultura Oceânica da COI-UNESCO'
-			/>
+			<Box style={isLargeDesktop ? { transform: 'translateY(50%)'} : {}}>
+				<PersonQuoteCard
+					horizontal
+					quote='"Patricia é uma rara combinação de talento artístico e compromisso sério com a proteção do oceano. Tive o prazer de conhecê-la por ocasião de um workshop que organizei em Veneza em 2019 e, desde então, continuamos a trabalhar juntas para promover a Cultura Oceânica para Todos e com Todos!"'
+					personImg='/acquamater/quem-pensa-faz/people/francesca-santoro.png'
+					name='Francesca Santoro'
+					description='Responsável Cultura Oceânica da COI-UNESCO'
+				/>
+			</Box>
 		</CulturaOceanicaContainer>
 
-		<Wrapper>
+		<Wrapper style={isLargeDesktop ? { paddingTop: '100px'} : {}}>
 			<Box textAlign='center' mb='5%'>
 				<Typography variant='body1' mb='30px'>
 					Em 2021, é convidada a integrar o seleto grupo de
@@ -144,12 +149,13 @@ export const UNESCO = () => (
 				</Typography>
 			</Box>
 		</Wrapper>
+
 		<LinksContainer>
 			<Wrapper>
-				<Typography variant='h1' color={colors.blueLighter}>
+				<Typography variant='h1' color={colors.blueLighter} style={{ margin: 0 }}>
 					PARA SABER MAIS
 				</Typography>
-				<Typography variant='h2lite'>
+				<Typography variant='h2lite' style={{ margin: 0 }}>
 					Projetos com os quais a Acqua Mater colaborou em 2020 e
 					2021.
 				</Typography>
@@ -235,4 +241,4 @@ export const UNESCO = () => (
 			</Wrapper>
 		</LinksContainer>
 	</Box>
-);
+)};

@@ -2,7 +2,7 @@ import { Container } from '@mui/material';
 import styled from 'styled-components';
 
 export const IntroContainer = styled(Container)`
-	margin: 100px auto;
+	margin: 50px auto;
 	margin-bottom: 10px;
 	text-align: center;
 `;

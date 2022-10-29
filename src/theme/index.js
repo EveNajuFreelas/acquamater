@@ -23,7 +23,7 @@ let theme = createTheme({
 			fontWeight: 'bold',
 		},
 		body2: {
-			fontSize: '13px',
+			fontSize: '12px',
 		},
 		body3: {
 			fontSize: '15px',
@@ -32,6 +32,11 @@ let theme = createTheme({
 		h1: {
 			fontSize: '33px',
 			marginTop: '20px',
+		},
+		h1bold: {
+			fontSize: '30px',
+			marginTop: '20px',
+			fontWeight: 'bold',
 		},
 		h2: {
 			fontSize: '23px',
@@ -121,6 +126,14 @@ theme = createTheme(theme, {
 				},
 			},
 		},
+		MuiFilledInput: {
+			styleOverrides: {
+				root: {
+					borderRadius: '25px',
+					borderBottom: 'none',
+				}
+			}
+		}
 	},
 });
 
