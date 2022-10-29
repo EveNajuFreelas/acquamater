@@ -15,6 +15,7 @@ import {
 import { Wrapper } from '../../styles';
 import BoxGray from '../../../components/BoxGray';
 import { Strip } from '../../../components/Strip';
+import { Wave } from '../../../components/BoxGray/styles';
 
 const Talk = () => {
 	const listAllThemesLeft = [
@@ -75,7 +76,7 @@ const Talk = () => {
 	return (
 		<>
 			<HeadPage image='/acquamater/head-talk.png' noMargin>
-				<ContainerTextSingle maxWidth='lg'>
+				<Wrapper style={{ textAlign: 'center' }}>
 					<Typography variant='subtitle1' sx={{ color: '#fff' }}>
 						Oferecemos uma série de Palestras ligadas ao Mundo
 						ÁGUA-OCEANO que incentivam reflexões, pesquisas,
@@ -85,7 +86,7 @@ const Talk = () => {
 						relações e os negócios sob um prisma disruptivo e
 						revelador.
 					</Typography>
-				</ContainerTextSingle>
+				</Wrapper>
 			</HeadPage>
 			<ContainerTitle image='talk-wave.png'>
 				<Title maxWidth='lg'>Palestras</Title>
@@ -100,15 +101,16 @@ const Talk = () => {
 				>
 					A formação e a experiência de Patricia como Atriz e
 					Professora fizeram dela uma verdadeira "Storyteller". Além
-					de apresentar e moderar eventos, dá Palestras Inspiracionais
-					para os mais variados públicos, no Brasil e no exterior,
-					compartilhando sua experiência pessoal, suas pesquisas e
-					aprendizagens relacionadas ao Mundo ÁGUA-OCEANO. Seu
-					background artístico e sua pluralidade profissional permitem
-					que misture temas, transmita dados científicos e informações
-					atuais que favoreçam mudanças de comportamento e tomadas de
-					decisão. Sua visão sistêmica é capaz de sensibilizar as
-					pessoas, visando à transformação humana, social e ambiental.
+					de apresentar e moderar eventos, dá{' '}
+					<strong>Palestras Inspiracionais</strong> para os mais
+					variados públicos, no Brasil e no exterior, compartilhando
+					sua experiência pessoal, suas pesquisas e aprendizagens
+					relacionadas ao Mundo ÁGUA-OCEANO. Seu background artístico
+					e sua pluralidade profissional permitem que misture temas,
+					transmita dados científicos e informações atuais que
+					favoreçam mudanças de comportamento e tomadas de decisão.
+					Sua visão sistêmica é capaz de sensibilizar as pessoas,
+					visando à transformação humana, social e ambiental.
 					<p>
 						Línguas Fluentes: português, inglês, espanhol, italiano.
 					</p>
@@ -172,7 +174,7 @@ const Talk = () => {
 						<Grid item md={6}>
 							<BoxGray dense>
 								<TitleThemesBlue variant='h2'>
-									Macrotemas
+									Água & Saneamento / ODS 6
 								</TitleThemesBlue>
 								<List>
 									{listMacroThemesLeft.map(item => (
@@ -185,13 +187,30 @@ const Talk = () => {
 						<Grid item md={6}>
 							<BoxGray dense waterMark>
 								<TitleThemesBlue variant='h2'>
-									Macrotemas
+									Vida marinha / ODS 14
 								</TitleThemesBlue>
 								<List>
 									{listMacroThemesRight.map(item => (
 										<li>{item}</li>
 									))}
 								</List>
+
+								<Wave
+									style={{
+										height: 'auto',
+										position: 'absolute',
+										bottom: '0',
+										left: '29px',
+										right: ' -577px',
+										top: '101px',
+									}}
+								>
+									<img
+										src='/acquamater/wave.png'
+										alt='wave'
+										width='80%'
+									/>
+								</Wave>
 							</BoxGray>
 						</Grid>
 					</Grid>

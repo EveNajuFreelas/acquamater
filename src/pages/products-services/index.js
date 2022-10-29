@@ -12,33 +12,50 @@ const ProductsServices = () => {
 	return (
 		<>
 			<HeadPage image={'/acquamater/head-products.png'}>
-				<Grid container>
-					<Grid item md={5}>
-						<Typography
-							variant='h1'
-							sx={{ color: '#fff', fontSize: '2.2rem' }}
-						>
-							O que oferecemos
-						</Typography>
-					</Grid>
-					<Grid item md={7} display="flex" justifyContent="end">
-						<Description>
-							<Typography variant='subtitle1' sx={{ color: '#fff' }}>
-								Todos os Produtos da Acqua Mater são realizados
-								tendo por eixo a ÁGUA e o OCEANO e têm sinergia
-								entre si, podendo se articular dependendo das
-								necessidades do cliente
+				<Wrapper>
+					<Grid container alignItems='center'>
+						<Grid item md={5}>
+							<Typography
+								variant='h1'
+								sx={{
+									color: '#fff',
+									fontSize: '2.2rem',
+								}}
+							>
+								O que oferecemos
 							</Typography>
-						</Description>
+						</Grid>
+						<Grid item md={7} display='flex' justifyContent='end'>
+							<Description>
+								<Typography
+									variant='subtitle1'
+									sx={{
+										'color': '#fff',
+										'@media (max-width:1024px)': {
+											fontSize: '13px',
+										},
+									}}
+								>
+									Todos os Produtos da Acqua Mater são
+									realizados tendo por eixo a ÁGUA e o OCEANO
+									e têm sinergia entre si, podendo se
+									articular dependendo das necessidades do
+									cliente
+								</Typography>
+							</Description>
+						</Grid>
 					</Grid>
-				</Grid>
+				</Wrapper>
 			</HeadPage>
 
 			<ContainerProducts>
 				<ContainerProduct>
 					<Wrapper>
 						<ColumnTextImage
-							image={{ isBg: false, img: '/acquamater/o-que-oferecemos-1.png' }}
+							image={{
+								isBg: false,
+								img: '/acquamater/o-que-oferecemos-1.png',
+							}}
 							title='Palestras'
 							pathName='/o-que-oferecemos/palestras'
 							buttons={[
@@ -61,7 +78,10 @@ const ProductsServices = () => {
 				<ContainerProduct>
 					<Wrapper>
 						<ColumnTextImage
-							image={{ isBg: false, img: '/acquamater/o-que-oferecemos-2.png' }}
+							image={{
+								isBg: false,
+								img: '/acquamater/o-que-oferecemos-2.png',
+							}}
 							title='Capacitação'
 							pathName='/o-que-oferecemos/capacitacao'
 							buttons={[
@@ -86,7 +106,10 @@ const ProductsServices = () => {
 				<ContainerProduct>
 					<Wrapper>
 						<ColumnTextImage
-							image={{ isBg: false, img: '/acquamater/o-que-oferecemos-3.png' }}
+							image={{
+								isBg: false,
+								img: '/acquamater/o-que-oferecemos-3.png',
+							}}
 							title='Consultorias'
 							pathName='/o-que-oferecemos/consultoria'
 							buttons={[
@@ -109,7 +132,10 @@ const ProductsServices = () => {
 				<ContainerProduct>
 					<Wrapper>
 						<ColumnTextImage
-							image={{ isBg: false, img: '/acquamater/last-products.png' }}
+							image={{
+								isBg: false,
+								img: '/acquamater/last-products.png',
+							}}
 							title='Experiência'
 							pathName='/o-que-oferecemos/experiencia'
 							buttons={[

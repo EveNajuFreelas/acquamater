@@ -5,6 +5,7 @@ export const ContainerTitle = styled.div`
 	display: flex;
 	background: no-repeat url(${props => props.image});
 	margin-bottom: 24px;
+	background-size: contain;
 `;
 
 export const Title = styled(Container)`
@@ -13,8 +14,12 @@ export const Title = styled(Container)`
 	color: #fff;
 	font-size: 54px;
 	margin-bottom: 24px;
-	@media (max-width: 768px) {
-		justify-content: center;
+	@media (max-width: 1280px) {
+		padding: 10px 130px;
+		font-size: 45px;
+	}
+	@media (max-width: 1024px) {
+		font-size: 40px;
 	}
 `;
 
@@ -59,11 +64,19 @@ export const HeadPage = styled.div`
 	background: url(${props => props.image});
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
-	height: 25em;
+	height: 28em;
 	z-index: 10;
 	padding: 2% 10%;
 	margin-bottom: ${props => !props.noMargin && '60px'};
 
 	color: #fff;
 	position: relative;
+
+	@media (max-width: 1280px) {
+		height: 20em;
+	}
+
+	@media (max-width: 1024px) {
+		height: 16em;
+	}
 `;

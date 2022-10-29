@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Grid, Typography } from '@mui/material';
 import styled from 'styled-components';
 import { colors } from '../../../theme/colors';
 
@@ -66,4 +66,21 @@ export const BlueBusinessHubContainer = styled(Box)`
 	padding: 10% 10%;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
+	margin-bottom: 100px;
+`;
+
+export const ImgBlue = styled(Grid)`
+	position: absolute;
+	left: 564px;
+	top: 20px;
+
+	@media (max-width: 1280px) {
+		left: 474px;
+		top: 35px;
+	}
+
+	@media (max-width: 1024px) {
+		left: 405px;
+		top: 156px;
+	}
 `;

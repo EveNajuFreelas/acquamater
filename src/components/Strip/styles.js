@@ -7,6 +7,7 @@ export const StripContainer = styled.div`
 	background-image: url(${props => props.img});
 	display: flex;
 	margin: 70px 0px;
+	background-size: cover;
 `;
 
 export const WrapperStrip = styled(Container)``;
