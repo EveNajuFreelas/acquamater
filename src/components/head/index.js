@@ -17,7 +17,7 @@ export const Head = ({ breadcrumbs, title, backgroundImage, children, ...props }
 			<Grid container>
 					<Grid item sm={4} style={{ margin: 'auto' }}>
 						<HeadBreadcrumbs separator=">">
-							{breadcrumbs.map(bc => (
+							{breadcrumbs?.map(bc => (
 								<Link underline='hover' color='inherit' href={bc.url}>
 									{bc.name}
 								</Link>

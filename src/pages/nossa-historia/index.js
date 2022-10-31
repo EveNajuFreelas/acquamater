@@ -17,11 +17,7 @@ export const NossaHistoria = () => {
 
 	const expandText = () => {
 		setText(curr => {
-			if (curr === fullDawnText) {
-				return smallDawnText;
-			} else {
-				return fullDawnText;
-			}
+			return curr === fullDawnText ? smallDawnText : fullDawnText;
 		});
 	};
 	return (

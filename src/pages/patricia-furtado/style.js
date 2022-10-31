@@ -9,18 +9,16 @@ export const Head = styled.div`
 `;
 
 export const WrapperHead = styled.div`
-  height: 22vw;
-
-  @media (max-width: 880px) {
-    height: 50vw;
-  }
+  position: relative;
+  height: 50vh;
+  z-index: 12;
 `;
 
 export const ContainerHead = styled((props) => <Grid container {...props} />)`
-  position: absolute;
-  top: 400px;
-  display: flex;
+  transform: translateY(-50%);
   height: auto;
+  justify-content: center;
+
   img {
     margin-left: 10vw;
   }

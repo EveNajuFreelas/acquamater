@@ -1,12 +1,10 @@
 import { Box, Button, Typography, Grid, Modal, Divider } from '@mui/material';
 import {
 	ContainerBio,
-	Head,
 	WrapperHead,
 	ContainerHead,
 	Text,
 	WrapperSecond,
-	WrapperTestimony,
 	Videos,
 	VideoSection,
 	PodcastSection,
@@ -21,6 +19,7 @@ import { Podcast } from './Podcast';
 import { useState } from 'react';
 import { ModalContainer } from '../quem-pensa-e-faz/styles';
 import { Add } from '@mui/icons-material';
+import { Head } from '../../components/head';
 
 export const PatriciaFurtado = () => {
   const fullMarceloText = (
@@ -111,18 +110,17 @@ export const PatriciaFurtado = () => {
 
   return (
     <Box overflow="hidden">
-      <Head />
+      <Head backgroundImage="/acquamater/patricia-head.png" />
       <WrapperHead>
         <ContainerHead>
-          <Grid item md={6}>
+          <Grid item md={5}>
             <img
               src="/acquamater/patricia-first.png"
               alt="Patricia Furtado"
               width="100%"
-              height="100%"
             />
           </Grid>
-          <Grid item md={6}>
+          <Grid item md={5}>
             <Text>
               <Typography
                 variant="h2"
@@ -139,6 +137,7 @@ export const PatriciaFurtado = () => {
           </Grid>
         </ContainerHead>
       </WrapperHead>
+
       <Modal open={modalOpen} onClose={handleModal}>
         <ModalContainer>
           <Typography variant="h3" margin="20px">
@@ -148,6 +147,7 @@ export const PatriciaFurtado = () => {
           </Typography>
         </ModalContainer>
       </Modal>
+
       <ContainerBio>
         <Typography variant="body1" maxWidth={"1024px"}>
           - Brasileira e Italiana, Empreendedora, Palestrante
@@ -179,8 +179,9 @@ export const PatriciaFurtado = () => {
             </Button>
           </WrapperSecond>
         </Typography>
-        <WrapperTestimony>
-          <Grid item md={5}>
+
+        <Grid container spacing={2} style={{ marginTop: '60px', display: 'flex', justifyContent: 'center' }}>
+          <Grid item md={4}>
             <Testimony
               author="/acquamater/patricia-marcelo.png"
               name="MARCELO LLÉVENES"
@@ -206,7 +207,7 @@ export const PatriciaFurtado = () => {
             </Testimony>
           </Grid>
 
-          <Grid item md={5}>
+          <Grid item md={4}>
             <Testimony
               author="/acquamater/patricia-susana.png"
               name="SUSANA SALVADOR"
@@ -231,7 +232,7 @@ export const PatriciaFurtado = () => {
               </Button>
             </Testimony>
           </Grid>
-        </WrapperTestimony>
+        </Grid>
       </ContainerBio>
 
       <VideoSection>

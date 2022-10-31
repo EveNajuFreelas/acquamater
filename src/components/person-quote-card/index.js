@@ -27,6 +27,7 @@ export const PersonQuoteCard = ({
 	const descriptionStyle = {
 		img: {
 			marginBottom: horizontal ? 0 : '-60px',
+			transform: horizontal ? 'none' : 'translateY(-50%)',
 		},
 		padding: horizontal ? '20px' : '0 0 20px 0',
 	};
