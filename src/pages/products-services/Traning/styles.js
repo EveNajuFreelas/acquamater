@@ -67,6 +67,10 @@ export const BlueBusinessHubContainer = styled(Box)`
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	margin-bottom: 100px;
+
+	@media (max-width: 1024px) {
+		padding: 7% 2%;
+	}
 `;
 
 export const ImgBlue = styled(Grid)`
@@ -80,7 +84,12 @@ export const ImgBlue = styled(Grid)`
 	}
 
 	@media (max-width: 1024px) {
-		left: 405px;
-		top: 156px;
+		left: 434px;
+		top: 48px;
+	}
+
+	@media (max-width: 880px) {
+		left: 414px;
+		top: 99px;
 	}
 `;

@@ -6,6 +6,10 @@ export const ContainerTitle = styled.div`
 	background: no-repeat url(${props => props.image});
 	margin-bottom: 24px;
 	background-size: contain;
+
+	@media (max-width: 880px) {
+		margin-bottom: -40px;
+	}
 `;
 
 export const Title = styled(Container)`

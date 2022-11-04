@@ -70,7 +70,7 @@ const Training = () => {
 						justifyContent='space-between'
 						alignItems='center'
 					>
-						<Grid item md={5}>
+						<Grid item md={5} xs={6}>
 							<Typography variant='h1' color='white'>
 								BLUE BUSINESS HUB
 							</Typography>
@@ -97,6 +97,7 @@ const Training = () => {
 						<ImgBlue
 							item
 							md={6}
+							xs={6}
 							display='flex'
 							alignItems='end'
 							justifyContent='center'
