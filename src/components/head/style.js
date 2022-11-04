@@ -8,7 +8,7 @@ export const HeadBreadcrumbs = styled(Breadcrumbs)`
 
 export const HeadContainer = styled.div`
 	position: relative;
-	height: 50vh;
+	height: ${props => (props.marginBottom ? props.marginBottom : '50vh')};
 	z-index: 10;
 	color: white;
 	margin-bottom: 10%;

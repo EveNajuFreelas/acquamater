@@ -29,6 +29,7 @@ export const NossaHistoria = () => {
 				]}
 				title='Nossa História'
 				backgroundImage='/acquamater/default-head-bg.png'
+				marginBottom='35vh'
 			>
 				<Typography variant='body2' color='white'>
 					A missão da Acqua Mater é ambiciosa, pois se propõe a ser um
@@ -44,7 +45,7 @@ export const NossaHistoria = () => {
 					container
 					pt='100px'
 					pb='100px'
-					maxWidth="1024px"
+					maxWidth='1024px'
 					mx='auto'
 					justifyContent='space-between'
 					spacing={3}
@@ -115,7 +116,10 @@ export const NossaHistoria = () => {
 						personImg='/acquamater/quem-pensa-faz/people/dawn-fleming.png'
 						name='Dawn Fleming'
 						extraContent={
-							<Typography variant='body1' color={colors.blueLighter}>
+							<Typography
+								variant='body1'
+								color={colors.blueLighter}
+							>
 								Canadá / Brasil
 							</Typography>
 						}
@@ -128,7 +132,10 @@ export const NossaHistoria = () => {
 						personImg='/acquamater/quem-pensa-faz/people/anais-barclay.png'
 						name='Anais Barclay'
 						extraContent={
-							<Typography variant='body1' color={colors.blueLighter}>
+							<Typography
+								variant='body1'
+								color={colors.blueLighter}
+							>
 								Laos / Hong Kong
 							</Typography>
 						}
