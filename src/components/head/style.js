@@ -12,4 +12,16 @@ export const HeadContainer = styled.div`
 	z-index: 10;
 	color: white;
 	margin-bottom: 10%;
+
+	@media (max-width: 1280px) {
+		height: 42vh;
+	}
+
+	@media (max-width: 1024px) {
+		height: 40vh;
+	}
+
+	@media (max-width: 880px) {
+		height: 28vh;
+	}
 `;
