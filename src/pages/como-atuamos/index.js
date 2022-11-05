@@ -8,6 +8,7 @@ import {
 	GraphContainer,
 	TooltipContainer,
 	SubfooterContainer,
+	BoxComoAtuamos,
 } from './styles';
 import { colors } from '../../theme/colors';
 import { BackgroundImage, Wrapper } from '../styles.js';
@@ -29,6 +30,7 @@ export const ComoAtuamos = () => {
 				]}
 				title='Como Atuamos'
 				backgroundImage='/acquamater/default-head-bg.png'
+				marginBottom='45vh'
 			/>
 			<Wrapper>
 				<IntroContainer>
@@ -41,8 +43,12 @@ export const ComoAtuamos = () => {
 					<Typography variant='body1'>
 						Os produtos e serviços são personalizados, nascem de um
 						processo de construção colaborativa que também inclui a
-						participação de nosso <a href="/quem-pensa-e-faz#advisory-board">Advisory Board</a> e de uma ampla rede
-						de <a href='/parceiros'>Parceiros</a>.
+						participação de nosso{' '}
+						<a href='/quem-pensa-e-faz#advisory-board'>
+							Advisory Board
+						</a>{' '}
+						e de uma ampla rede de{' '}
+						<a href='/parceiros'>Parceiros</a>.
 					</Typography>
 
 					<PeopleContainer>
@@ -62,9 +68,15 @@ export const ComoAtuamos = () => {
 				</IntroContainer>
 			</Wrapper>
 
-			<Box position="relative" style={{ maxHeight: '100vh', display: 'inline-flex', flexDirection: 'column', margin: 'auto', alignItems: 'center', justifyContent: 'center', width: '100%', padding: '10% 0', textAlign: 'center' }}>
-				<BackgroundImage src="/acquamater/como-atuamos-quote-bg.png" />
-				<Typography variant="h1" color="white" sx={{ margin: '30px 0'}}>ESSÊNCIA</Typography>
+			<BoxComoAtuamos position='relative'>
+				<BackgroundImage src='/acquamater/como-atuamos-quote-bg.png' />
+				<Typography
+					variant='h1'
+					color='white'
+					sx={{ margin: '30px 0' }}
+				>
+					ESSÊNCIA
+				</Typography>
 				<Typography variant='body1bold' color='white'>
 					Como promover mais SAÚDE nos organismos vivos da Terra?{' '}
 					<br /> Como gerar mais VIDA no planeta?
@@ -80,7 +92,7 @@ export const ComoAtuamos = () => {
 					cuidado de todas as águas, doces ou salgadas, naturais ou
 					domesticadas, que circulam em nosso planeta.
 				</Typography>
-			</Box>
+			</BoxComoAtuamos>
 
 			<Wrapper style={{ marginTop: '30px' }}>
 				<PilaresContainer>
@@ -135,26 +147,50 @@ export const ComoAtuamos = () => {
 			<SubfooterContainer>
 				<Wrapper>
 					<Grid container spacing={6}>
-						<Grid item xs={12} md={6} display='flex' justifyContent='end' width="100%">
-							<img 
-								src="/acquamater/acquamater-logo.svg" 
-								alt="acquamater logo" 
-								width="50%" 
+						<Grid
+							item
+							xs={12}
+							md={6}
+							display='flex'
+							justifyContent='end'
+							width='100%'
+						>
+							<img
+								src='/acquamater/acquamater-logo.svg'
+								alt='acquamater logo'
+								width='50%'
 							/>
 						</Grid>
 						<Grid item xs={12} md={5}>
-							<Typography variant="h1bold" color={colors.blueLighter}>
+							<Typography
+								variant='h1bold'
+								color={colors.blueLighter}
+							>
 								Apresentação Institucional Acqua Mater
 							</Typography>
-							<Typography variant='body1' textAlign='start' color={colors.blueLighter} style={{ marginTop: '20px'}}>
-								Lorem ipsum dolor sit amet, consectetur adipiscing
-								elit, sed do eiusmod tempor incididunt ut labore.
-								dolor sit amet, consectetur adipiscing elit, sed do
-								eiusmod tempor incididunt ut labore.
+							<Typography
+								variant='body1'
+								textAlign='start'
+								color={colors.blueLighter}
+								style={{ marginTop: '20px' }}
+							>
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore. dolor sit amet,
+								consectetur adipiscing elit, sed do eiusmod
+								tempor incididunt ut labore.
 							</Typography>
-	
-							<Box display='flex' alignItems='center' style={{ marginTop: '20px'}}>
-								<Typography variant='body1' style={{ margin: '0 20px 0 0' }} color={colors.blueLighter}>
+
+							<Box
+								display='flex'
+								alignItems='center'
+								style={{ marginTop: '20px' }}
+							>
+								<Typography
+									variant='body1'
+									style={{ margin: '0 20px 0 0' }}
+									color={colors.blueLighter}
+								>
 									Baixe o arquivo em PDF
 								</Typography>
 								<Button onClick={downloadPDF}>Download</Button>

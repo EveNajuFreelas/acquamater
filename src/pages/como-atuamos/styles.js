@@ -1,8 +1,7 @@
-import { Container } from '@mui/material';
+import { Box, Container } from '@mui/material';
 import styled from 'styled-components';
 
 export const IntroContainer = styled(Container)`
-	margin: 50px auto;
 	margin-bottom: 10px;
 	text-align: center;
 `;
@@ -53,4 +52,20 @@ export const SubfooterContainer = styled.div`
 	display: flex;
 	align-items: center;
 	padding: 337px 0 0;
+`;
+
+export const BoxComoAtuamos = styled(Box)`
+	display: inline-flex;
+	flex-direction: column;
+	margin: auto;
+	margin-bottom: 60px;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding: 10% 0;
+	text-align: center;
+
+	@media (max-width: 1280px) {
+		margin-bottom: 0px;
+	}
 `;

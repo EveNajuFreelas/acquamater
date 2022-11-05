@@ -1,60 +1,83 @@
-import { Typography, Grid, Box } from "@mui/material";
-import styled from "styled-components";
+import { Typography, Grid, Box } from '@mui/material';
+import styled from 'styled-components';
 import { colors } from '../../theme/colors';
 
 export const TextOrganism = styled(Typography)`
-    text-align: center;
-    margin-bottom: 20px;
+	text-align: center;
+	margin-bottom: 20px;
 `;
 
 export const SectionBlueTitle = styled(Typography)`
-    background-color: ${colors.blueLighter};
-    color: white;
-    padding: 10px 60px;
-    border-radius: 35px;
-    margin-bottom: 30px;
-    width: fit-content;
+	background-color: ${colors.blueLighter};
+	color: white;
+	padding: 10px 60px;
+	border-radius: 35px;
+	margin-bottom: 30px;
+	width: fit-content;
 `;
 
 export const ParceirosContainer = styled.div`
-    padding: 10%;
-    background-size: 100%;
-    background-image: url('/acquamater/quem-pensa-faz/parceiros-bg.png');
-    background-repeat: no-repeat;
+	padding: 10%;
+	background-size: 100%;
+	background-image: url('/acquamater/quem-pensa-faz/parceiros-bg.png');
+	background-repeat: no-repeat;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
 `;
 
 export const ParceiroImg = styled(({ src }) => (
-    <Grid item sm={1}>
-        <img src={src} alt="parceiro" width="180px" height="180px" />
-    </Grid>))``;
+	<Grid item sm={1}>
+		<img src={src} alt='parceiro' width='180px' height='180px' />
+	</Grid>
+))``;
 
 // Modal Styles
 
 export const ModalContainer = styled(Box)`
-    width: 60%;
-    height: 80%;
-    background-color: white;
+	width: 60%;
+	height: 80%;
+	background-color: white;
 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 
-    padding: 20px;
-    overflow-y: auto;
+	padding: 20px;
+	overflow-y: auto;
 
-    box-shadow: 10px 10px gray;
+	box-shadow: 10px 10px gray;
 `;
 
 export const CloseButton = styled.button`
-    border-radius: 50px;
-    border: none;
-    height: 20px;
-    width: 20px;
-    text-align: center;
+	border-radius: 50px;
+	border: none;
+	height: 20px;
+	width: 20px;
+	text-align: center;
+`;
+
+export const BoxQuemPensaFaz = styled(Box)`
+	margin-top: -14%;
+
+	@media (min-width: 1280px) {
+	}
+
+	@media (min-width: 1024px) {
+		margin-bottom: 10%;
+	}
+`;
+
+export const BackgroundImageQuemPensaFaz = styled.img`
+	position: absolute;
+	z-index: -1;
+	height: 800px;
+	width: 100%;
+
+	@media (min-width: 1280px) {
+		height: 800px;
+	}
 `;
